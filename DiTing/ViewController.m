@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic, weak) UITableView *tableView;
+
 @end
 
 @implementation ViewController
@@ -23,10 +25,20 @@
     UILabel *titleL = [[UILabel alloc] initWithFrame:CGRectMake(50, 150, 200, 20)];
     titleL.text = @"DiTing";
     [self.view addSubview:titleL];
+    
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    self.tableView = tableView;
+    [self.view addSubview:tableView];
 }
 
 
-- (void)didReceiveMemoryWarning {
+
+
+
+
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
