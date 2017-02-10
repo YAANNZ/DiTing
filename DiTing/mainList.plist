@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>header</key>
+		<string>three</string>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>custom layout</string>
+				<key>targetVc</key>
+				<string>MDRViewController</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>header</key>
+		<string>liner scale</string>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>liner</string>
+				<key>targetVc</key>
+				<string>MDRLinerController</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>header</key>
+		<string>record</string>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>record vedio</string>
+				<key>targetVc</key>
+				<string>MDRRecordVedioController</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>header</key>
+		<string>other</string>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>frosted glass</string>
+				<key>targetVc</key>
+				<string>MDRGlassController</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>timeLine</string>
+				<key>targetVc</key>
+				<string>TimelineController</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>header</key>
+		<string>custom transiton</string>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>custom present</string>
+				<key>targetVc</key>
+				<string>MDRSwipeOneController</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>RotatePresent</string>
+				<key>targetVc</key>
+				<string>MDRRotateController</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
