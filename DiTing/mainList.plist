@@ -71,12 +71,6 @@
 				<key>targetVc</key>
 				<string>MDRSwipeOneController</string>
 			</dict>
-			<dict>
-				<key>title</key>
-				<string>RotatePresent</string>
-				<key>targetVc</key>
-				<string>MDRRotateController</string>
-			</dict>
 		</array>
 	</dict>
 </array>

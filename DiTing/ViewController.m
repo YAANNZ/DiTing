@@ -17,26 +17,23 @@
 
 @implementation ViewController
 
+NSString * const cellID = @"cellID";
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    self.view.backgroundColor = [UIColor whiteColor];
-    
-    UILabel *titleL = [[UILabel alloc] initWithFrame:CGRectMake(50, 150, 200, 20)];
-    titleL.text = @"DiTing";
-    [self.view addSubview:titleL];
-    
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     self.tableView = tableView;
     tableView.delegate = self;
+    tableView.dataSource = self;
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
     [self.view addSubview:tableView];
 }
 
 #pragma mark - dataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    
     return self.listAry.count;
 }
 
@@ -45,20 +42,63 @@
     return [self.listAry[section][@"items"] count];
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return self.listAry[section][@"header"];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    if (section == self.listAry.count - 1)
+    {
+        return 30;
+    }
+    return 0;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    if (section == self.listAry.count - 1)
+    {
+        UIButton *footerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [footerBtn setTitle:@"退出" forState:UIControlStateNormal];
+        [footerBtn setBackgroundColor:[UIColor colorWithRed:247/255.0 green:247/255.0 blue:247/255.0 alpha:1.0]];
+        [footerBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [footerBtn addTarget:self action:@selector(footerBtnClick) forControlEvents:UIControlEventTouchUpInside];
+        return footerBtn;
+    }
+    
+    return [UIView new];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     NSDictionary *cellItem = self.listAry[indexPath.section][@"items"][indexPath.row];
-    
     cell.textLabel.text = cellItem[@"title"];
-    
-    
     return cell;
 }
 
+// 退出
+- (void)footerBtnClick
+{
+    [UIView beginAnimations:@"exitApplication" context:nil];
+    [UIView setAnimationDuration:0.5];
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationTransition:UIViewAnimationTransitionCurlDown forView:[[UIApplication sharedApplication] keyWindow] cache:NO];
+    [UIView setAnimationDidStopSelector:@selector(animationFinished:finished:context:)];
+    [[UIApplication sharedApplication] keyWindow].bounds = CGRectMake(0, 0, 0, 0);
+    [UIView commitAnimations];
+}
 
-
+- (void)animationFinished:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context
+{
+    if ([animationID compare:@"exitApplication"] == 0)
+    {
+        exit(0);
+    }
+}
 
 #pragma mark - lazy
 - (NSArray *)listAry
@@ -69,6 +109,12 @@
     }
     return _listAry;
 }
+
+
+
+
+
+
 
 
 
