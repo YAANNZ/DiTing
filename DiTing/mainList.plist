@@ -9,9 +9,9 @@
 		<array>
 			<dict>
 				<key>title</key>
-				<string>custom layout</string>
+				<string>WeChat</string>
 				<key>targetVc</key>
-				<string>MDRViewController</string>
+				<string>DTPWeChatTabBarController</string>
 			</dict>
 		</array>
 	</dict>

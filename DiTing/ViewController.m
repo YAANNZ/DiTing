@@ -100,6 +100,18 @@ NSString * const cellID = @"cellID";
     }
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    NSDictionary *cellItem = self.listAry[indexPath.section][@"items"][indexPath.row];
+    if ([cellItem[@"targetVc"] isEqualToString:@"DTPWeChatTabBarController"])
+    {
+//        [];
+    }
+}
+
+
 #pragma mark - lazy
 - (NSArray *)listAry
 {

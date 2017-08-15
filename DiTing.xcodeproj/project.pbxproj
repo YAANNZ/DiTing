@@ -16,6 +16,7 @@
 		193AF82F1E48C03E00F35FE4 /* DiTingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 193AF82E1E48C03E00F35FE4 /* DiTingTests.m */; };
 		193AF83A1E48C03E00F35FE4 /* DiTingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 193AF8391E48C03E00F35FE4 /* DiTingUITests.m */; };
 		193EA9F71E4E0E14008EF309 /* mainList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 193EA9F61E4E0E14008EF309 /* mainList.plist */; };
+		19A2D7C41F4340DF00341A7E /* DTPWeChatTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7C31F4340DF00341A7E /* DTPWeChatTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		193AF8391E48C03E00F35FE4 /* DiTingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiTingUITests.m; sourceTree = "<group>"; };
 		193AF83B1E48C03E00F35FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		193EA9F61E4E0E14008EF309 /* mainList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mainList.plist; sourceTree = "<group>"; };
+		19A2D7C21F4340DF00341A7E /* DTPWeChatTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTPWeChatTabBarController.h; sourceTree = "<group>"; };
+		19A2D7C31F4340DF00341A7E /* DTPWeChatTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTPWeChatTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 				193AF8221E48C03E00F35FE4 /* LaunchScreen.storyboard */,
 				193AF8251E48C03E00F35FE4 /* Info.plist */,
 				193AF8141E48C03E00F35FE4 /* Supporting Files */,
+				19A2D7C21F4340DF00341A7E /* DTPWeChatTabBarController.h */,
+				19A2D7C31F4340DF00341A7E /* DTPWeChatTabBarController.m */,
 			);
 			path = DiTing;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 			files = (
 				193AF81C1E48C03E00F35FE4 /* ViewController.m in Sources */,
 				193AF8191E48C03E00F35FE4 /* AppDelegate.m in Sources */,
+				19A2D7C41F4340DF00341A7E /* DTPWeChatTabBarController.m in Sources */,
 				193AF8161E48C03E00F35FE4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
