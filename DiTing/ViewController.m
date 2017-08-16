@@ -107,7 +107,7 @@ NSString * const cellID = @"cellID";
     NSDictionary *cellItem = self.listAry[indexPath.section][@"items"][indexPath.row];
     if ([cellItem[@"targetVc"] isEqualToString:@"DTPWeChatTabBarController"])
     {
-//        [];
+        [UIApplication sharedApplication].keyWindow.rootViewController = [[NSClassFromString(cellItem[@"targetVc"]) alloc] init];
     }
 }
 

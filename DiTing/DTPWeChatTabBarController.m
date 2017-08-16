@@ -14,10 +14,15 @@
 
 @implementation DTPWeChatTabBarController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UIViewController *profileVC = [[UIViewController alloc] init];
+    profileVC.view.backgroundColor = [UIColor purpleColor];
+    [self addChildViewController:profileVC];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
