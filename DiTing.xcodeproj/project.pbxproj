@@ -16,7 +16,11 @@
 		193AF82F1E48C03E00F35FE4 /* DiTingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 193AF82E1E48C03E00F35FE4 /* DiTingTests.m */; };
 		193AF83A1E48C03E00F35FE4 /* DiTingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 193AF8391E48C03E00F35FE4 /* DiTingUITests.m */; };
 		193EA9F71E4E0E14008EF309 /* mainList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 193EA9F61E4E0E14008EF309 /* mainList.plist */; };
-		19A2D7C41F4340DF00341A7E /* DTPWeChatTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7C31F4340DF00341A7E /* DTPWeChatTabBarController.m */; };
+		19A2D7C91F45ED0000341A7E /* DITWeChatTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7C81F45ED0000341A7E /* DITWeChatTabBarController.m */; };
+		19A2D7CD1F45EF0600341A7E /* DITWeChatHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7CC1F45EF0600341A7E /* DITWeChatHomeViewController.m */; };
+		19A2D7D01F45EF1600341A7E /* DITWeChatContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7CF1F45EF1600341A7E /* DITWeChatContactsViewController.m */; };
+		19A2D7D31F45EF2400341A7E /* DITWeChatDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7D21F45EF2400341A7E /* DITWeChatDiscoverViewController.m */; };
+		19A2D7D61F45EF3000341A7E /* DITWeChatProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7D51F45EF3000341A7E /* DITWeChatProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +58,18 @@
 		193AF8391E48C03E00F35FE4 /* DiTingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiTingUITests.m; sourceTree = "<group>"; };
 		193AF83B1E48C03E00F35FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		193EA9F61E4E0E14008EF309 /* mainList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mainList.plist; sourceTree = "<group>"; };
-		19A2D7C21F4340DF00341A7E /* DTPWeChatTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTPWeChatTabBarController.h; sourceTree = "<group>"; };
-		19A2D7C31F4340DF00341A7E /* DTPWeChatTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTPWeChatTabBarController.m; sourceTree = "<group>"; };
+		19A2D7C61F45ECCE00341A7E /* DITDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITDefine.h; sourceTree = "<group>"; };
+		19A2D7C71F45ED0000341A7E /* DITWeChatTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITWeChatTabBarController.h; sourceTree = "<group>"; };
+		19A2D7C81F45ED0000341A7E /* DITWeChatTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITWeChatTabBarController.m; sourceTree = "<group>"; };
+		19A2D7CA1F45EDD200341A7E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		19A2D7CB1F45EF0600341A7E /* DITWeChatHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITWeChatHomeViewController.h; sourceTree = "<group>"; };
+		19A2D7CC1F45EF0600341A7E /* DITWeChatHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITWeChatHomeViewController.m; sourceTree = "<group>"; };
+		19A2D7CE1F45EF1600341A7E /* DITWeChatContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITWeChatContactsViewController.h; sourceTree = "<group>"; };
+		19A2D7CF1F45EF1600341A7E /* DITWeChatContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITWeChatContactsViewController.m; sourceTree = "<group>"; };
+		19A2D7D11F45EF2400341A7E /* DITWeChatDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITWeChatDiscoverViewController.h; sourceTree = "<group>"; };
+		19A2D7D21F45EF2400341A7E /* DITWeChatDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITWeChatDiscoverViewController.m; sourceTree = "<group>"; };
+		19A2D7D41F45EF3000341A7E /* DITWeChatProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITWeChatProfileViewController.h; sourceTree = "<group>"; };
+		19A2D7D51F45EF3000341A7E /* DITWeChatProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITWeChatProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +129,18 @@
 				193AF8221E48C03E00F35FE4 /* LaunchScreen.storyboard */,
 				193AF8251E48C03E00F35FE4 /* Info.plist */,
 				193AF8141E48C03E00F35FE4 /* Supporting Files */,
-				19A2D7C21F4340DF00341A7E /* DTPWeChatTabBarController.h */,
-				19A2D7C31F4340DF00341A7E /* DTPWeChatTabBarController.m */,
+				19A2D7C61F45ECCE00341A7E /* DITDefine.h */,
+				19A2D7C71F45ED0000341A7E /* DITWeChatTabBarController.h */,
+				19A2D7C81F45ED0000341A7E /* DITWeChatTabBarController.m */,
+				19A2D7CA1F45EDD200341A7E /* PrefixHeader.pch */,
+				19A2D7CB1F45EF0600341A7E /* DITWeChatHomeViewController.h */,
+				19A2D7CC1F45EF0600341A7E /* DITWeChatHomeViewController.m */,
+				19A2D7CE1F45EF1600341A7E /* DITWeChatContactsViewController.h */,
+				19A2D7CF1F45EF1600341A7E /* DITWeChatContactsViewController.m */,
+				19A2D7D11F45EF2400341A7E /* DITWeChatDiscoverViewController.h */,
+				19A2D7D21F45EF2400341A7E /* DITWeChatDiscoverViewController.m */,
+				19A2D7D41F45EF3000341A7E /* DITWeChatProfileViewController.h */,
+				19A2D7D51F45EF3000341A7E /* DITWeChatProfileViewController.m */,
 			);
 			path = DiTing;
 			sourceTree = "<group>";
@@ -210,6 +234,7 @@
 		193AF8091E48C03E00F35FE4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DIT;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = zyn;
 				TargetAttributes = {
@@ -285,9 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A2D7D61F45EF3000341A7E /* DITWeChatProfileViewController.m in Sources */,
+				19A2D7C91F45ED0000341A7E /* DITWeChatTabBarController.m in Sources */,
+				19A2D7D31F45EF2400341A7E /* DITWeChatDiscoverViewController.m in Sources */,
 				193AF81C1E48C03E00F35FE4 /* ViewController.m in Sources */,
 				193AF8191E48C03E00F35FE4 /* AppDelegate.m in Sources */,
-				19A2D7C41F4340DF00341A7E /* DTPWeChatTabBarController.m in Sources */,
+				19A2D7D01F45EF1600341A7E /* DITWeChatContactsViewController.m in Sources */,
+				19A2D7CD1F45EF0600341A7E /* DITWeChatHomeViewController.m in Sources */,
 				193AF8161E48C03E00F35FE4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UA62U3JARN;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DiTing/PrefixHeader.pch";
 				INFOPLIST_FILE = DiTing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -451,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UA62U3JARN;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DiTing/PrefixHeader.pch";
 				INFOPLIST_FILE = DiTing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

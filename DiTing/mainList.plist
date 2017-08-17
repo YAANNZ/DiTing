@@ -11,7 +11,7 @@
 				<key>title</key>
 				<string>WeChat</string>
 				<key>targetVc</key>
-				<string>DTPWeChatTabBarController</string>
+				<string>DITWeChatTabBarController</string>
 			</dict>
 		</array>
 	</dict>

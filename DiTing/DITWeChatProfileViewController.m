@@ -1,28 +1,23 @@
 //
-//  DTPWeChatTabBarController.m
+//  DITWeChatProfileViewController.m
 //  DiTing
 //
-//  Created by ZHUYN on 2017/8/15.
+//  Created by ZHUYN on 2017/8/17.
 //  Copyright © 2017年 zyn. All rights reserved.
 //
 
-#import "DTPWeChatTabBarController.h"
+#import "DITWeChatProfileViewController.h"
 
-@interface DTPWeChatTabBarController ()
+@interface DITWeChatProfileViewController ()
 
 @end
 
-@implementation DTPWeChatTabBarController
+@implementation DITWeChatProfileViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    
-    UIViewController *profileVC = [[UIViewController alloc] init];
-    profileVC.view.backgroundColor = [UIColor purpleColor];
-    [self addChildViewController:profileVC];
+    // Do any additional setup after loading the view.
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
