@@ -10,6 +10,8 @@
 
 @interface DITWeChatContactsViewController ()
 
+@property (nonatomic, weak) UITableView *tableView;
+
 @end
 
 @implementation DITWeChatContactsViewController
@@ -19,6 +21,10 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor purpleColor];
+    
+    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    tableView.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:tableView];
 }
 
 - (void)didReceiveMemoryWarning {
