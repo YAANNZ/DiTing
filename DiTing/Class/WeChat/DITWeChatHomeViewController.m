@@ -14,9 +14,13 @@
 
 @implementation DITWeChatHomeViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    tableView.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:tableView];
 }
 
 - (void)didReceiveMemoryWarning {
