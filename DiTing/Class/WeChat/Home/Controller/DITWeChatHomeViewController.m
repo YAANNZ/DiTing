@@ -14,6 +14,7 @@
 @interface DITWeChatHomeViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, weak) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *sessionArray;
 
 @end
 
@@ -57,7 +58,14 @@
 }
 
 
-
+- (NSMutableArray *)sessionArray
+{
+    if (!_sessionArray)
+    {
+        _sessionArray = [NSMutableArray array];
+    }
+    return _sessionArray;
+}
 
 
 - (void)didReceiveMemoryWarning
