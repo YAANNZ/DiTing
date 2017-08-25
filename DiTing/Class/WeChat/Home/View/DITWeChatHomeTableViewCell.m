@@ -47,6 +47,30 @@
     _messageLabel = [UILabel new];
     _messageLabel.font = [UIFont systemFontOfSize:14];
     _messageLabel.textColor = [UIColor lightGrayColor];
+    
+    [self.contentView addSubview:_iconImageView];
+    [self.contentView addSubview:_nameLabel];
+    [self.contentView addSubview:_timeLabel];
+    [self.contentView addSubview:_messageLabel];
+    
+    [self setupMasonry];
+}
+
+- (void)setupMasonry
+{
+    [_iconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.height.mas_equalTo(60);
+        make.left.mas_equalTo(10);
+        make.top.mas_equalTo(5);
+        make.bottom.mas_equalTo(-5);
+    }];
+}
+
+- (void)setHomeModel:(DITWeChatHomeModel *)homeModel
+{
+    _homeModel = homeModel;
+    
+    _iconImageView.image = [UIImage imageNamed:@"default_Icon"];
 }
 
 @end
