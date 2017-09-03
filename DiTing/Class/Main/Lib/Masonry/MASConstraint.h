@@ -27,13 +27,6 @@
 /**
  *	Modifies the NSLayoutConstraint constant,
  *  only affects MASConstraints in which the first item's NSLayoutAttribute is one of the following
- *  NSLayoutAttributeTop, NSLayoutAttributeLeft, NSLayoutAttributeBottom, NSLayoutAttributeRight
- */
-- (MASConstraint * (^)(CGFloat inset))inset;
-
-/**
- *	Modifies the NSLayoutConstraint constant,
- *  only affects MASConstraints in which the first item's NSLayoutAttribute is one of the following
  *  NSLayoutAttributeWidth, NSLayoutAttributeHeight
  */
 - (MASConstraint * (^)(CGSize offset))sizeOffset;
@@ -141,7 +134,7 @@
 
 #endif
 
-#if (__IPHONE_OS_VERSION_MIN_REQUIRED >= 80000) || (__TV_OS_VERSION_MIN_REQUIRED >= 9000)
+#if TARGET_OS_IPHONE || TARGET_OS_TV
 
 - (MASConstraint *)leftMargin;
 - (MASConstraint *)rightMargin;
@@ -169,13 +162,6 @@
  *  NSLayoutAttributeTop, NSLayoutAttributeLeft, NSLayoutAttributeBottom, NSLayoutAttributeRight
  */
 - (void)setInsets:(MASEdgeInsets)insets;
-
-/**
- *	Modifies the NSLayoutConstraint constant,
- *  only affects MASConstraints in which the first item's NSLayoutAttribute is one of the following
- *  NSLayoutAttributeTop, NSLayoutAttributeLeft, NSLayoutAttributeBottom, NSLayoutAttributeRight
- */
-- (void)setInset:(CGFloat)inset;
 
 /**
  *	Modifies the NSLayoutConstraint constant,
