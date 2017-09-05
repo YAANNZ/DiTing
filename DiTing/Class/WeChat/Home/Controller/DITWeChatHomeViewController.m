@@ -8,13 +8,14 @@
 
 #import "DITWeChatHomeViewController.h"
 #import "DITWeChatHomeTableViewCell.h"
+#import "DITWeChatHomeModel.h"
 
 #define DITWeChatHomeCellID @"DITWeChatHomeCellID"
 
 @interface DITWeChatHomeViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, weak) UITableView *tableView;
-@property (nonatomic, strong) NSMutableArray *sessionArray;
+@property (nonatomic, strong) NSMutableArray <DITWeChatHomeModel *> *sessionArray;
 
 @end
 
@@ -25,6 +26,8 @@
     [super viewDidLoad];
 
     [self setupSubview];
+    
+    
 }
 
 - (void)setupSubview
@@ -41,13 +44,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 8;
+    return self.sessionArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DITWeChatHomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:DITWeChatHomeCellID];
-    
+    cell.homeModel = self.sessionArray[indexPath.row];
     return cell;
 }
 
@@ -63,6 +66,14 @@
     if (!_sessionArray)
     {
         _sessionArray = [NSMutableArray array];
+        DITWeChatHomeModel *dataModel = [[DITWeChatHomeModel alloc] init];
+        dataModel.headImg = @"default_Icon";
+        dataModel.nameStr = @"Gavin";
+        dataModel.msgStr = @"no zuo no die why you try";
+        dataModel.timeStr = @"13:05";
+        for (int i = 0; i < 8; i++) {
+            [_sessionArray addObject:dataModel];
+        }
     }
     return _sessionArray;
 }
