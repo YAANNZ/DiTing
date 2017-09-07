@@ -69,7 +69,7 @@
         DITWeChatHomeModel *dataModel = [[DITWeChatHomeModel alloc] init];
         dataModel.headImg = @"default_Icon";
         dataModel.nameStr = @"Gavin";
-        dataModel.msgStr = @"no zuo no die why you try";
+        dataModel.msgStr = @"no zuo no die why you try😊";
         dataModel.timeStr = @"13:05";
         for (int i = 0; i < 8; i++) {
             [_sessionArray addObject:dataModel];

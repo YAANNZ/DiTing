@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1926211B1F612749004ECA8E /* DITWeChatContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1926211A1F612749004ECA8E /* DITWeChatContactModel.m */; };
 		193AF8161E48C03E00F35FE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 193AF8151E48C03E00F35FE4 /* main.m */; };
 		193AF81F1E48C03E00F35FE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 193AF81D1E48C03E00F35FE4 /* Main.storyboard */; };
 		193AF8211E48C03E00F35FE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 193AF8201E48C03E00F35FE4 /* Assets.xcassets */; };
@@ -60,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		192621191F612749004ECA8E /* DITWeChatContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITWeChatContactModel.h; sourceTree = "<group>"; };
+		1926211A1F612749004ECA8E /* DITWeChatContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITWeChatContactModel.m; sourceTree = "<group>"; };
 		193AF8111E48C03E00F35FE4 /* DiTing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiTing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		193AF8151E48C03E00F35FE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		193AF81E1E48C03E00F35FE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -292,6 +295,8 @@
 		19A2D7FC1F4C813700341A7E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				192621191F612749004ECA8E /* DITWeChatContactModel.h */,
+				1926211A1F612749004ECA8E /* DITWeChatContactModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -650,6 +655,7 @@
 				19F7699D1F5C48D90050775C /* ViewController+MASAdditions.m in Sources */,
 				19F769981F5C48D90050775C /* MASViewAttribute.m in Sources */,
 				19F769941F5C48D90050775C /* MASCompositeConstraint.m in Sources */,
+				1926211B1F612749004ECA8E /* DITWeChatContactModel.m in Sources */,
 				19A2D8191F4C813700341A7E /* DITWeChatTabBarController.m in Sources */,
 				19F769B11F5C48EA0050775C /* AFURLSessionManager.m in Sources */,
 				19A2D8161F4C813700341A7E /* DITWeChatContactsViewController.m in Sources */,

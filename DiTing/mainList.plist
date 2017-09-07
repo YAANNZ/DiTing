@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>header</key>
-		<string>three</string>
+		<string>IM</string>
 		<key>items</key>
 		<array>
 			<dict>
@@ -17,7 +17,7 @@
 	</dict>
 	<dict>
 		<key>header</key>
-		<string>liner scale</string>
+		<string>Animation</string>
 		<key>items</key>
 		<array>
 			<dict>
@@ -30,7 +30,7 @@
 	</dict>
 	<dict>
 		<key>header</key>
-		<string>record</string>
+		<string>Audio and Video</string>
 		<key>items</key>
 		<array>
 			<dict>
@@ -62,7 +62,7 @@
 	</dict>
 	<dict>
 		<key>header</key>
-		<string>custom transiton</string>
+		<string>Custom transiton</string>
 		<key>items</key>
 		<array>
 			<dict>
