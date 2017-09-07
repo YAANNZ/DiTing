@@ -7,9 +7,9 @@
 //
 
 #import "DITWeChatContactsViewController.h"
-#import "DITWeChatContactModel.h"
+#import "DITWeChatContactsTableViewCell.h"
 
-@interface DITWeChatContactsViewController () <UISearchBarDelegate>
+@interface DITWeChatContactsViewController () <UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UISearchController *searchController;
@@ -30,6 +30,8 @@
 - (void)addSubviews
 {
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
     [self.view addSubview:_tableView];
     
     UISearchBar *bar = self.searchController.searchBar;
@@ -106,10 +108,95 @@
     for (NSUInteger index = 0; index < AZNumbers; index++)
     {
         NSMutableArray *persionsForSection = [dataAry objectAtIndex:index];
-        [collation sortedArrayFromArray:persionsForSection collationStringSelector:@selector(name)];
-        
+        NSArray *resultPersionsForSection = [collation sortedArrayFromArray:persionsForSection collationStringSelector:@selector(name)];
+        [dataAry replaceObjectAtIndex:index withObject:resultPersionsForSection];
     }
     
+    NSMutableArray *tempAry = [NSMutableArray array];
+    [dataAry enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj count] == 0)
+        {
+            [tempAry addObject:obj];
+        }
+        else
+        {
+            [self.sectionTitlesArray addObject:[[collation sectionTitles] objectAtIndex:idx]];
+        }
+    }];
+    [dataAry removeObjectsInArray:tempAry];
+    
+    NSMutableArray *otherModels = [NSMutableArray new];
+    NSArray *dicts = @[@{@"name" : @"新的朋友", @"imageName" : @"plugins_FriendNotify"},
+                       @{@"name" : @"群聊", @"imageName" : @"add_friend_icon_addgroup"},
+                       @{@"name" : @"标签", @"imageName" : @"Contact_icon_ContactTag"},
+                       @{@"name" : @"公众号", @"imageName" : @"add_friend_icon_offical"}];
+    for (NSDictionary *dict in dicts)
+    {
+        DITWeChatContactModel *contactModel = [DITWeChatContactModel new];
+        contactModel.name = dict[@"name"];
+        contactModel.imageName = dict[@"imageName"];
+        [otherModels addObject:contactModel];
+    }
+    [dataAry insertObject:otherModels atIndex:0];
+    
+    self.sectionDataArray = dataAry;
+    [self.sectionTitlesArray insertObject:@"" atIndex:0];
+}
+
+#pragma mark - UITableViewDelegate, UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return self.sectionDataArray.count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.sectionDataArray[section] count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return self.sectionTitlesArray[section];
+}
+
+- (NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView
+{
+    return self.sectionTitlesArray;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *ID = @"SDContacts";
+    DITWeChatContactsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (!cell) {
+        cell = [[DITWeChatContactsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+    }
+    
+    NSUInteger section = indexPath.section;
+    NSUInteger row = indexPath.row;
+    DITWeChatContactModel *model = self.sectionDataArray[section][row];
+    cell.model = model;
+    return cell;
+}
+
+
+#pragma mark - 懒加载
+- (NSMutableArray *)sectionTitlesArray
+{
+    if (!_sectionTitlesArray)
+    {
+        _sectionTitlesArray = [NSMutableArray array];
+    }
+    return _sectionTitlesArray;
+}
+
+- (NSMutableArray *)sectionDataArray
+{
+    if (!_sectionDataArray)
+    {
+        _sectionDataArray = [NSMutableArray array];
+    }
+    return _sectionDataArray;
 }
 
 
