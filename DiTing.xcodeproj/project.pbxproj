@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		191F31E31F623A1E001D757D /* DITWeCharContactsSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 191F31E21F623A1E001D757D /* DITWeCharContactsSearchResultController.m */; };
+		191F31E71F658475001D757D /* DITWeChatChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 191F31E61F658475001D757D /* DITWeChatChatTableViewController.m */; };
 		1926211B1F612749004ECA8E /* DITWeChatContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1926211A1F612749004ECA8E /* DITWeChatContactModel.m */; };
 		1926211E1F6197CB004ECA8E /* DITWeChatContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1926211D1F6197CB004ECA8E /* DITWeChatContactsTableViewCell.m */; };
 		193AF8161E48C03E00F35FE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 193AF8151E48C03E00F35FE4 /* main.m */; };
@@ -62,6 +64,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		191F31E11F623A1E001D757D /* DITWeCharContactsSearchResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITWeCharContactsSearchResultController.h; sourceTree = "<group>"; };
+		191F31E21F623A1E001D757D /* DITWeCharContactsSearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITWeCharContactsSearchResultController.m; sourceTree = "<group>"; };
+		191F31E51F658475001D757D /* DITWeChatChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITWeChatChatTableViewController.h; sourceTree = "<group>"; };
+		191F31E61F658475001D757D /* DITWeChatChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITWeChatChatTableViewController.m; sourceTree = "<group>"; };
 		192621191F612749004ECA8E /* DITWeChatContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITWeChatContactModel.h; sourceTree = "<group>"; };
 		1926211A1F612749004ECA8E /* DITWeChatContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITWeChatContactModel.m; sourceTree = "<group>"; };
 		1926211C1F6197CB004ECA8E /* DITWeChatContactsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITWeChatContactsTableViewCell.h; sourceTree = "<group>"; };
@@ -291,6 +297,8 @@
 			children = (
 				19A2D7FA1F4C813700341A7E /* DITWeChatContactsViewController.h */,
 				19A2D7FB1F4C813700341A7E /* DITWeChatContactsViewController.m */,
+				191F31E11F623A1E001D757D /* DITWeCharContactsSearchResultController.h */,
+				191F31E21F623A1E001D757D /* DITWeCharContactsSearchResultController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -361,6 +369,8 @@
 			children = (
 				19A2D8061F4C813700341A7E /* DITWeChatHomeViewController.h */,
 				19A2D8071F4C813700341A7E /* DITWeChatHomeViewController.m */,
+				191F31E51F658475001D757D /* DITWeChatChatTableViewController.h */,
+				191F31E61F658475001D757D /* DITWeChatChatTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -665,7 +675,9 @@
 				19F769B11F5C48EA0050775C /* AFURLSessionManager.m in Sources */,
 				19A2D8161F4C813700341A7E /* DITWeChatContactsViewController.m in Sources */,
 				19F769961F5C48D90050775C /* MASConstraintMaker.m in Sources */,
+				191F31E71F658475001D757D /* DITWeChatChatTableViewController.m in Sources */,
 				19F769AC1F5C48EA0050775C /* AFHTTPSessionManager.m in Sources */,
+				191F31E31F623A1E001D757D /* DITWeCharContactsSearchResultController.m in Sources */,
 				1926211E1F6197CB004ECA8E /* DITWeChatContactsTableViewCell.m in Sources */,
 				19F769B01F5C48EA0050775C /* AFURLResponseSerialization.m in Sources */,
 				19F769951F5C48D90050775C /* MASConstraint.m in Sources */,

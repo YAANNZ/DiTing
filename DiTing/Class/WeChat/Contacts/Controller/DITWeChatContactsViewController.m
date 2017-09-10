@@ -8,6 +8,7 @@
 
 #import "DITWeChatContactsViewController.h"
 #import "DITWeChatContactsTableViewCell.h"
+#import "DITWeCharContactsSearchResultController.h"
 
 @interface DITWeChatContactsViewController () <UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource>
 
@@ -33,6 +34,9 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
+    
+    self.searchController = [[UISearchController alloc] initWithSearchResultsController:[DITWeCharContactsSearchResultController new]];
+    self.searchController.view.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.95];
     
     UISearchBar *bar = self.searchController.searchBar;
     bar.barStyle = UIBarStyleDefault;

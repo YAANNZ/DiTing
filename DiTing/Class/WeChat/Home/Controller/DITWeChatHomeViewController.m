@@ -9,6 +9,7 @@
 #import "DITWeChatHomeViewController.h"
 #import "DITWeChatHomeTableViewCell.h"
 #import "DITWeChatHomeModel.h"
+#import "DITWeChatChatTableViewController.h"
 
 #define DITWeChatHomeCellID @"DITWeChatHomeCellID"
 
@@ -58,6 +59,8 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    DITWeChatChatTableViewController *chatVC = [[DITWeChatChatTableViewController alloc] init];
+    [self.navigationController pushViewController:chatVC animated:YES];
 }
 
 
