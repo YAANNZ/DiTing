@@ -10,7 +10,7 @@
 #import "DITWeChatHomeTableViewCell.h"
 #import "DITWeChatHomeModel.h"
 #import "DITWeChatChatTableViewController.h"
-#import "AFNetworking.h"
+
 #define DITWeChatHomeCellID @"DITWeChatHomeCellID"
 
 @interface DITWeChatHomeViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -28,13 +28,7 @@
 
     [self setupSubview];
     
-//    [[AFHTTPSessionManager manager] GET:@"http://127.0.0.1:3000" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-//        
-//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        
-//    }];
+    
 }
 
 - (void)setupSubview

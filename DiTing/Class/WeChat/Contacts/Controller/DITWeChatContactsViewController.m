@@ -170,7 +170,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *ID = @"SDContacts";
+    static NSString *ID = @"DITWeChatContactsTableViewCell";
     DITWeChatContactsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (!cell) {
         cell = [[DITWeChatContactsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
@@ -181,6 +181,12 @@
     DITWeChatContactModel *model = self.sectionDataArray[section][row];
     cell.model = model;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
 }
 
 
