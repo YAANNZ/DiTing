@@ -85,6 +85,7 @@
 		193AF8391E48C03E00F35FE4 /* DiTingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiTingUITests.m; sourceTree = "<group>"; };
 		193AF83B1E48C03E00F35FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		193EA9F61E4E0E14008EF309 /* mainList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mainList.plist; sourceTree = "<group>"; };
+		1964F0901F72480D00661FC8 /* DITHttpLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITHttpLink.h; sourceTree = "<group>"; };
 		19A2D7CA1F45EDD200341A7E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		19A2D7DA1F48955A00341A7E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		19A2D7DB1F48955A00341A7E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -266,6 +267,7 @@
 				19A2D7DD1F48955A00341A7E /* AppDelegate.h */,
 				19A2D7DE1F48955A00341A7E /* AppDelegate.m */,
 				19A2D7DF1F48955A00341A7E /* DITDefine.h */,
+				1964F0901F72480D00661FC8 /* DITHttpLink.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
