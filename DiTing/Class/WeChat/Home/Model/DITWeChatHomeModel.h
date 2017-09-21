@@ -10,9 +10,9 @@
 
 @interface DITWeChatHomeModel : NSObject
 
-@property (nonatomic, copy) NSString *headImg;
-@property (nonatomic, copy) NSString *nameStr;
-@property (nonatomic, copy) NSString *msgStr;
-@property (nonatomic, copy) NSString *timeStr;
+@property (nonatomic, copy) NSString *imageName;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSString *time;
 
 @end

@@ -45,10 +45,23 @@
 
 - (void)getAllData
 {
-    [[AFHTTPSessionManager manager] POST:home_allMsg parameters:nil progress:^(NSProgress * _Nonnull uploadProgress) {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager POST:home_allMsg parameters:nil progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"%@",responseObject);
+        if ([responseObject[@"flag"] integerValue] == 0)
+        {
+            self.sessionArray = [DITWeChatHomeModel mj_objectArrayWithKeyValuesArray:responseObject[@"result"]];
+            [self.tableView reloadData];
+        }
+        else
+        {
+            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+            hud.mode = MBProgressHUDModeText;
+            hud.label.text = responseObject[@"msg"];
+            [hud hideAnimated:YES afterDelay:0.8];
+        }
+     
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@",error.localizedDescription);
     }];
@@ -80,14 +93,14 @@
     if (!_sessionArray)
     {
         _sessionArray = [NSMutableArray array];
-        DITWeChatHomeModel *dataModel = [[DITWeChatHomeModel alloc] init];
-        dataModel.headImg = @"default_Icon";
-        dataModel.nameStr = @"Gavin";
-        dataModel.msgStr = @"no zuo no die why you try😊";
-        dataModel.timeStr = @"13:05";
-        for (int i = 0; i < 8; i++) {
-            [_sessionArray addObject:dataModel];
-        }
+//        DITWeChatHomeModel *dataModel = [[DITWeChatHomeModel alloc] init];
+//        dataModel.headImg = @"default_Icon";
+//        dataModel.nameStr = @"Gavin";
+//        dataModel.msgStr = @"no zuo no die why you try😊";
+//        dataModel.timeStr = @"13:05";
+//        for (int i = 0; i < 8; i++) {
+//            [_sessionArray addObject:dataModel];
+//        }
     }
     return _sessionArray;
 }

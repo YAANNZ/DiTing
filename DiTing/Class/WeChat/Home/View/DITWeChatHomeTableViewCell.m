@@ -90,10 +90,10 @@
 {
     _homeModel = homeModel;
     
-    _iconImageView.image = [UIImage imageNamed:homeModel.headImg];
-    _nameLabel.text = homeModel.nameStr;
-    _messageLabel.text = homeModel.msgStr;
-    _timeLabel.text = homeModel.timeStr;
+    _iconImageView.image = [UIImage imageNamed:homeModel.imageName];
+    _nameLabel.text = homeModel.name;
+    _messageLabel.text = homeModel.message;
+    _timeLabel.text = homeModel.time;
 }
 
 @end
