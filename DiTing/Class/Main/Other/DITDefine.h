@@ -18,3 +18,14 @@
 #define DITColor(r, g, b, a) [UIColor colorWithRed:(r / 255.0) green:(g / 255.0) blue:(b / 255.0) alpha:a]
 
 #define WeChat_Global_mainColor DITColor(248, 248, 248, 1)
+
+// MBProgressHUD
+#define ShowMBProgressHUDText(Text)     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];\
+hud.mode = MBProgressHUDModeText;\
+hud.label.text = Text;\
+[hud hideAnimated:YES afterDelay:0.8];
+
+#define ShowMBProgressHUDInViewText(Text)     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self animated:YES];\
+hud.mode = MBProgressHUDModeText;\
+hud.label.text = Text;\
+[hud hideAnimated:YES afterDelay:0.8];

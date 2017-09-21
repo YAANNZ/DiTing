@@ -56,10 +56,7 @@
         }
         else
         {
-            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-            hud.mode = MBProgressHUDModeText;
-            hud.label.text = responseObject[@"msg"];
-            [hud hideAnimated:YES afterDelay:0.8];
+            ShowMBProgressHUDText(responseObject[@"msg"])
         }
      
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
