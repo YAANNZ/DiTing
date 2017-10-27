@@ -7,11 +7,11 @@
 //
 
 #import "DITDataBaseManager.h"
-#import "FMDB.h"
+//#import "FMDB.h"
 
 @interface DITDataBaseManager()
 
-@property (nonatomic, strong) FMDatabaseQueue *WeChatDbQueue;
+//@property (nonatomic, strong) FMDatabaseQueue *WeChatDbQueue;
 
 @end
 
@@ -23,27 +23,27 @@
     static dispatch_once_t predicate;
     dispatch_once(&predicate, ^{
         instance = [[[self class] alloc] init];
-        [instance weChatDbQueue];
+//        [instance weChatDbQueue];
     });
     return instance;
 }
 
-- (FMDatabaseQueue *)weChatDbQueue
-{
-    if (!_WeChatDbQueue)
-    {
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
-        NSString *documentDirectory = [paths firstObject];
-        NSString *dbPath = [documentDirectory stringByAppendingPathComponent:@"WeChat.sqlite"];
-        _WeChatDbQueue = [FMDatabaseQueue databaseQueueWithPath:dbPath];
-        
-        if (_WeChatDbQueue)
-        {
-//            [self createAllTableIfNeed];
-        }
-    }
-    return _WeChatDbQueue;
-}
+//- (FMDatabaseQueue *)weChatDbQueue
+//{
+//    if (!_WeChatDbQueue)
+//    {
+//        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+//        NSString *documentDirectory = [paths firstObject];
+//        NSString *dbPath = [documentDirectory stringByAppendingPathComponent:@"WeChat.sqlite"];
+//        _WeChatDbQueue = [FMDatabaseQueue databaseQueueWithPath:dbPath];
+//        
+//        if (_WeChatDbQueue)
+//        {
+////            [self createAllTableIfNeed];
+//        }
+//    }
+//    return _WeChatDbQueue;
+//}
 
 - (void)closeDBForDisconnect
 {

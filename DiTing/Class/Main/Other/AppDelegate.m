@@ -28,6 +28,28 @@
 }
 
 
+//- (void)setup3DTouch:(UIApplication *)application
+//{
+//    UIApplicationShortcutIcon *icon1 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"tabbar_contacts"];
+//    UIApplicationShortcutItem *contactItem = [[UIApplicationShortcutItem alloc] initWithType:@"contactItem" localizedTitle:@"通讯录" localizedSubtitle:@"" icon:icon1 userInfo:nil];
+//
+//    UIApplicationShortcutIcon *icon2 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"tabbar_mainframe"];
+//    UIApplicationShortcutItem *msgItem = [[UIApplicationShortcutItem alloc] initWithType:@"msgItem" localizedTitle:@"消息" localizedSubtitle:@"" icon:icon2 userInfo:nil];
+//    // 加入到shortcutItems数组中
+//    application.shortcutItems = @[contactItem,msgItem];
+//}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
+{
+    if([shortcutItem.type isEqualToString:@"contactItem"])
+    {
+     
+    }else if([shortcutItem.type isEqualToString:@"msgItem"])
+    {
+        
+    }
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
