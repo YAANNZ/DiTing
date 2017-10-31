@@ -58,6 +58,12 @@
 				<key>targetVc</key>
 				<string>TimelineController</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>Peek and Pop</string>
+				<key>targetVc</key>
+				<string>TimelineController</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
