@@ -109,6 +109,10 @@ NSString * const cellID = @"cellID";
     {
         [UIApplication sharedApplication].keyWindow.rootViewController = [[NSClassFromString(cellItem[@"targetVc"]) alloc] init];
     }
+    else
+    {
+        [self.navigationController pushViewController:[[NSClassFromString(cellItem[@"targetVc"]) alloc] init] animated:YES];
+    }
     
 //    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"banzu://"]];
 }

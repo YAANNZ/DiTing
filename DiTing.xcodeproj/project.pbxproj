@@ -31,6 +31,7 @@
 		1964F1BE1F7367EE00661FC8 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1964F1B21F7367EE00661FC8 /* NSObject+MJProperty.m */; };
 		1964F1BF1F7367EE00661FC8 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1964F1B41F7367EE00661FC8 /* NSString+MJExtension.m */; };
 		1964F1D91F73BD8300661FC8 /* DITDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1964F1D81F73BD8300661FC8 /* DITDataBaseManager.m */; };
+		1982B4001FAB6B42000806AB /* DITPeekPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1982B3FF1FAB6B42000806AB /* DITPeekPopViewController.m */; };
 		19A2D7EB1F48955A00341A7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7DB1F48955A00341A7E /* ViewController.m */; };
 		19A2D7EC1F48955A00341A7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7DE1F48955A00341A7E /* AppDelegate.m */; };
 		19A2D8161F4C813700341A7E /* DITWeChatContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7FB1F4C813700341A7E /* DITWeChatContactsViewController.m */; };
@@ -126,6 +127,8 @@
 		1964F1B41F7367EE00661FC8 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
 		1964F1D71F73BD8300661FC8 /* DITDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITDataBaseManager.h; sourceTree = "<group>"; };
 		1964F1D81F73BD8300661FC8 /* DITDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITDataBaseManager.m; sourceTree = "<group>"; };
+		1982B3FE1FAB6B42000806AB /* DITPeekPopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITPeekPopViewController.h; sourceTree = "<group>"; };
+		1982B3FF1FAB6B42000806AB /* DITPeekPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITPeekPopViewController.m; sourceTree = "<group>"; };
 		19A2D7CA1F45EDD200341A7E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		19A2D7DA1F48955A00341A7E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		19A2D7DB1F48955A00341A7E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -344,6 +347,8 @@
 			children = (
 				19A2D7DA1F48955A00341A7E /* ViewController.h */,
 				19A2D7DB1F48955A00341A7E /* ViewController.m */,
+				1982B3FE1FAB6B42000806AB /* DITPeekPopViewController.h */,
+				1982B3FF1FAB6B42000806AB /* DITPeekPopViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -786,6 +791,7 @@
 				19F769AF1F5C48EA0050775C /* AFURLRequestSerialization.m in Sources */,
 				19F7699B1F5C48D90050775C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				1964F1B91F7367EE00661FC8 /* MJPropertyKey.m in Sources */,
+				1982B4001FAB6B42000806AB /* DITPeekPopViewController.m in Sources */,
 				1964F1B71F7367EE00661FC8 /* MJFoundation.m in Sources */,
 				1964F1BF1F7367EE00661FC8 /* NSString+MJExtension.m in Sources */,
 				19F769971F5C48D90050775C /* MASLayoutConstraint.m in Sources */,

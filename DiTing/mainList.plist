@@ -62,7 +62,7 @@
 				<key>title</key>
 				<string>Peek and Pop</string>
 				<key>targetVc</key>
-				<string>TimelineController</string>
+				<string>DITPeekPopViewController</string>
 			</dict>
 		</array>
 	</dict>
