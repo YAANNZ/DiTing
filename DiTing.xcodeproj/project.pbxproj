@@ -32,6 +32,7 @@
 		1964F1BF1F7367EE00661FC8 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1964F1B41F7367EE00661FC8 /* NSString+MJExtension.m */; };
 		1964F1D91F73BD8300661FC8 /* DITDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1964F1D81F73BD8300661FC8 /* DITDataBaseManager.m */; };
 		1982B4001FAB6B42000806AB /* DITPeekPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1982B3FF1FAB6B42000806AB /* DITPeekPopViewController.m */; };
+		1982B4031FABFF70000806AB /* DITPeekPopPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1982B4021FABFF70000806AB /* DITPeekPopPresentationViewController.m */; };
 		19A2D7EB1F48955A00341A7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7DB1F48955A00341A7E /* ViewController.m */; };
 		19A2D7EC1F48955A00341A7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7DE1F48955A00341A7E /* AppDelegate.m */; };
 		19A2D8161F4C813700341A7E /* DITWeChatContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7FB1F4C813700341A7E /* DITWeChatContactsViewController.m */; };
@@ -129,6 +130,8 @@
 		1964F1D81F73BD8300661FC8 /* DITDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITDataBaseManager.m; sourceTree = "<group>"; };
 		1982B3FE1FAB6B42000806AB /* DITPeekPopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITPeekPopViewController.h; sourceTree = "<group>"; };
 		1982B3FF1FAB6B42000806AB /* DITPeekPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITPeekPopViewController.m; sourceTree = "<group>"; };
+		1982B4011FABFF70000806AB /* DITPeekPopPresentationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITPeekPopPresentationViewController.h; sourceTree = "<group>"; };
+		1982B4021FABFF70000806AB /* DITPeekPopPresentationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITPeekPopPresentationViewController.m; sourceTree = "<group>"; };
 		19A2D7CA1F45EDD200341A7E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		19A2D7DA1F48955A00341A7E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		19A2D7DB1F48955A00341A7E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -349,6 +352,8 @@
 				19A2D7DB1F48955A00341A7E /* ViewController.m */,
 				1982B3FE1FAB6B42000806AB /* DITPeekPopViewController.h */,
 				1982B3FF1FAB6B42000806AB /* DITPeekPopViewController.m */,
+				1982B4011FABFF70000806AB /* DITPeekPopPresentationViewController.h */,
+				1982B4021FABFF70000806AB /* DITPeekPopPresentationViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -802,6 +807,7 @@
 				19F769AD1F5C48EA0050775C /* AFNetworkReachabilityManager.m in Sources */,
 				1964F0941F72BB2B00661FC8 /* NSArray+Log.m in Sources */,
 				19F769991F5C48D90050775C /* MASViewConstraint.m in Sources */,
+				1982B4031FABFF70000806AB /* DITPeekPopPresentationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

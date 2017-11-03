@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface DITPeekPopViewController : UIViewController
-
+@property (nonatomic, strong) UITableView *tableView;
 @end
