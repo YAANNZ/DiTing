@@ -51,7 +51,10 @@
 - (void)replaceItem
 {
     [self.dataAry replaceObjectAtIndex:self.index withObject:@"replacedItem"];
-    self.replaceBlock();
+    if (self.replaceBlock) {
+        self.replaceBlock();
+    }
+    
 }
 
 

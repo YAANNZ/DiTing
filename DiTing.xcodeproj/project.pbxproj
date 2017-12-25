@@ -42,6 +42,7 @@
 		19A2D81A1F4C813700341A7E /* DITWeChatProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D8131F4C813700341A7E /* DITWeChatProfileViewController.m */; };
 		19A2D81D1F4C815F00341A7E /* DITWeChatHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D81C1F4C815F00341A7E /* DITWeChatHomeTableViewCell.m */; };
 		19A2D8201F4C832A00341A7E /* DITWeChatHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D81F1F4C832A00341A7E /* DITWeChatHomeModel.m */; };
+		19B3CC021FE2813600598D6C /* DITWeChatContactsSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B3CC011FE2813600598D6C /* DITWeChatContactsSearchController.m */; };
 		19F769931F5C48D90050775C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19F769791F5C48D90050775C /* Info.plist */; };
 		19F769941F5C48D90050775C /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F7697B1F5C48D90050775C /* MASCompositeConstraint.m */; };
 		19F769951F5C48D90050775C /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F7697E1F5C48D90050775C /* MASConstraint.m */; };
@@ -152,6 +153,8 @@
 		19A2D81C1F4C815F00341A7E /* DITWeChatHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITWeChatHomeTableViewCell.m; sourceTree = "<group>"; };
 		19A2D81E1F4C832A00341A7E /* DITWeChatHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITWeChatHomeModel.h; sourceTree = "<group>"; };
 		19A2D81F1F4C832A00341A7E /* DITWeChatHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITWeChatHomeModel.m; sourceTree = "<group>"; };
+		19B3CC001FE2813600598D6C /* DITWeChatContactsSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITWeChatContactsSearchController.h; sourceTree = "<group>"; };
+		19B3CC011FE2813600598D6C /* DITWeChatContactsSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITWeChatContactsSearchController.m; sourceTree = "<group>"; };
 		19F769791F5C48D90050775C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19F7697A1F5C48D90050775C /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		19F7697B1F5C48D90050775C /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -398,6 +401,8 @@
 				19A2D7FB1F4C813700341A7E /* DITWeChatContactsViewController.m */,
 				191F31E11F623A1E001D757D /* DITWeCharContactsSearchResultController.h */,
 				191F31E21F623A1E001D757D /* DITWeCharContactsSearchResultController.m */,
+				19B3CC001FE2813600598D6C /* DITWeChatContactsSearchController.h */,
+				19B3CC011FE2813600598D6C /* DITWeChatContactsSearchController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -692,8 +697,8 @@
 				TargetAttributes = {
 					193AF8101E48C03E00F35FE4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = UA62U3JARN;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = FX625MT89Z;
+						ProvisioningStyle = Manual;
 					};
 					193AF8291E48C03E00F35FE4 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -763,6 +768,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B3CC021FE2813600598D6C /* DITWeChatContactsSearchController.m in Sources */,
 				1964F1D91F73BD8300661FC8 /* DITDataBaseManager.m in Sources */,
 				19F7699C1F5C48D90050775C /* View+MASAdditions.m in Sources */,
 				19A2D81D1F4C815F00341A7E /* DITWeChatHomeTableViewCell.m in Sources */,
@@ -956,13 +962,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UA62U3JARN;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FX625MT89Z;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DiTing/PrefixHeader.pch";
 				INFOPLIST_FILE = DiTing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zyn.DiTing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xztz.tbsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cb7dc0c5-0fff-40ce-909e-d2a9c8c40e40";
+				PROVISIONING_PROFILE_SPECIFIER = dev_tbsy;
 			};
 			name = Debug;
 		};
@@ -970,13 +979,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UA62U3JARN;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DiTing/PrefixHeader.pch";
 				INFOPLIST_FILE = DiTing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zyn.DiTing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xztz.tbsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

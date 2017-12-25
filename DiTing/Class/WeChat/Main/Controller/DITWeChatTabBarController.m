@@ -47,8 +47,11 @@
     [childItemsArray enumerateObjectsUsingBlock:^(NSDictionary *dict, NSUInteger idx, BOOL *stop) {
         UIViewController *vc = [NSClassFromString(dict[kClassKey]) new];
         vc.title = dict[kTitleKey];
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
         vc.view.backgroundColor = [UIColor whiteColor];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        [nav.navigationBar setBarTintColor:[UIColor colorWithRed:0.1 green:0.1 blue:0.1 alpha:0.9]];
+        [nav.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+        
         UITabBarItem *item = nav.tabBarItem;
         item.title = dict[kTitleKey];
         item.image = [UIImage imageNamed:dict[kImgKey]];
@@ -56,6 +59,8 @@
         [item setTitleTextAttributes:@{NSForegroundColorAttributeName : WeChat_Global_tintColor} forState:UIControlStateSelected];
         [self addChildViewController:nav];
     }];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
 

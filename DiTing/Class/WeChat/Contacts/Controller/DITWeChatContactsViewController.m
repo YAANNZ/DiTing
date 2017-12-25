@@ -10,7 +10,7 @@
 #import "DITWeChatContactsTableViewCell.h"
 #import "DITWeCharContactsSearchResultController.h"
 
-@interface DITWeChatContactsViewController () <UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface DITWeChatContactsViewController () <UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, UISearchControllerDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UISearchController *searchController;
@@ -36,6 +36,7 @@
     [self.view addSubview:_tableView];
     
     self.searchController = [[UISearchController alloc] initWithSearchResultsController:[DITWeCharContactsSearchResultController new]];
+    self.searchController.delegate = self;
     self.searchController.view.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.95];
     
     UISearchBar *bar = self.searchController.searchBar;
@@ -147,6 +148,7 @@
     [self.sectionTitlesArray insertObject:@"" atIndex:0];
 }
 
+
 #pragma mark - UITableViewDelegate, UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -188,6 +190,23 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 }
+
+#pragma mark - UISearchControllerDelegate
+- (void)willPresentSearchController:(UISearchController *)searchController
+{
+    [self.navigationController.tabBarController.tabBar setHidden:YES];
+}
+
+- (void)didDismissSearchController:(UISearchController *)searchController
+{
+    [self.navigationController.tabBarController.tabBar setHidden:NO];
+}
+
+- (void)willDismissSearchController:(UISearchController *)searchController
+{
+//    [self.navigationController.tabBarController.tabBar setHidden:NO];
+}
+
 
 
 #pragma mark - 懒加载
