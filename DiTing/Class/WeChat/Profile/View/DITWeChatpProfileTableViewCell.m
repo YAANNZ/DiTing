@@ -1,30 +1,30 @@
 //
-//  DITWeChatDiscoverTableViewCell.m
+//  DITWeChatpProfileTableViewCell.m
 //  DiTing
 //
-//  Created by ZHUYN on 2018/1/10.
+//  Created by ZHUYN on 2018/1/11.
 //  Copyright © 2018年 zyn. All rights reserved.
 //
 
-#import "DITWeChatDiscoverTableViewCell.h"
+#import "DITWeChatpProfileTableViewCell.h"
 
-static NSString *cellID = @"DITWeChatDiscoverTableViewCell";
+static NSString *cellID = @"DITWeChatpProfileTableViewCell";
 
-@interface DITWeChatDiscoverTableViewCell()
+@interface DITWeChatpProfileTableViewCell()
 
 @property (nonatomic, strong) UIImageView *imgView;
 @property (nonatomic, strong) UILabel *titleLabel;
 
 @end
 
-@implementation DITWeChatDiscoverTableViewCell
+@implementation DITWeChatpProfileTableViewCell
 
-+ (DITWeChatDiscoverTableViewCell *)cellWithTableView:(UITableView *)tableView
++ (DITWeChatpProfileTableViewCell *)cellWithTableView:(UITableView *)tableView
 {
-    DITWeChatDiscoverTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    DITWeChatpProfileTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (!cell)
     {
-        cell = [[DITWeChatDiscoverTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+        cell = [[DITWeChatpProfileTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
@@ -67,12 +67,10 @@ static NSString *cellID = @"DITWeChatDiscoverTableViewCell";
     }];
 }
 
-- (void)setDiscoverData:(DITWeChatDiscoverModel *)discoverData
+- (void)setAccountData:(DITWeChatAccount *)accountData
 {
-    _discoverData = discoverData;
-    
-    self.imgView.image = [UIImage imageNamed:discoverData.Img];
-    self.titleLabel.text = discoverData.title;
+    _accountData = accountData;
 }
+
 
 @end

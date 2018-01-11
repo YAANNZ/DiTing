@@ -14,6 +14,9 @@
 		19272E762006013500EA104F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 19272E742006013400EA104F /* UIView+Extension.m */; };
 		19272E792006030100EA104F /* DITWeChatDiscoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19272E782006030100EA104F /* DITWeChatDiscoverTableViewCell.m */; };
 		19272E7C2006033300EA104F /* DITWeChatDiscoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19272E7B2006033300EA104F /* DITWeChatDiscoverModel.m */; };
+		19272E8420075B1700EA104F /* DITWeChatpProfileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19272E8320075B1700EA104F /* DITWeChatpProfileTableViewCell.m */; };
+		19272E8720075DAE00EA104F /* DITWeChatAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 19272E8620075DAE00EA104F /* DITWeChatAccount.m */; };
+		19272E8920079B7200EA104F /* profileList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19272E8820079B7200EA104F /* profileList.plist */; };
 		193AF8161E48C03E00F35FE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 193AF8151E48C03E00F35FE4 /* main.m */; };
 		193AF81F1E48C03E00F35FE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 193AF81D1E48C03E00F35FE4 /* Main.storyboard */; };
 		193AF8211E48C03E00F35FE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 193AF8201E48C03E00F35FE4 /* Assets.xcassets */; };
@@ -98,6 +101,11 @@
 		19272E782006030100EA104F /* DITWeChatDiscoverTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITWeChatDiscoverTableViewCell.m; sourceTree = "<group>"; };
 		19272E7A2006033300EA104F /* DITWeChatDiscoverModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITWeChatDiscoverModel.h; sourceTree = "<group>"; };
 		19272E7B2006033300EA104F /* DITWeChatDiscoverModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITWeChatDiscoverModel.m; sourceTree = "<group>"; };
+		19272E8220075B1700EA104F /* DITWeChatpProfileTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITWeChatpProfileTableViewCell.h; sourceTree = "<group>"; };
+		19272E8320075B1700EA104F /* DITWeChatpProfileTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITWeChatpProfileTableViewCell.m; sourceTree = "<group>"; };
+		19272E8520075DAE00EA104F /* DITWeChatAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITWeChatAccount.h; sourceTree = "<group>"; };
+		19272E8620075DAE00EA104F /* DITWeChatAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITWeChatAccount.m; sourceTree = "<group>"; };
+		19272E8820079B7200EA104F /* profileList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = profileList.plist; sourceTree = "<group>"; };
 		193AF8111E48C03E00F35FE4 /* DiTing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiTing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		193AF8151E48C03E00F35FE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		193AF81E1E48C03E00F35FE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -537,6 +545,8 @@
 		19A2D80E1F4C813700341A7E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				19272E8520075DAE00EA104F /* DITWeChatAccount.h */,
+				19272E8620075DAE00EA104F /* DITWeChatAccount.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -551,6 +561,7 @@
 		19A2D8101F4C813700341A7E /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				19272E8820079B7200EA104F /* profileList.plist */,
 				19A2D8111F4C813700341A7E /* Controller */,
 				19A2D8141F4C813700341A7E /* Model */,
 				19A2D8151F4C813700341A7E /* View */,
@@ -577,6 +588,8 @@
 		19A2D8151F4C813700341A7E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				19272E8220075B1700EA104F /* DITWeChatpProfileTableViewCell.h */,
+				19272E8320075B1700EA104F /* DITWeChatpProfileTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -757,6 +770,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19272E8920079B7200EA104F /* profileList.plist in Resources */,
 				193AF8241E48C03E00F35FE4 /* LaunchScreen.storyboard in Resources */,
 				193EA9F71E4E0E14008EF309 /* mainList.plist in Resources */,
 				193AF8211E48C03E00F35FE4 /* Assets.xcassets in Resources */,
@@ -798,6 +812,7 @@
 				19A2D8201F4C832A00341A7E /* DITWeChatHomeModel.m in Sources */,
 				1964F19C1F7366B600661FC8 /* MBProgressHUD.m in Sources */,
 				19A2D7EB1F48955A00341A7E /* ViewController.m in Sources */,
+				19272E8720075DAE00EA104F /* DITWeChatAccount.m in Sources */,
 				19A2D8171F4C813700341A7E /* DITWeChatDiscoverViewController.m in Sources */,
 				19F7699D1F5C48D90050775C /* ViewController+MASAdditions.m in Sources */,
 				19F769981F5C48D90050775C /* MASViewAttribute.m in Sources */,
@@ -813,6 +828,7 @@
 				19F769B11F5C48EA0050775C /* AFURLSessionManager.m in Sources */,
 				1964F1BD1F7367EE00661FC8 /* NSObject+MJKeyValue.m in Sources */,
 				19A2D8161F4C813700341A7E /* DITWeChatContactsViewController.m in Sources */,
+				19272E8420075B1700EA104F /* DITWeChatpProfileTableViewCell.m in Sources */,
 				19F769961F5C48D90050775C /* MASConstraintMaker.m in Sources */,
 				191F31E71F658475001D757D /* DITWeChatChatTableViewController.m in Sources */,
 				19F769AC1F5C48EA0050775C /* AFHTTPSessionManager.m in Sources */,
