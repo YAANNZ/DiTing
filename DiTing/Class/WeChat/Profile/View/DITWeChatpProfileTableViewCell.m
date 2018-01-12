@@ -14,6 +14,8 @@ static NSString *cellID = @"DITWeChatpProfileTableViewCell";
 
 @property (nonatomic, strong) UIImageView *imgView;
 @property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel *subtitleLabel;
+@property (nonatomic, strong) UIImageView *qcodeView;
 
 @end
 
@@ -49,27 +51,43 @@ static NSString *cellID = @"DITWeChatpProfileTableViewCell";
     self.titleLabel.font = [UIFont systemFontOfSize:17];
     [self.contentView addSubview:self.titleLabel];
     
+    self.subtitleLabel = [[UILabel alloc] init];
+    self.subtitleLabel.font = [UIFont systemFontOfSize:15];
+    [self.contentView addSubview:self.subtitleLabel];
+    
+    self.qcodeView = [[UIImageView alloc] init];
+    [self.contentView addSubview:self.qcodeView];
+    
     [self addMasonry];
 }
 
 - (void)addMasonry
 {
     [self.imgView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.offset(15);
-        make.top.offset(11);
-        make.bottom.offset(-11);
-        make.width.equalTo(@22);
+        make.left.offset(13);
+        make.top.offset(12);
+        make.bottom.offset(-12);
+        make.width.equalTo(@64);
     }];
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.imgView.mas_right).offset(15);
-        make.centerY.equalTo(self.imgView.mas_centerY);
+        make.top.offset(20);
+        make.left.equalTo(self.imgView.mas_right).offset(10);
+    }];
+    
+    [self.subtitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.offset(-20);
+        make.left.equalTo(self.imgView.mas_right).offset(10);
     }];
 }
 
 - (void)setAccountData:(DITWeChatAccount *)accountData
 {
     _accountData = accountData;
+    
+    self.imgView.image = [UIImage imageNamed:@"tabbar_meHL"];
+    self.titleLabel.text = @"Allen";
+    self.subtitleLabel.text = @"crystal_plane";
 }
 
 

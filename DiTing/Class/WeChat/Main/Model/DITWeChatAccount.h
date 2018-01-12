@@ -10,4 +10,8 @@
 
 @interface DITWeChatAccount : NSObject
 
+@property (nonatomic, copy) NSString *headshot;
+@property (nonatomic, copy) NSString *nickname;
+@property (nonatomic, copy) NSString *weChatAccount;
+
 @end

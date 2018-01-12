@@ -38,12 +38,17 @@
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return self.dataAry.count;
+    return self.dataAry.count + 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.dataAry[section] count];
+    if (section == 0)
+    {
+        return 1;
+    }
+    
+    return [self.dataAry[section-1] count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
@@ -72,13 +77,26 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.section == 0)
+    {
+        return 88;
+    }
     return 44;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.section == 0)
+    {
+        DITWeChatpProfileTableViewCell *cell = [DITWeChatpProfileTableViewCell cellWithTableView:tableView];
+        DITWeChatAccount *account = [[DITWeChatAccount alloc] init];
+//        account
+        cell.accountData = account;
+        return cell;
+    }
+    
     DITWeChatDiscoverTableViewCell *cell = [DITWeChatDiscoverTableViewCell cellWithTableView:tableView];
-    cell.discoverData = self.dataAry[indexPath.section][indexPath.row];
+    cell.discoverData = self.dataAry[indexPath.section-1][indexPath.row];
     return cell;
 }
 
@@ -95,7 +113,7 @@
 {
     if (!_dataAry)
     {
-        NSArray *tempAry = [NSMutableArray arrayWithArray:[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"discoverList.plist" ofType:nil]]];
+        NSArray *tempAry = [NSMutableArray arrayWithArray:[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"profileList.plist" ofType:nil]]];
         _dataAry = [DITWeChatDiscoverModel mj_objectArrayWithKeyValuesArray:tempAry];
     }
     return _dataAry;
