@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>Img</key>
+			<string>profile_bankCard</string>
+			<key>title</key>
+			<string>钱包</string>
+			<key>targetVc</key>
+			<string>DITWeChatBankCardController</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>Img</key>
+			<string>profile_favorites</string>
+			<key>title</key>
+			<string>收藏</string>
+			<key>targetVc</key>
+			<string>DITWeChatFavoritesController</string>
+		</dict>
+		<dict>
+			<key>Img</key>
+			<string>profile_album</string>
+			<key>title</key>
+			<string>相册</string>
+			<key>targetVc</key>
+			<string>DITWeAlbumController</string>
+		</dict>
+        <dict>
+            <key>Img</key>
+            <string>profile_cardPackage</string>
+            <key>title</key>
+            <string>卡包</string>
+            <key>targetVc</key>
+            <string>DITWeChatCardPackageController</string>
+        </dict>
+        <dict>
+            <key>Img</key>
+            <string>profile_emotion</string>
+            <key>title</key>
+            <string>表情</string>
+            <key>targetVc</key>
+            <string>DITWeChatEmotionController</string>
+        </dict>
+	</array>
+	<array>
+		<dict>
+			<key>Img</key>
+			<string>profile_setting</string>
+			<key>title</key>
+			<string>设置</string>
+			<key>targetVc</key>
+			<string>DITWeChatSettingController</string>
+		</dict>
+	</array>
+</array>
+</plist>

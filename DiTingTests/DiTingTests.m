@@ -19,6 +19,13 @@
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
+- (void)testOnePlusOne {
+    NSInteger a = 1;
+    NSInteger b = 1;
+    NSInteger result = a + b;
+    XCTAssertTrue(result == 2);
+}
+
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];

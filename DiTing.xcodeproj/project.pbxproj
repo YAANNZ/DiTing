@@ -40,6 +40,12 @@
 		1982B4001FAB6B42000806AB /* DITPeekPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1982B3FF1FAB6B42000806AB /* DITPeekPopViewController.m */; };
 		1982B4031FABFF70000806AB /* DITPeekPopPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1982B4021FABFF70000806AB /* DITPeekPopPresentationViewController.m */; };
 		198A27921FFB842A0003CC55 /* discoverList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 198A27911FFB84290003CC55 /* discoverList.plist */; };
+		198BD6322033138900FEA818 /* IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 198BD6312033138900FEA818 /* IntentHandler.m */; };
+		198BD63B2033138900FEA818 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198BD63A2033138900FEA818 /* IntentsUI.framework */; };
+		198BD63F2033138900FEA818 /* IntentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 198BD63E2033138900FEA818 /* IntentViewController.m */; };
+		198BD6422033138900FEA818 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198BD6402033138900FEA818 /* MainInterface.storyboard */; };
+		198BD6462033138900FEA818 /* DITSiriExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 198BD6382033138900FEA818 /* DITSiriExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		198BD6492033138900FEA818 /* DITSiriExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 198BD62E2033138900FEA818 /* DITSiriExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		19A2D7EB1F48955A00341A7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7DB1F48955A00341A7E /* ViewController.m */; };
 		19A2D7EC1F48955A00341A7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7DE1F48955A00341A7E /* AppDelegate.m */; };
 		19A2D8161F4C813700341A7E /* DITWeChatContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7FB1F4C813700341A7E /* DITWeChatContactsViewController.m */; };
@@ -84,7 +90,36 @@
 			remoteGlobalIDString = 193AF8101E48C03E00F35FE4;
 			remoteInfo = DiTing;
 		};
+		198BD6442033138900FEA818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 193AF8091E48C03E00F35FE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 198BD6372033138900FEA818;
+			remoteInfo = DITSiriExtensionUI;
+		};
+		198BD6472033138900FEA818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 193AF8091E48C03E00F35FE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 198BD62D2033138900FEA818;
+			remoteInfo = DITSiriExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		198BD6502033138900FEA818 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				198BD6462033138900FEA818 /* DITSiriExtensionUI.appex in Embed App Extensions */,
+				198BD6492033138900FEA818 /* DITSiriExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		191F31E11F623A1E001D757D /* DITWeCharContactsSearchResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITWeCharContactsSearchResultController.h; sourceTree = "<group>"; };
@@ -152,6 +187,16 @@
 		1982B4011FABFF70000806AB /* DITPeekPopPresentationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITPeekPopPresentationViewController.h; sourceTree = "<group>"; };
 		1982B4021FABFF70000806AB /* DITPeekPopPresentationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITPeekPopPresentationViewController.m; sourceTree = "<group>"; };
 		198A27911FFB84290003CC55 /* discoverList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = discoverList.plist; sourceTree = "<group>"; };
+		198BD62E2033138900FEA818 /* DITSiriExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DITSiriExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		198BD6302033138900FEA818 /* IntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentHandler.h; sourceTree = "<group>"; };
+		198BD6312033138900FEA818 /* IntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentHandler.m; sourceTree = "<group>"; };
+		198BD6332033138900FEA818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		198BD6382033138900FEA818 /* DITSiriExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DITSiriExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		198BD63A2033138900FEA818 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		198BD63D2033138900FEA818 /* IntentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentViewController.h; sourceTree = "<group>"; };
+		198BD63E2033138900FEA818 /* IntentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentViewController.m; sourceTree = "<group>"; };
+		198BD6412033138900FEA818 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		198BD6432033138900FEA818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19A2D7CA1F45EDD200341A7E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		19A2D7DA1F48955A00341A7E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		19A2D7DB1F48955A00341A7E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -237,6 +282,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		198BD62B2033138900FEA818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		198BD6352033138900FEA818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				198BD63B2033138900FEA818 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -246,6 +306,9 @@
 				193AF8131E48C03E00F35FE4 /* DiTing */,
 				193AF82D1E48C03E00F35FE4 /* DiTingTests */,
 				193AF8381E48C03E00F35FE4 /* DiTingUITests */,
+				198BD62F2033138900FEA818 /* DITSiriExtension */,
+				198BD63C2033138900FEA818 /* DITSiriExtensionUI */,
+				198BD6392033138900FEA818 /* Frameworks */,
 				193AF8121E48C03E00F35FE4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -256,6 +319,8 @@
 				193AF8111E48C03E00F35FE4 /* DiTing.app */,
 				193AF82A1E48C03E00F35FE4 /* DiTingTests.xctest */,
 				193AF8351E48C03E00F35FE4 /* DiTingUITests.xctest */,
+				198BD62E2033138900FEA818 /* DITSiriExtension.appex */,
+				198BD6382033138900FEA818 /* DITSiriExtensionUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -347,6 +412,35 @@
 				1964F1D81F73BD8300661FC8 /* DITDataBaseManager.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		198BD62F2033138900FEA818 /* DITSiriExtension */ = {
+			isa = PBXGroup;
+			children = (
+				198BD6302033138900FEA818 /* IntentHandler.h */,
+				198BD6312033138900FEA818 /* IntentHandler.m */,
+				198BD6332033138900FEA818 /* Info.plist */,
+			);
+			path = DITSiriExtension;
+			sourceTree = "<group>";
+		};
+		198BD6392033138900FEA818 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				198BD63A2033138900FEA818 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		198BD63C2033138900FEA818 /* DITSiriExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				198BD63D2033138900FEA818 /* IntentViewController.h */,
+				198BD63E2033138900FEA818 /* IntentViewController.m */,
+				198BD6402033138900FEA818 /* MainInterface.storyboard */,
+				198BD6432033138900FEA818 /* Info.plist */,
+			);
+			path = DITSiriExtensionUI;
 			sourceTree = "<group>";
 		};
 		19A2D7D71F48955A00341A7E /* Class */ = {
@@ -670,10 +764,13 @@
 				193AF80D1E48C03E00F35FE4 /* Sources */,
 				193AF80E1E48C03E00F35FE4 /* Frameworks */,
 				193AF80F1E48C03E00F35FE4 /* Resources */,
+				198BD6502033138900FEA818 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				198BD6452033138900FEA818 /* PBXTargetDependency */,
+				198BD6482033138900FEA818 /* PBXTargetDependency */,
 			);
 			name = DiTing;
 			productName = DiTing;
@@ -716,6 +813,40 @@
 			productReference = 193AF8351E48C03E00F35FE4 /* DiTingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		198BD62D2033138900FEA818 /* DITSiriExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 198BD64D2033138900FEA818 /* Build configuration list for PBXNativeTarget "DITSiriExtension" */;
+			buildPhases = (
+				198BD62A2033138900FEA818 /* Sources */,
+				198BD62B2033138900FEA818 /* Frameworks */,
+				198BD62C2033138900FEA818 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DITSiriExtension;
+			productName = DITSiriExtension;
+			productReference = 198BD62E2033138900FEA818 /* DITSiriExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		198BD6372033138900FEA818 /* DITSiriExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 198BD64A2033138900FEA818 /* Build configuration list for PBXNativeTarget "DITSiriExtensionUI" */;
+			buildPhases = (
+				198BD6342033138900FEA818 /* Sources */,
+				198BD6352033138900FEA818 /* Frameworks */,
+				198BD6362033138900FEA818 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DITSiriExtensionUI;
+			productName = DITSiriExtensionUI;
+			productReference = 198BD6382033138900FEA818 /* DITSiriExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -723,6 +854,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DIT;
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = zyn;
 				TargetAttributes = {
@@ -743,6 +875,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 193AF8101E48C03E00F35FE4;
 					};
+					198BD62D2033138900FEA818 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = FX625MT89Z;
+						ProvisioningStyle = Automatic;
+					};
+					198BD6372033138900FEA818 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = FX625MT89Z;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 193AF80C1E48C03E00F35FE4 /* Build configuration list for PBXProject "DiTing" */;
@@ -761,6 +903,8 @@
 				193AF8101E48C03E00F35FE4 /* DiTing */,
 				193AF8291E48C03E00F35FE4 /* DiTingTests */,
 				193AF8341E48C03E00F35FE4 /* DiTingUITests */,
+				198BD62D2033138900FEA818 /* DITSiriExtension */,
+				198BD6372033138900FEA818 /* DITSiriExtensionUI */,
 			);
 		};
 /* End PBXProject section */
@@ -791,6 +935,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		198BD62C2033138900FEA818 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		198BD6362033138900FEA818 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				198BD6422033138900FEA818 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -871,6 +1030,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		198BD62A2033138900FEA818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				198BD6322033138900FEA818 /* IntentHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		198BD6342033138900FEA818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				198BD63F2033138900FEA818 /* IntentViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -883,6 +1058,16 @@
 			isa = PBXTargetDependency;
 			target = 193AF8101E48C03E00F35FE4 /* DiTing */;
 			targetProxy = 193AF8361E48C03E00F35FE4 /* PBXContainerItemProxy */;
+		};
+		198BD6452033138900FEA818 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 198BD6372033138900FEA818 /* DITSiriExtensionUI */;
+			targetProxy = 198BD6442033138900FEA818 /* PBXContainerItemProxy */;
+		};
+		198BD6482033138900FEA818 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 198BD62D2033138900FEA818 /* DITSiriExtension */;
+			targetProxy = 198BD6472033138900FEA818 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -901,6 +1086,14 @@
 				193AF8231E48C03E00F35FE4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		198BD6402033138900FEA818 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				198BD6412033138900FEA818 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1000,6 +1193,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = FX625MT89Z;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DiTing/PrefixHeader.pch";
@@ -1017,6 +1211,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DiTing/PrefixHeader.pch";
@@ -1079,6 +1274,110 @@
 			};
 			name = Release;
 		};
+		198BD64B2033138900FEA818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX625MT89Z;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DITSiriExtensionUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xztz.tbsy.DITSiriExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		198BD64C2033138900FEA818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DITSiriExtensionUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xztz.tbsy.DITSiriExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		198BD64E2033138900FEA818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX625MT89Z;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DITSiriExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xztz.tbsy.DITSiriExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		198BD64F2033138900FEA818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DITSiriExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xztz.tbsy.DITSiriExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1114,6 +1413,24 @@
 			buildConfigurations = (
 				193AF8451E48C03E00F35FE4 /* Debug */,
 				193AF8461E48C03E00F35FE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		198BD64A2033138900FEA818 /* Build configuration list for PBXNativeTarget "DITSiriExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				198BD64B2033138900FEA818 /* Debug */,
+				198BD64C2033138900FEA818 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		198BD64D2033138900FEA818 /* Build configuration list for PBXNativeTarget "DITSiriExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				198BD64E2033138900FEA818 /* Debug */,
+				198BD64F2033138900FEA818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
