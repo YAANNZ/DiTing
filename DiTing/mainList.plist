@@ -43,31 +43,6 @@
 	</dict>
 	<dict>
 		<key>header</key>
-		<string>other</string>
-		<key>items</key>
-		<array>
-			<dict>
-				<key>title</key>
-				<string>frosted glass</string>
-				<key>targetVc</key>
-				<string>MDRGlassController</string>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>timeLine</string>
-				<key>targetVc</key>
-				<string>TimelineController</string>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>Peek and Pop</string>
-				<key>targetVc</key>
-				<string>DITPeekPopViewController</string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>header</key>
 		<string>Custom transiton</string>
 		<key>items</key>
 		<array>
@@ -79,5 +54,49 @@
 			</dict>
 		</array>
 	</dict>
+	<dict>
+		<key>header</key>
+		<string>Component</string>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>loopView</string>
+				<key>targetVc</key>
+				<string>DITCompLoopViewController</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>slide selector</string>
+				<key>targetVc</key>
+				<string>DITCompSlideSelViewController</string>
+			</dict>
+		</array>
+	</dict>
+    <dict>
+        <key>header</key>
+        <string>Other</string>
+        <key>items</key>
+        <array>
+            <dict>
+                <key>title</key>
+                <string>frosted glass</string>
+                <key>targetVc</key>
+                <string>MDRGlassController</string>
+            </dict>
+            <dict>
+                <key>title</key>
+                <string>timeLine</string>
+                <key>targetVc</key>
+                <string>TimelineController</string>
+            </dict>
+            <dict>
+                <key>title</key>
+                <string>Peek and Pop</string>
+                <key>targetVc</key>
+                <string>DITPeekPopViewController</string>
+            </dict>
+        </array>
+    </dict>
 </array>
 </plist>
