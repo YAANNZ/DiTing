@@ -8,15 +8,48 @@
 
 #import "DITCompSlideSelViewController.h"
 
-@interface DITCompSlideSelViewController ()
+@interface DITCompSlideSelViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) NSMutableArray *dataAry;
 
 @end
 
 @implementation DITCompSlideSelViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    [self.view addSubview:tableView];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataAry.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellID = @"comSlideSelCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (!cell)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    
+    return cell;
+}
+
+- (NSMutableArray *)dataAry
+{
+    if (!_dataAry)
+    {
+        _dataAry = [[NSMutableArray alloc] init];
+    }
+    return _dataAry;
 }
 
 - (void)didReceiveMemoryWarning {
