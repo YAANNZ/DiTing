@@ -31,6 +31,11 @@
     return self.dataAry.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 35;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellID = @"comSlideSelCell";
@@ -38,6 +43,10 @@
     if (!cell)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+        
+        UIImageView *selImgV = [[UIImageView alloc] init];
+        selImgV.frame = CGRectMake(0, 0, 35, 35);
+        [cell.contentView addSubview:selImgV];
     }
     
     return cell;
