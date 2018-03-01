@@ -45,6 +45,9 @@ static NSString *cellID = @"DITCompSlideSelTableViewCell";
     self.statusImageView.userInteractionEnabled = YES;
     [self.contentView addSubview:self.statusImageView];
     
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
+    [self.statusImageView addGestureRecognizer:tapGesture];
+    
     self.contentLabel = [[UILabel alloc] init];
     [self.contentView addSubview:self.contentLabel];
     
@@ -80,6 +83,11 @@ static NSString *cellID = @"DITCompSlideSelTableViewCell";
     {
         self.statusImageView.image = [UIImage imageNamed:@"slide_sel"];
     }
+}
+
+- (void)tapGesture:(UITapGestureRecognizer *)tapGesture
+{
+    
 }
 
 @end
