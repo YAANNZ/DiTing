@@ -1,20 +1,22 @@
 //
-//  DITCompSlideSelViewController.m
+//  DITUIGestureRecognizerViewController.m
 //  DiTing
 //
-//  Created by ZHUYN on 2018/2/25.
+//  Created by ZHUYN on 2018/3/2.
 //  Copyright © 2018年 zyn. All rights reserved.
 //
 
-#import "DITCompSlideSelViewController.h"
+#import "DITUIGestureRecognizerViewController.h"
 
-@interface DITCompSlideSelViewController () <UITableViewDelegate, UITableViewDataSource>
+#import "DITUIGestureRecognizerExamplesViewController.h"
 
-@property (nonatomic, strong) NSMutableArray *dataAry;
+@interface DITUIGestureRecognizerViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) NSArray *dataAry;
 
 @end
 
-@implementation DITCompSlideSelViewController
+@implementation DITUIGestureRecognizerViewController
 
 - (void)viewDidLoad
 {
@@ -33,33 +35,40 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 35;
+    return 45;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cellID = @"comSlideSelCell";
+    static NSString *cellID = @"DITUIGestureRecognizerCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (!cell)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
-        
-        UIImageView *selImgV = [[UIImageView alloc] init];
-        selImgV.frame = CGRectMake(0, 0, 35, 35);
-        [cell.contentView addSubview:selImgV];
     }
-    
+    cell.textLabel.text = self.dataAry[indexPath.row];
     return cell;
 }
 
-- (NSMutableArray *)dataAry
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    DITUIGestureRecognizerExamplesViewController *examplesVC = [[DITUIGestureRecognizerExamplesViewController alloc] init];
+    examplesVC.gestureRecognizerType = self.dataAry[indexPath.row];
+    [self.navigationController pushViewController:examplesVC animated:YES];
+}
+
+- (NSArray *)dataAry
 {
     if (!_dataAry)
     {
-        _dataAry = [[NSMutableArray alloc] init];
+        _dataAry = @[@"UITapGestureRecognizer", @"UISwipeGestureRecognizer", @"UILongPressGestureRecognizer", @"UIPanGestureRecognizer", @"UIPinchGestureRecognizer", @"UIRotationGestureRecognizer", @"UIScreenEdgePanGestureRecognizer"];
     }
     return _dataAry;
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

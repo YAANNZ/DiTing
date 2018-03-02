@@ -75,6 +75,19 @@
 	</dict>
     <dict>
         <key>header</key>
+        <string>AppleComponent</string>
+        <key>items</key>
+        <array>
+            <dict>
+                <key>title</key>
+                <string>UIGestureRecognizer</string>
+                <key>targetVc</key>
+                <string>DITUIGestureRecognizerViewController</string>
+            </dict>
+        </array>
+    </dict>
+    <dict>
+        <key>header</key>
         <string>Other</string>
         <key>items</key>
         <array>

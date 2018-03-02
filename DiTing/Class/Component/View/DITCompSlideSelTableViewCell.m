@@ -48,6 +48,9 @@ static NSString *cellID = @"DITCompSlideSelTableViewCell";
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
     [self.statusImageView addGestureRecognizer:tapGesture];
     
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesture:)];
+    [self.statusImageView addGestureRecognizer:panGesture];
+    
     self.contentLabel = [[UILabel alloc] init];
     [self.contentView addSubview:self.contentLabel];
     
@@ -86,6 +89,11 @@ static NSString *cellID = @"DITCompSlideSelTableViewCell";
 }
 
 - (void)tapGesture:(UITapGestureRecognizer *)tapGesture
+{
+    
+}
+
+- (void)panGesture:(UIPanGestureRecognizer *)panGesture
 {
     
 }
