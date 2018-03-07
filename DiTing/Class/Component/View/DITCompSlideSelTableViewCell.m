@@ -25,6 +25,7 @@ static NSString *cellID = @"DITCompSlideSelTableViewCell";
     if (!cell)
     {
         cell = [[DITCompSlideSelTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
     return cell;
@@ -45,12 +46,12 @@ static NSString *cellID = @"DITCompSlideSelTableViewCell";
     self.statusImageView.userInteractionEnabled = YES;
     [self.contentView addSubview:self.statusImageView];
     
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
-    [self.statusImageView addGestureRecognizer:tapGesture];
-    
-    // 平移
-    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesture:)];
-    [self.statusImageView addGestureRecognizer:panGesture];
+//    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
+//    [self.statusImageView addGestureRecognizer:tapGesture];
+
+//    // 平移
+//    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesture:)];
+//    [self.statusImageView addGestureRecognizer:panGesture];
     
     self.contentLabel = [[UILabel alloc] init];
     [self.contentView addSubview:self.contentLabel];
@@ -79,7 +80,28 @@ static NSString *cellID = @"DITCompSlideSelTableViewCell";
     
     self.contentLabel.text = compSideSelModel.content;
     
-    if (compSideSelModel.status.integerValue == 0)
+    [self layoutSubviews];
+}
+
+//- (void)tapGesture:(UITapGestureRecognizer *)tapGesture
+//{
+//    self.compSideSelModel.status = !self.compSideSelModel.status;
+//
+//    [self layoutSubviews];
+//}
+
+//- (void)panGesture:(UIPanGestureRecognizer *)panGesture
+//{
+//    self.compSideSelModel.status = !self.compSideSelModel.status;
+//
+//    [self layoutSubviews];
+//}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    if (self.compSideSelModel.status == 0)
     {
         self.statusImageView.image = [UIImage imageNamed:@"slide_unsel"];
     }
@@ -87,16 +109,6 @@ static NSString *cellID = @"DITCompSlideSelTableViewCell";
     {
         self.statusImageView.image = [UIImage imageNamed:@"slide_sel"];
     }
-}
-
-- (void)tapGesture:(UITapGestureRecognizer *)tapGesture
-{
-    
-}
-
-- (void)panGesture:(UIPanGestureRecognizer *)panGesture
-{
-    
 }
 
 @end

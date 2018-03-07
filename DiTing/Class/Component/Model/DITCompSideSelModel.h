@@ -11,6 +11,6 @@
 @interface DITCompSideSelModel : NSObject
 
 @property (nonatomic, copy) NSString *content;
-@property (nonatomic, copy) NSString *status;
+@property (nonatomic, assign) BOOL status;
 
 @end
