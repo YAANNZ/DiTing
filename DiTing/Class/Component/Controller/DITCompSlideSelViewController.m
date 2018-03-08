@@ -35,7 +35,8 @@
         make.left.bottom.equalTo(@0);
         make.width.equalTo(@45);
     }];
-    
+
+    // 轻拍
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
     [self.panView addGestureRecognizer:tapGesture];
     
@@ -56,16 +57,14 @@
     NSUInteger currentIndex = currentPoint.y/35;
     DITCompSideSelModel *sideSelModel = self.dataAry[currentIndex];
     sideSelModel.status = !sideSelModel.status;
-//    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:currentIndex inSection:0];
-//    DITCompSlideSelTableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-//    cell.compSideSelModel = sideSelModel;
+
     [self.tableView reloadData];
 }
 
 static NSUInteger cellIndex = NSUIntegerMax;
 - (void)panGesture:(UIPanGestureRecognizer *)panGesture
 {
-    NSLog(@"%@, %@, %@", NSStringFromCGPoint([panGesture translationInView:self.view]), NSStringFromCGPoint([panGesture velocityInView:self.panView]), NSStringFromCGPoint([panGesture locationInView:self.panView]));
+    NSLog(@"%ld", sizeof(self.dataAry));
     
     CGPoint currentPoint = [panGesture locationInView:self.panView];
     NSUInteger currentIndex = currentPoint.y/35;
@@ -81,9 +80,7 @@ static NSUInteger cellIndex = NSUIntegerMax;
     
     DITCompSideSelModel *sideSelModel = self.dataAry[currentIndex];
     sideSelModel.status = !sideSelModel.status;
-//    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:currentIndex inSection:0];
-//    DITCompSlideSelTableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-//    cell.compSideSelModel = sideSelModel;
+
     [self.tableView reloadData];
     
     cellIndex = currentPoint.y/35;
@@ -144,6 +141,9 @@ static NSUInteger cellIndex = NSUIntegerMax;
     }
     return _dataAry;
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

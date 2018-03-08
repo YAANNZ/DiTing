@@ -46,13 +46,6 @@ static NSString *cellID = @"DITCompSlideSelTableViewCell";
     self.statusImageView.userInteractionEnabled = YES;
     [self.contentView addSubview:self.statusImageView];
     
-//    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
-//    [self.statusImageView addGestureRecognizer:tapGesture];
-
-//    // 平移
-//    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesture:)];
-//    [self.statusImageView addGestureRecognizer:panGesture];
-    
     self.contentLabel = [[UILabel alloc] init];
     [self.contentView addSubview:self.contentLabel];
     
@@ -79,23 +72,8 @@ static NSString *cellID = @"DITCompSlideSelTableViewCell";
     _compSideSelModel = compSideSelModel;
     
     self.contentLabel.text = compSideSelModel.content;
-    
-    [self layoutSubviews];
 }
 
-//- (void)tapGesture:(UITapGestureRecognizer *)tapGesture
-//{
-//    self.compSideSelModel.status = !self.compSideSelModel.status;
-//
-//    [self layoutSubviews];
-//}
-
-//- (void)panGesture:(UIPanGestureRecognizer *)panGesture
-//{
-//    self.compSideSelModel.status = !self.compSideSelModel.status;
-//
-//    [self layoutSubviews];
-//}
 
 - (void)layoutSubviews
 {

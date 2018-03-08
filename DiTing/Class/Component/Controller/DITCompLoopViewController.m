@@ -8,7 +8,9 @@
 
 #import "DITCompLoopViewController.h"
 
-@interface DITCompLoopViewController ()
+@interface DITCompLoopViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
+
+@property (nonatomic, strong) UICollectionView *collectionView;
 
 @end
 
@@ -18,10 +20,79 @@
 {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor whiteColor];
+//    self.view.backgroundColor = [UIColor lightGrayColor];
   
+
+    UICollectionViewFlowLayout *cvLayout = [UICollectionViewFlowLayout new];
+    cvLayout.itemSize = CGSizeMake(MAINSCREEN_WIDTH, 60);
+    cvLayout.minimumInteritemSpacing = 0;
+    cvLayout.minimumLineSpacing = 0;
+    cvLayout.headerReferenceSize = CGSizeMake(MAINSCREEN_WIDTH, 40);
     
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, MAINSCREEN_HEIGHT) collectionViewLayout:cvLayout];
+    self.collectionView.backgroundColor = [UIColor lightGrayColor];
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"collectionViewCell"];
+    [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"collectionViewHeader"];
+    [self.view addSubview:self.collectionView];
     
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 5;
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"collectionViewHeader" forIndexPath:indexPath];
+    headerView.backgroundColor = [UIColor blueColor];
+//    if (!headerView.subviews)
+//    {
+        UILabel *fLabel = [[UILabel alloc] init];
+        fLabel.text = @"左边的";
+        fLabel.backgroundColor = [UIColor brownColor];
+        [headerView addSubview:fLabel];
+        
+        [fLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.left.bottom.equalTo(@5);
+            make.bottom.equalTo(@-5);
+        }];
+        
+        UILabel *rLabel = [[UILabel alloc] init];
+        rLabel.text = @"右边的";
+        rLabel.backgroundColor = [UIColor brownColor];
+        [headerView addSubview:rLabel];
+        
+        [rLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(@5);
+            make.bottom.equalTo(@-5);
+            make.right.equalTo(@-5);
+        }];
+//    }
+    return headerView;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionViewCell" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor yellowColor];
+//    if (!cell.contentView.subviews)
+//    {
+        UILabel *fLabel = [[UILabel alloc] init];
+    fLabel.backgroundColor = [UIColor redColor];
+        fLabel.text = [NSString stringWithFormat:@"%d只", arc4random() % 5];
+    fLabel.textAlignment = NSTextAlignmentCenter;
+        [cell.contentView addSubview:fLabel];
+        
+        [fLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.left.bottom.equalTo(@10);
+            make.bottom.equalTo(@-10);
+            make.right.equalTo(@-10);
+        }];
+//    }
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {
