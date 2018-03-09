@@ -20,8 +20,11 @@
 {
     [super viewDidLoad];
     
-//    self.view.backgroundColor = [UIColor lightGrayColor];
+    self.view.backgroundColor = [UIColor whiteColor];
   
+    UIScrollView *loopView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, 210)];
+    loopView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:loopView];
 
     UICollectionViewFlowLayout *cvLayout = [UICollectionViewFlowLayout new];
     cvLayout.itemSize = CGSizeMake(MAINSCREEN_WIDTH, 60);
@@ -29,7 +32,7 @@
     cvLayout.minimumLineSpacing = 0;
     cvLayout.headerReferenceSize = CGSizeMake(MAINSCREEN_WIDTH, 40);
     
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, MAINSCREEN_HEIGHT) collectionViewLayout:cvLayout];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 210, MAINSCREEN_WIDTH, MAINSCREEN_HEIGHT) collectionViewLayout:cvLayout];
     self.collectionView.backgroundColor = [UIColor lightGrayColor];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
