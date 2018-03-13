@@ -21,7 +21,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-  
+    
     UIScrollView *loopView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, 210)];
     loopView.backgroundColor = [UIColor redColor];
     [self.view addSubview:loopView];
