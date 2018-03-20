@@ -7,10 +7,12 @@
 //
 
 #import "DITCompLoopViewController.h"
+#import "DITLoopScrollView.h"
 
 @interface DITCompLoopViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, weak) DITLoopScrollView *loopScrollView;
 
 @end
 
@@ -22,9 +24,10 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIScrollView *loopView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, 210)];
-    loopView.backgroundColor = [UIColor redColor];
-    [self.view addSubview:loopView];
+    DITLoopScrollView *loopScrollView = [[DITLoopScrollView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, 210)];
+    self.loopScrollView = loopScrollView;
+    loopScrollView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:loopScrollView];
 
     UICollectionViewFlowLayout *cvLayout = [UICollectionViewFlowLayout new];
     cvLayout.itemSize = CGSizeMake(MAINSCREEN_WIDTH, 60);
