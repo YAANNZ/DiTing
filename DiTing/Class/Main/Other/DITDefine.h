@@ -43,3 +43,7 @@ hud.label.text = Text;\
 #define MAINSCREEN_WIDTH  MAINSCREEN_FRAME.size.width
 //设备屏幕高
 #define MAINSCREEN_HEIGHT MAINSCREEN_FRAME.size.height
+//导航栏高
+#define NAV_HEIGHT 64
+//Tabbar高
+#define TABBAR_HEIGHT 49
