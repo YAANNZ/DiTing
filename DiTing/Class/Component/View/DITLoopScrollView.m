@@ -8,6 +8,14 @@
 
 #import "DITLoopScrollView.h"
 
+@interface DITLoopScrollView ()
+
+@property (nonatomic, strong) UIImageView *imgVF;
+@property (nonatomic, strong) UIImageView *imgVS;
+@property (nonatomic, strong) UIImageView *imgVT;
+
+@end
+
 @implementation DITLoopScrollView
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -32,7 +40,8 @@
 
 - (void)setupSubviews
 {
-    
+    self.imgVF = [[UIImageView alloc] init];
+    [self addSubview:self.imgVF];
 }
 
 @end
