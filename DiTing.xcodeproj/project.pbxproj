@@ -56,13 +56,15 @@
 		19A2D81D1F4C815F00341A7E /* DITWeChatHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D81C1F4C815F00341A7E /* DITWeChatHomeTableViewCell.m */; };
 		19A2D8201F4C832A00341A7E /* DITWeChatHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D81F1F4C832A00341A7E /* DITWeChatHomeModel.m */; };
 		19B3CC021FE2813600598D6C /* DITWeChatContactsSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B3CC011FE2813600598D6C /* DITWeChatContactsSearchController.m */; };
-		19C18A612046F7EB0014BEF4 /* DITCompSlideSelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A5C2046F7EB0014BEF4 /* DITCompSlideSelViewController.m */; };
-		19C18A622046F7EB0014BEF4 /* DITCompLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A5D2046F7EB0014BEF4 /* DITCompLoopViewController.m */; };
-		19C18A652046F82B0014BEF4 /* DITCompSideSelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A642046F82B0014BEF4 /* DITCompSideSelModel.m */; };
-		19C18A682046FA410014BEF4 /* DITCompSlideSelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A672046FA410014BEF4 /* DITCompSlideSelTableViewCell.m */; };
 		19C18A712049380F0014BEF4 /* DITUIGestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A702049380F0014BEF4 /* DITUIGestureRecognizerViewController.m */; };
 		19C18A7420493CA10014BEF4 /* DITUIGestureRecognizerExamplesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A7320493CA10014BEF4 /* DITUIGestureRecognizerExamplesViewController.m */; };
-		19C18A832057D2B00014BEF4 /* DITLoopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A822057D2B00014BEF4 /* DITLoopScrollView.m */; };
+		19C18A9B206891B20014BEF4 /* DITCompLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A8C206891B20014BEF4 /* DITCompLoopViewController.m */; };
+		19C18A9C206891B20014BEF4 /* DITLoopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A90206891B20014BEF4 /* DITLoopScrollView.m */; };
+		19C18A9D206891B20014BEF4 /* DITCompSlideSelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A93206891B20014BEF4 /* DITCompSlideSelViewController.m */; };
+		19C18A9E206891B20014BEF4 /* DITCompSideSelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A96206891B20014BEF4 /* DITCompSideSelModel.m */; };
+		19C18A9F206891B20014BEF4 /* DITCompSlideSelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A99206891B20014BEF4 /* DITCompSlideSelTableViewCell.m */; };
+		19C18AA5206898A10014BEF4 /* DITRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18AA4206898A10014BEF4 /* DITRecordViewController.m */; };
+		19C18AA8206899AD0014BEF4 /* DITRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18AA7206899AD0014BEF4 /* DITRecordView.m */; };
 		19F769931F5C48D90050775C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19F769791F5C48D90050775C /* Info.plist */; };
 		19F769941F5C48D90050775C /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F7697B1F5C48D90050775C /* MASCompositeConstraint.m */; };
 		19F769951F5C48D90050775C /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F7697E1F5C48D90050775C /* MASConstraint.m */; };
@@ -227,20 +229,24 @@
 		19A2D81F1F4C832A00341A7E /* DITWeChatHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITWeChatHomeModel.m; sourceTree = "<group>"; };
 		19B3CC001FE2813600598D6C /* DITWeChatContactsSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITWeChatContactsSearchController.h; sourceTree = "<group>"; };
 		19B3CC011FE2813600598D6C /* DITWeChatContactsSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITWeChatContactsSearchController.m; sourceTree = "<group>"; };
-		19C18A5B2046F7EB0014BEF4 /* DITCompLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITCompLoopViewController.h; sourceTree = "<group>"; };
-		19C18A5C2046F7EB0014BEF4 /* DITCompSlideSelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITCompSlideSelViewController.m; sourceTree = "<group>"; };
-		19C18A5D2046F7EB0014BEF4 /* DITCompLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITCompLoopViewController.m; sourceTree = "<group>"; };
-		19C18A5E2046F7EB0014BEF4 /* DITCompSlideSelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITCompSlideSelViewController.h; sourceTree = "<group>"; };
-		19C18A632046F82B0014BEF4 /* DITCompSideSelModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITCompSideSelModel.h; sourceTree = "<group>"; };
-		19C18A642046F82B0014BEF4 /* DITCompSideSelModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITCompSideSelModel.m; sourceTree = "<group>"; };
-		19C18A662046FA410014BEF4 /* DITCompSlideSelTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITCompSlideSelTableViewCell.h; sourceTree = "<group>"; };
-		19C18A672046FA410014BEF4 /* DITCompSlideSelTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITCompSlideSelTableViewCell.m; sourceTree = "<group>"; };
 		19C18A6F2049380F0014BEF4 /* DITUIGestureRecognizerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITUIGestureRecognizerViewController.h; sourceTree = "<group>"; };
 		19C18A702049380F0014BEF4 /* DITUIGestureRecognizerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITUIGestureRecognizerViewController.m; sourceTree = "<group>"; };
 		19C18A7220493CA10014BEF4 /* DITUIGestureRecognizerExamplesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITUIGestureRecognizerExamplesViewController.h; sourceTree = "<group>"; };
 		19C18A7320493CA10014BEF4 /* DITUIGestureRecognizerExamplesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITUIGestureRecognizerExamplesViewController.m; sourceTree = "<group>"; };
-		19C18A812057D2B00014BEF4 /* DITLoopScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITLoopScrollView.h; sourceTree = "<group>"; };
-		19C18A822057D2B00014BEF4 /* DITLoopScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITLoopScrollView.m; sourceTree = "<group>"; };
+		19C18A8B206891B20014BEF4 /* DITCompLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITCompLoopViewController.h; sourceTree = "<group>"; };
+		19C18A8C206891B20014BEF4 /* DITCompLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITCompLoopViewController.m; sourceTree = "<group>"; };
+		19C18A8F206891B20014BEF4 /* DITLoopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITLoopScrollView.h; sourceTree = "<group>"; };
+		19C18A90206891B20014BEF4 /* DITLoopScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITLoopScrollView.m; sourceTree = "<group>"; };
+		19C18A93206891B20014BEF4 /* DITCompSlideSelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITCompSlideSelViewController.m; sourceTree = "<group>"; };
+		19C18A94206891B20014BEF4 /* DITCompSlideSelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITCompSlideSelViewController.h; sourceTree = "<group>"; };
+		19C18A96206891B20014BEF4 /* DITCompSideSelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITCompSideSelModel.m; sourceTree = "<group>"; };
+		19C18A97206891B20014BEF4 /* DITCompSideSelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITCompSideSelModel.h; sourceTree = "<group>"; };
+		19C18A99206891B20014BEF4 /* DITCompSlideSelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITCompSlideSelTableViewCell.m; sourceTree = "<group>"; };
+		19C18A9A206891B20014BEF4 /* DITCompSlideSelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITCompSlideSelTableViewCell.h; sourceTree = "<group>"; };
+		19C18AA3206898A10014BEF4 /* DITRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITRecordViewController.h; sourceTree = "<group>"; };
+		19C18AA4206898A10014BEF4 /* DITRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITRecordViewController.m; sourceTree = "<group>"; };
+		19C18AA6206899AD0014BEF4 /* DITRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITRecordView.h; sourceTree = "<group>"; };
+		19C18AA7206899AD0014BEF4 /* DITRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITRecordView.m; sourceTree = "<group>"; };
 		19F769791F5C48D90050775C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19F7697A1F5C48D90050775C /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		19F7697B1F5C48D90050775C /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -729,42 +735,11 @@
 		19C18A592046F7EB0014BEF4 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				19C18A5A2046F7EB0014BEF4 /* Controller */,
-				19C18A5F2046F7EB0014BEF4 /* Model */,
-				19C18A602046F7EB0014BEF4 /* View */,
+				19C18AA02068962A0014BEF4 /* Record */,
+				19C18A89206891B20014BEF4 /* LoopView */,
+				19C18A91206891B20014BEF4 /* slideView */,
 			);
 			path = Component;
-			sourceTree = "<group>";
-		};
-		19C18A5A2046F7EB0014BEF4 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				19C18A5B2046F7EB0014BEF4 /* DITCompLoopViewController.h */,
-				19C18A5D2046F7EB0014BEF4 /* DITCompLoopViewController.m */,
-				19C18A5E2046F7EB0014BEF4 /* DITCompSlideSelViewController.h */,
-				19C18A5C2046F7EB0014BEF4 /* DITCompSlideSelViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		19C18A5F2046F7EB0014BEF4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				19C18A632046F82B0014BEF4 /* DITCompSideSelModel.h */,
-				19C18A642046F82B0014BEF4 /* DITCompSideSelModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		19C18A602046F7EB0014BEF4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				19C18A662046FA410014BEF4 /* DITCompSlideSelTableViewCell.h */,
-				19C18A672046FA410014BEF4 /* DITCompSlideSelTableViewCell.m */,
-				19C18A812057D2B00014BEF4 /* DITLoopScrollView.h */,
-				19C18A822057D2B00014BEF4 /* DITLoopScrollView.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		19C18A6B204937CB0014BEF4 /* AppleComponent */ = {
@@ -798,6 +773,105 @@
 		19C18A6E204937CB0014BEF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19C18A89206891B20014BEF4 /* LoopView */ = {
+			isa = PBXGroup;
+			children = (
+				19C18A8A206891B20014BEF4 /* Controller */,
+				19C18A8D206891B20014BEF4 /* Model */,
+				19C18A8E206891B20014BEF4 /* View */,
+			);
+			path = LoopView;
+			sourceTree = "<group>";
+		};
+		19C18A8A206891B20014BEF4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19C18A8B206891B20014BEF4 /* DITCompLoopViewController.h */,
+				19C18A8C206891B20014BEF4 /* DITCompLoopViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		19C18A8D206891B20014BEF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19C18A8E206891B20014BEF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19C18A8F206891B20014BEF4 /* DITLoopScrollView.h */,
+				19C18A90206891B20014BEF4 /* DITLoopScrollView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19C18A91206891B20014BEF4 /* slideView */ = {
+			isa = PBXGroup;
+			children = (
+				19C18A92206891B20014BEF4 /* Controller */,
+				19C18A95206891B20014BEF4 /* Model */,
+				19C18A98206891B20014BEF4 /* View */,
+			);
+			path = slideView;
+			sourceTree = "<group>";
+		};
+		19C18A92206891B20014BEF4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19C18A93206891B20014BEF4 /* DITCompSlideSelViewController.m */,
+				19C18A94206891B20014BEF4 /* DITCompSlideSelViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		19C18A95206891B20014BEF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19C18A96206891B20014BEF4 /* DITCompSideSelModel.m */,
+				19C18A97206891B20014BEF4 /* DITCompSideSelModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19C18A98206891B20014BEF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19C18A99206891B20014BEF4 /* DITCompSlideSelTableViewCell.m */,
+				19C18A9A206891B20014BEF4 /* DITCompSlideSelTableViewCell.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19C18AA02068962A0014BEF4 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				19C18AA12068962A0014BEF4 /* Controller */,
+				19C18AA22068962A0014BEF4 /* View */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		19C18AA12068962A0014BEF4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19C18AA3206898A10014BEF4 /* DITRecordViewController.h */,
+				19C18AA4206898A10014BEF4 /* DITRecordViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		19C18AA22068962A0014BEF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19C18AA6206899AD0014BEF4 /* DITRecordView.h */,
+				19C18AA7206899AD0014BEF4 /* DITRecordView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1070,11 +1144,12 @@
 				1964F1D91F73BD8300661FC8 /* DITDataBaseManager.m in Sources */,
 				19F7699C1F5C48D90050775C /* View+MASAdditions.m in Sources */,
 				19A2D81D1F4C815F00341A7E /* DITWeChatHomeTableViewCell.m in Sources */,
-				19C18A682046FA410014BEF4 /* DITCompSlideSelTableViewCell.m in Sources */,
 				19F769AE1F5C48EA0050775C /* AFSecurityPolicy.m in Sources */,
 				1964F1BE1F7367EE00661FC8 /* NSObject+MJProperty.m in Sources */,
+				19C18A9D206891B20014BEF4 /* DITCompSlideSelViewController.m in Sources */,
 				1964F1B61F7367EE00661FC8 /* MJExtensionConst.m in Sources */,
 				19A2D81A1F4C813700341A7E /* DITWeChatProfileViewController.m in Sources */,
+				19C18A9E206891B20014BEF4 /* DITCompSideSelModel.m in Sources */,
 				19A2D8201F4C832A00341A7E /* DITWeChatHomeModel.m in Sources */,
 				1964F19C1F7366B600661FC8 /* MBProgressHUD.m in Sources */,
 				19A2D7EB1F48955A00341A7E /* ViewController.m in Sources */,
@@ -1086,7 +1161,6 @@
 				19C18A7420493CA10014BEF4 /* DITUIGestureRecognizerExamplesViewController.m in Sources */,
 				1964F1BA1F7367EE00661FC8 /* MJPropertyType.m in Sources */,
 				1964F1BB1F7367EE00661FC8 /* NSObject+MJClass.m in Sources */,
-				19C18A652046F82B0014BEF4 /* DITCompSideSelModel.m in Sources */,
 				19272E762006013500EA104F /* UIView+Extension.m in Sources */,
 				1964F1B81F7367EE00661FC8 /* MJProperty.m in Sources */,
 				1926211B1F612749004ECA8E /* DITWeChatContactModel.m in Sources */,
@@ -1099,12 +1173,16 @@
 				19272E8420075B1700EA104F /* DITWeChatpProfileTableViewCell.m in Sources */,
 				19F769961F5C48D90050775C /* MASConstraintMaker.m in Sources */,
 				191F31E71F658475001D757D /* DITWeChatChatTableViewController.m in Sources */,
+				19C18AA8206899AD0014BEF4 /* DITRecordView.m in Sources */,
+				19C18AA5206898A10014BEF4 /* DITRecordViewController.m in Sources */,
 				19F769AC1F5C48EA0050775C /* AFHTTPSessionManager.m in Sources */,
 				191F31E31F623A1E001D757D /* DITWeCharContactsSearchResultController.m in Sources */,
 				1926211E1F6197CB004ECA8E /* DITWeChatContactsTableViewCell.m in Sources */,
 				19F769B01F5C48EA0050775C /* AFURLResponseSerialization.m in Sources */,
 				19F769951F5C48D90050775C /* MASConstraint.m in Sources */,
 				19F769AF1F5C48EA0050775C /* AFURLRequestSerialization.m in Sources */,
+				19C18A9F206891B20014BEF4 /* DITCompSlideSelTableViewCell.m in Sources */,
+				19C18A9C206891B20014BEF4 /* DITLoopScrollView.m in Sources */,
 				19F7699B1F5C48D90050775C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				1964F1B91F7367EE00661FC8 /* MJPropertyKey.m in Sources */,
 				1982B4001FAB6B42000806AB /* DITPeekPopViewController.m in Sources */,
@@ -1116,14 +1194,12 @@
 				19C18A712049380F0014BEF4 /* DITUIGestureRecognizerViewController.m in Sources */,
 				193AF8161E48C03E00F35FE4 /* main.m in Sources */,
 				19A2D7EC1F48955A00341A7E /* AppDelegate.m in Sources */,
-				19C18A622046F7EB0014BEF4 /* DITCompLoopViewController.m in Sources */,
-				19C18A832057D2B00014BEF4 /* DITLoopScrollView.m in Sources */,
 				19A2D8181F4C813700341A7E /* DITWeChatHomeViewController.m in Sources */,
 				19F769AD1F5C48EA0050775C /* AFNetworkReachabilityManager.m in Sources */,
 				1964F0941F72BB2B00661FC8 /* NSArray+Log.m in Sources */,
 				19F769991F5C48D90050775C /* MASViewConstraint.m in Sources */,
-				19C18A612046F7EB0014BEF4 /* DITCompSlideSelViewController.m in Sources */,
 				1982B4031FABFF70000806AB /* DITPeekPopPresentationViewController.m in Sources */,
+				19C18A9B206891B20014BEF4 /* DITCompLoopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

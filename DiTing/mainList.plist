@@ -71,6 +71,12 @@
 				<key>targetVc</key>
 				<string>DITCompSlideSelViewController</string>
 			</dict>
+            <dict>
+                <key>title</key>
+                <string>Record</string>
+                <key>targetVc</key>
+                <string>DITRecordViewController</string>
+            </dict>
 		</array>
 	</dict>
     <dict>

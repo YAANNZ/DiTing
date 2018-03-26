@@ -47,3 +47,10 @@ hud.label.text = Text;\
 #define NAV_HEIGHT 64
 //Tabbar高
 #define TABBAR_HEIGHT 49
+
+// 比例宽
+#define SCALE_WIDTH(w) w/375.0*MAINSCREEN_WIDTH
+// 比例高
+#define SCALE_HEIGHT(h) h/667.0*MAINSCREEN_HEIGHT
+
+
