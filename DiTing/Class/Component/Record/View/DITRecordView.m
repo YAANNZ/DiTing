@@ -51,7 +51,10 @@
     [self addSubview:pressBtn];
     
     UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressBtn:)];
+    longPressGesture.minimumPressDuration = 1.0;
     [pressBtn addGestureRecognizer:longPressGesture];
+    
+//    UITapGestureRecognizer
     
     UIButton *addBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.addBtn = addBtn;
