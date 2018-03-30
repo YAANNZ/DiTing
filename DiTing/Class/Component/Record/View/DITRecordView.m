@@ -73,7 +73,8 @@
 
 - (void)longPressBtn:(UILongPressGestureRecognizer *)longPressGesture
 {
-    
+    CGPoint loctionPress = [longPressGesture locationInView:self.pressBtn];
+    NSLog(@"%@", NSStringFromCGPoint(loctionPress));
 }
 
 @end
