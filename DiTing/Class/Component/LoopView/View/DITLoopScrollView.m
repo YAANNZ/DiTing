@@ -41,7 +41,26 @@
 - (void)setupSubviews
 {
     self.imgVF = [[UIImageView alloc] init];
+    self.imgVF.image = [UIImage imageNamed:@"banner1"];
     [self addSubview:self.imgVF];
+    
+    self.imgVS = [[UIImageView alloc] init];
+    self.imgVS.image = [UIImage imageNamed:@"Work_banner"];
+    [self addSubview:self.imgVS];
+    
+    self.imgVT = [[UIImageView alloc] init];
+    self.imgVT.image = [UIImage imageNamed:@"banner1"];
+    [self addSubview:self.imgVT];
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    [self.imgVF mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.bottom.equalTo(@0);
+        make.width.mas_equalTo(MAINSCREEN_WIDTH);
+    }];
 }
 
 @end
