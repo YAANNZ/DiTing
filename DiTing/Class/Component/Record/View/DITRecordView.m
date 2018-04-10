@@ -7,10 +7,11 @@
 //
 
 #import "DITRecordView.h"
+#import "DITRecordButton.h"
 
 @interface DITRecordView ()
 
-@property (nonatomic, weak) UIButton *pressBtn;
+@property (nonatomic, weak) DITRecordButton *pressBtn;
 @property (nonatomic, weak) UIButton *addBtn;
 
 @end
@@ -41,7 +42,7 @@
 {
     self.backgroundColor = [UIColor colorWithRed:244.0/255.0 green:244.0/255.0 blue:244.0/255.0 alpha:1.0];
     
-    UIButton *pressBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    DITRecordButton *pressBtn = [DITRecordButton buttonWithType:UIButtonTypeCustom];
     self.pressBtn = pressBtn;
     self.pressBtn.layer.cornerRadius = 5;
     self.pressBtn.layer.borderWidth = 1.0;
@@ -50,11 +51,6 @@
     [self.pressBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self addSubview:pressBtn];
     
-    UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressBtn:)];
-    longPressGesture.minimumPressDuration = 1.0;
-    [pressBtn addGestureRecognizer:longPressGesture];
-    
-//    UITapGestureRecognizer
     
     UIButton *addBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.addBtn = addBtn;
@@ -71,10 +67,6 @@
     self.addBtn.frame = CGRectMake(MAINSCREEN_WIDTH - 55, 10, 30, 30);
 }
 
-- (void)longPressBtn:(UILongPressGestureRecognizer *)longPressGesture
-{
-    CGPoint loctionPress = [longPressGesture locationInView:self.pressBtn];
-    NSLog(@"%@", NSStringFromCGPoint(loctionPress));
-}
+
 
 @end

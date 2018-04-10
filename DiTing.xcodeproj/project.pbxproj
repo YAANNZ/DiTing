@@ -24,6 +24,7 @@
 		193AF82F1E48C03E00F35FE4 /* DiTingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 193AF82E1E48C03E00F35FE4 /* DiTingTests.m */; };
 		193AF83A1E48C03E00F35FE4 /* DiTingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 193AF8391E48C03E00F35FE4 /* DiTingUITests.m */; };
 		193EA9F71E4E0E14008EF309 /* mainList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 193EA9F61E4E0E14008EF309 /* mainList.plist */; };
+		194CDF87207A62F200294F03 /* DITRecordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CDF86207A62F200294F03 /* DITRecordButton.m */; };
 		1964F0941F72BB2B00661FC8 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 1964F0931F72BB2B00661FC8 /* NSArray+Log.m */; };
 		1964F19C1F7366B600661FC8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1964F19B1F7366B600661FC8 /* MBProgressHUD.m */; };
 		1964F1B61F7367EE00661FC8 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1964F1A21F7367EE00661FC8 /* MJExtensionConst.m */; };
@@ -163,6 +164,8 @@
 		193AF8391E48C03E00F35FE4 /* DiTingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiTingUITests.m; sourceTree = "<group>"; };
 		193AF83B1E48C03E00F35FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		193EA9F61E4E0E14008EF309 /* mainList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mainList.plist; sourceTree = "<group>"; };
+		194CDF85207A62F200294F03 /* DITRecordButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITRecordButton.h; sourceTree = "<group>"; };
+		194CDF86207A62F200294F03 /* DITRecordButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITRecordButton.m; sourceTree = "<group>"; };
 		1964F0901F72480D00661FC8 /* DITHttpLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITHttpLink.h; sourceTree = "<group>"; };
 		1964F0921F72BB2B00661FC8 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		1964F0931F72BB2B00661FC8 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -872,6 +875,8 @@
 			children = (
 				19C18AA6206899AD0014BEF4 /* DITRecordView.h */,
 				19C18AA7206899AD0014BEF4 /* DITRecordView.m */,
+				194CDF85207A62F200294F03 /* DITRecordButton.h */,
+				194CDF86207A62F200294F03 /* DITRecordButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1198,6 +1203,7 @@
 				19F769AD1F5C48EA0050775C /* AFNetworkReachabilityManager.m in Sources */,
 				1964F0941F72BB2B00661FC8 /* NSArray+Log.m in Sources */,
 				19F769991F5C48D90050775C /* MASViewConstraint.m in Sources */,
+				194CDF87207A62F200294F03 /* DITRecordButton.m in Sources */,
 				1982B4031FABFF70000806AB /* DITPeekPopPresentationViewController.m in Sources */,
 				19C18A9B206891B20014BEF4 /* DITCompLoopViewController.m in Sources */,
 			);
