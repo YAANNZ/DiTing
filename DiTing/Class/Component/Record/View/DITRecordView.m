@@ -9,7 +9,7 @@
 #import "DITRecordView.h"
 #import "DITRecordButton.h"
 
-@interface DITRecordView ()
+@interface DITRecordView () <DITRecordButtonDelegate>
 
 @property (nonatomic, weak) DITRecordButton *pressBtn;
 @property (nonatomic, weak) UIButton *addBtn;
@@ -44,6 +44,7 @@
     
     DITRecordButton *pressBtn = [DITRecordButton buttonWithType:UIButtonTypeCustom];
     self.pressBtn = pressBtn;
+    self.pressBtn.delegate = self;
     self.pressBtn.layer.cornerRadius = 5;
     self.pressBtn.layer.borderWidth = 1.0;
     self.pressBtn.layer.borderColor = [UIColor lightGrayColor].CGColor;
@@ -67,6 +68,17 @@
     self.addBtn.frame = CGRectMake(MAINSCREEN_WIDTH - 55, 10, 30, 30);
 }
 
+
+#pragma mark - DITRecordButtonDelegate
+- (void)recordButtonBeginRecord
+{
+    
+}
+
+- (void)recordButtonEndRecordWithFinishState:(BOOL)isFinish
+{
+    
+}
 
 
 @end
