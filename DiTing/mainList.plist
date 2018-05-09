@@ -71,51 +71,57 @@
 				<key>targetVc</key>
 				<string>DITCompSlideSelViewController</string>
 			</dict>
-            <dict>
-                <key>title</key>
-                <string>Record</string>
-                <key>targetVc</key>
-                <string>DITRecordViewController</string>
-            </dict>
+			<dict>
+				<key>title</key>
+				<string>Record</string>
+				<key>targetVc</key>
+				<string>DITRecordViewController</string>
+			</dict>
 		</array>
 	</dict>
-    <dict>
-        <key>header</key>
-        <string>AppleComponent</string>
-        <key>items</key>
-        <array>
-            <dict>
-                <key>title</key>
-                <string>UIGestureRecognizer</string>
-                <key>targetVc</key>
-                <string>DITUIGestureRecognizerViewController</string>
-            </dict>
-        </array>
-    </dict>
-    <dict>
-        <key>header</key>
-        <string>Other</string>
-        <key>items</key>
-        <array>
-            <dict>
-                <key>title</key>
-                <string>frosted glass</string>
-                <key>targetVc</key>
-                <string>MDRGlassController</string>
-            </dict>
-            <dict>
-                <key>title</key>
-                <string>timeLine</string>
-                <key>targetVc</key>
-                <string>TimelineController</string>
-            </dict>
-            <dict>
-                <key>title</key>
-                <string>Peek and Pop</string>
-                <key>targetVc</key>
-                <string>DITPeekPopViewController</string>
-            </dict>
-        </array>
-    </dict>
+	<dict>
+		<key>header</key>
+		<string>AppleComponent</string>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>NSURLSessionDataTask（断点续传下载）</string>
+				<key>targetVc</key>
+				<string>NSURLSessionDataTaskViewController</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>UIGestureRecognizer</string>
+				<key>targetVc</key>
+				<string>DITUIGestureRecognizerViewController</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>header</key>
+		<string>Other</string>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>frosted glass</string>
+				<key>targetVc</key>
+				<string>MDRGlassController</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>timeLine</string>
+				<key>targetVc</key>
+				<string>TimelineController</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Peek and Pop</string>
+				<key>targetVc</key>
+				<string>DITPeekPopViewController</string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>

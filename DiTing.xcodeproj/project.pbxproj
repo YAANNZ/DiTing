@@ -57,8 +57,6 @@
 		19A2D81D1F4C815F00341A7E /* DITWeChatHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D81C1F4C815F00341A7E /* DITWeChatHomeTableViewCell.m */; };
 		19A2D8201F4C832A00341A7E /* DITWeChatHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D81F1F4C832A00341A7E /* DITWeChatHomeModel.m */; };
 		19B3CC021FE2813600598D6C /* DITWeChatContactsSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B3CC011FE2813600598D6C /* DITWeChatContactsSearchController.m */; };
-		19C18A712049380F0014BEF4 /* DITUIGestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A702049380F0014BEF4 /* DITUIGestureRecognizerViewController.m */; };
-		19C18A7420493CA10014BEF4 /* DITUIGestureRecognizerExamplesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A7320493CA10014BEF4 /* DITUIGestureRecognizerExamplesViewController.m */; };
 		19C18A9B206891B20014BEF4 /* DITCompLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A8C206891B20014BEF4 /* DITCompLoopViewController.m */; };
 		19C18A9C206891B20014BEF4 /* DITLoopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A90206891B20014BEF4 /* DITLoopScrollView.m */; };
 		19C18A9D206891B20014BEF4 /* DITCompSlideSelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A93206891B20014BEF4 /* DITCompSlideSelViewController.m */; };
@@ -66,6 +64,9 @@
 		19C18A9F206891B20014BEF4 /* DITCompSlideSelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A99206891B20014BEF4 /* DITCompSlideSelTableViewCell.m */; };
 		19C18AA5206898A10014BEF4 /* DITRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18AA4206898A10014BEF4 /* DITRecordViewController.m */; };
 		19C18AA8206899AD0014BEF4 /* DITRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18AA7206899AD0014BEF4 /* DITRecordView.m */; };
+		19E1516220A29FB9001D6E60 /* DITUIGestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E1515F20A29FB9001D6E60 /* DITUIGestureRecognizerViewController.m */; };
+		19E1516320A29FB9001D6E60 /* DITUIGestureRecognizerExamplesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E1516020A29FB9001D6E60 /* DITUIGestureRecognizerExamplesViewController.m */; };
+		19E1516620A29FCB001D6E60 /* NSURLSessionDataTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E1516520A29FCB001D6E60 /* NSURLSessionDataTaskViewController.m */; };
 		19F769931F5C48D90050775C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19F769791F5C48D90050775C /* Info.plist */; };
 		19F769941F5C48D90050775C /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F7697B1F5C48D90050775C /* MASCompositeConstraint.m */; };
 		19F769951F5C48D90050775C /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F7697E1F5C48D90050775C /* MASConstraint.m */; };
@@ -232,10 +233,6 @@
 		19A2D81F1F4C832A00341A7E /* DITWeChatHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITWeChatHomeModel.m; sourceTree = "<group>"; };
 		19B3CC001FE2813600598D6C /* DITWeChatContactsSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITWeChatContactsSearchController.h; sourceTree = "<group>"; };
 		19B3CC011FE2813600598D6C /* DITWeChatContactsSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITWeChatContactsSearchController.m; sourceTree = "<group>"; };
-		19C18A6F2049380F0014BEF4 /* DITUIGestureRecognizerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITUIGestureRecognizerViewController.h; sourceTree = "<group>"; };
-		19C18A702049380F0014BEF4 /* DITUIGestureRecognizerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITUIGestureRecognizerViewController.m; sourceTree = "<group>"; };
-		19C18A7220493CA10014BEF4 /* DITUIGestureRecognizerExamplesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITUIGestureRecognizerExamplesViewController.h; sourceTree = "<group>"; };
-		19C18A7320493CA10014BEF4 /* DITUIGestureRecognizerExamplesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITUIGestureRecognizerExamplesViewController.m; sourceTree = "<group>"; };
 		19C18A8B206891B20014BEF4 /* DITCompLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITCompLoopViewController.h; sourceTree = "<group>"; };
 		19C18A8C206891B20014BEF4 /* DITCompLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITCompLoopViewController.m; sourceTree = "<group>"; };
 		19C18A8F206891B20014BEF4 /* DITLoopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITLoopScrollView.h; sourceTree = "<group>"; };
@@ -250,6 +247,12 @@
 		19C18AA4206898A10014BEF4 /* DITRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITRecordViewController.m; sourceTree = "<group>"; };
 		19C18AA6206899AD0014BEF4 /* DITRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITRecordView.h; sourceTree = "<group>"; };
 		19C18AA7206899AD0014BEF4 /* DITRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITRecordView.m; sourceTree = "<group>"; };
+		19E1515E20A29FB9001D6E60 /* DITUIGestureRecognizerExamplesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITUIGestureRecognizerExamplesViewController.h; sourceTree = "<group>"; };
+		19E1515F20A29FB9001D6E60 /* DITUIGestureRecognizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITUIGestureRecognizerViewController.m; sourceTree = "<group>"; };
+		19E1516020A29FB9001D6E60 /* DITUIGestureRecognizerExamplesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITUIGestureRecognizerExamplesViewController.m; sourceTree = "<group>"; };
+		19E1516120A29FB9001D6E60 /* DITUIGestureRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITUIGestureRecognizerViewController.h; sourceTree = "<group>"; };
+		19E1516420A29FCB001D6E60 /* NSURLSessionDataTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSURLSessionDataTaskViewController.h; sourceTree = "<group>"; };
+		19E1516520A29FCB001D6E60 /* NSURLSessionDataTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionDataTaskViewController.m; sourceTree = "<group>"; };
 		19F769791F5C48D90050775C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19F7697A1F5C48D90050775C /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		19F7697B1F5C48D90050775C /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -748,36 +751,10 @@
 		19C18A6B204937CB0014BEF4 /* AppleComponent */ = {
 			isa = PBXGroup;
 			children = (
-				19C18A6C204937CB0014BEF4 /* Controller */,
-				19C18A6D204937CB0014BEF4 /* Model */,
-				19C18A6E204937CB0014BEF4 /* View */,
+				19E1515820A29FB8001D6E60 /* NSURLSessionDataTask */,
+				19E1515C20A29FB9001D6E60 /* UIGestureRecognizer */,
 			);
 			path = AppleComponent;
-			sourceTree = "<group>";
-		};
-		19C18A6C204937CB0014BEF4 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				19C18A6F2049380F0014BEF4 /* DITUIGestureRecognizerViewController.h */,
-				19C18A702049380F0014BEF4 /* DITUIGestureRecognizerViewController.m */,
-				19C18A7220493CA10014BEF4 /* DITUIGestureRecognizerExamplesViewController.h */,
-				19C18A7320493CA10014BEF4 /* DITUIGestureRecognizerExamplesViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		19C18A6D204937CB0014BEF4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		19C18A6E204937CB0014BEF4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		19C18A89206891B20014BEF4 /* LoopView */ = {
@@ -879,6 +856,58 @@
 				194CDF86207A62F200294F03 /* DITRecordButton.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		19E1515820A29FB8001D6E60 /* NSURLSessionDataTask */ = {
+			isa = PBXGroup;
+			children = (
+				19E1515920A29FB8001D6E60 /* Controller */,
+				19E1515A20A29FB8001D6E60 /* Model */,
+				19E1515B20A29FB8001D6E60 /* View */,
+			);
+			path = NSURLSessionDataTask;
+			sourceTree = "<group>";
+		};
+		19E1515920A29FB8001D6E60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19E1516420A29FCB001D6E60 /* NSURLSessionDataTaskViewController.h */,
+				19E1516520A29FCB001D6E60 /* NSURLSessionDataTaskViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		19E1515A20A29FB8001D6E60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19E1515B20A29FB8001D6E60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19E1515C20A29FB9001D6E60 /* UIGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				19E1515D20A29FB9001D6E60 /* Controller */,
+			);
+			path = UIGestureRecognizer;
+			sourceTree = "<group>";
+		};
+		19E1515D20A29FB9001D6E60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19E1515E20A29FB9001D6E60 /* DITUIGestureRecognizerExamplesViewController.h */,
+				19E1515F20A29FB9001D6E60 /* DITUIGestureRecognizerViewController.m */,
+				19E1516020A29FB9001D6E60 /* DITUIGestureRecognizerExamplesViewController.m */,
+				19E1516120A29FB9001D6E60 /* DITUIGestureRecognizerViewController.h */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		19F769781F5C48D90050775C /* Masonry */ = {
@@ -1155,6 +1184,7 @@
 				1964F1B61F7367EE00661FC8 /* MJExtensionConst.m in Sources */,
 				19A2D81A1F4C813700341A7E /* DITWeChatProfileViewController.m in Sources */,
 				19C18A9E206891B20014BEF4 /* DITCompSideSelModel.m in Sources */,
+				19E1516220A29FB9001D6E60 /* DITUIGestureRecognizerViewController.m in Sources */,
 				19A2D8201F4C832A00341A7E /* DITWeChatHomeModel.m in Sources */,
 				1964F19C1F7366B600661FC8 /* MBProgressHUD.m in Sources */,
 				19A2D7EB1F48955A00341A7E /* ViewController.m in Sources */,
@@ -1163,7 +1193,6 @@
 				19F7699D1F5C48D90050775C /* ViewController+MASAdditions.m in Sources */,
 				19F769981F5C48D90050775C /* MASViewAttribute.m in Sources */,
 				19F769941F5C48D90050775C /* MASCompositeConstraint.m in Sources */,
-				19C18A7420493CA10014BEF4 /* DITUIGestureRecognizerExamplesViewController.m in Sources */,
 				1964F1BA1F7367EE00661FC8 /* MJPropertyType.m in Sources */,
 				1964F1BB1F7367EE00661FC8 /* NSObject+MJClass.m in Sources */,
 				19272E762006013500EA104F /* UIView+Extension.m in Sources */,
@@ -1172,6 +1201,7 @@
 				19272E792006030100EA104F /* DITWeChatDiscoverTableViewCell.m in Sources */,
 				1964F1BC1F7367EE00661FC8 /* NSObject+MJCoding.m in Sources */,
 				19A2D8191F4C813700341A7E /* DITWeChatTabBarController.m in Sources */,
+				19E1516620A29FCB001D6E60 /* NSURLSessionDataTaskViewController.m in Sources */,
 				19F769B11F5C48EA0050775C /* AFURLSessionManager.m in Sources */,
 				1964F1BD1F7367EE00661FC8 /* NSObject+MJKeyValue.m in Sources */,
 				19A2D8161F4C813700341A7E /* DITWeChatContactsViewController.m in Sources */,
@@ -1187,6 +1217,7 @@
 				19F769951F5C48D90050775C /* MASConstraint.m in Sources */,
 				19F769AF1F5C48EA0050775C /* AFURLRequestSerialization.m in Sources */,
 				19C18A9F206891B20014BEF4 /* DITCompSlideSelTableViewCell.m in Sources */,
+				19E1516320A29FB9001D6E60 /* DITUIGestureRecognizerExamplesViewController.m in Sources */,
 				19C18A9C206891B20014BEF4 /* DITLoopScrollView.m in Sources */,
 				19F7699B1F5C48D90050775C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				1964F1B91F7367EE00661FC8 /* MJPropertyKey.m in Sources */,
@@ -1196,7 +1227,6 @@
 				1964F1BF1F7367EE00661FC8 /* NSString+MJExtension.m in Sources */,
 				19F769971F5C48D90050775C /* MASLayoutConstraint.m in Sources */,
 				19F7699A1F5C48D90050775C /* NSArray+MASAdditions.m in Sources */,
-				19C18A712049380F0014BEF4 /* DITUIGestureRecognizerViewController.m in Sources */,
 				193AF8161E48C03E00F35FE4 /* main.m in Sources */,
 				19A2D7EC1F48955A00341A7E /* AppDelegate.m in Sources */,
 				19A2D8181F4C813700341A7E /* DITWeChatHomeViewController.m in Sources */,
@@ -1393,6 +1423,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = FX625MT89Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DiTing/PrefixHeader.pch";
 				INFOPLIST_FILE = DiTing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1414,6 +1448,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = FX625MT89Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DiTing/PrefixHeader.pch";
 				INFOPLIST_FILE = DiTing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
