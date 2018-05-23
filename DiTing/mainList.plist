@@ -77,6 +77,12 @@
 				<key>targetVc</key>
 				<string>DITRecordViewController</string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>CustomRefresh</string>
+				<key>targetVc</key>
+				<string>DITCompCustomRefreshViewController</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>

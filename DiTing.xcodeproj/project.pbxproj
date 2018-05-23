@@ -24,6 +24,11 @@
 		193AF82F1E48C03E00F35FE4 /* DiTingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 193AF82E1E48C03E00F35FE4 /* DiTingTests.m */; };
 		193AF83A1E48C03E00F35FE4 /* DiTingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 193AF8391E48C03E00F35FE4 /* DiTingUITests.m */; };
 		193EA9F71E4E0E14008EF309 /* mainList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 193EA9F61E4E0E14008EF309 /* mainList.plist */; };
+		193F253320B2609B00F08873 /* DITCompCustomRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 193F253120B2609A00F08873 /* DITCompCustomRefreshViewController.m */; };
+		193F253620B260D500F08873 /* DITCompCustomRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 193F253520B260D500F08873 /* DITCompCustomRefreshHeader.m */; };
+		193F253920B260E600F08873 /* DITCompCustomRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 193F253820B260E600F08873 /* DITCompCustomRefreshFooter.m */; };
+		193F254B20B550C300F08873 /* DITCompProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 193F254A20B550C300F08873 /* DITCompProgressViewController.m */; };
+		193F254E20B550D400F08873 /* DITProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 193F254D20B550D400F08873 /* DITProgressView.m */; };
 		194CDF87207A62F200294F03 /* DITRecordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CDF86207A62F200294F03 /* DITRecordButton.m */; };
 		1964F0941F72BB2B00661FC8 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 1964F0931F72BB2B00661FC8 /* NSArray+Log.m */; };
 		1964F19C1F7366B600661FC8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1964F19B1F7366B600661FC8 /* MBProgressHUD.m */; };
@@ -165,6 +170,16 @@
 		193AF8391E48C03E00F35FE4 /* DiTingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiTingUITests.m; sourceTree = "<group>"; };
 		193AF83B1E48C03E00F35FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		193EA9F61E4E0E14008EF309 /* mainList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mainList.plist; sourceTree = "<group>"; };
+		193F253120B2609A00F08873 /* DITCompCustomRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITCompCustomRefreshViewController.m; sourceTree = "<group>"; };
+		193F253220B2609A00F08873 /* DITCompCustomRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITCompCustomRefreshViewController.h; sourceTree = "<group>"; };
+		193F253420B260D500F08873 /* DITCompCustomRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITCompCustomRefreshHeader.h; sourceTree = "<group>"; };
+		193F253520B260D500F08873 /* DITCompCustomRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITCompCustomRefreshHeader.m; sourceTree = "<group>"; };
+		193F253720B260E600F08873 /* DITCompCustomRefreshFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITCompCustomRefreshFooter.h; sourceTree = "<group>"; };
+		193F253820B260E600F08873 /* DITCompCustomRefreshFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITCompCustomRefreshFooter.m; sourceTree = "<group>"; };
+		193F254920B550C300F08873 /* DITCompProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITCompProgressViewController.h; sourceTree = "<group>"; };
+		193F254A20B550C300F08873 /* DITCompProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITCompProgressViewController.m; sourceTree = "<group>"; };
+		193F254C20B550D400F08873 /* DITProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITProgressView.h; sourceTree = "<group>"; };
+		193F254D20B550D400F08873 /* DITProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITProgressView.m; sourceTree = "<group>"; };
 		194CDF85207A62F200294F03 /* DITRecordButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITRecordButton.h; sourceTree = "<group>"; };
 		194CDF86207A62F200294F03 /* DITRecordButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITRecordButton.m; sourceTree = "<group>"; };
 		1964F0901F72480D00661FC8 /* DITHttpLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITHttpLink.h; sourceTree = "<group>"; };
@@ -399,6 +414,19 @@
 				193AF83B1E48C03E00F35FE4 /* Info.plist */,
 			);
 			path = DiTingUITests;
+			sourceTree = "<group>";
+		};
+		193F253020B2609A00F08873 /* CustomRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				193F253120B2609A00F08873 /* DITCompCustomRefreshViewController.m */,
+				193F253220B2609A00F08873 /* DITCompCustomRefreshViewController.h */,
+				193F253420B260D500F08873 /* DITCompCustomRefreshHeader.h */,
+				193F253520B260D500F08873 /* DITCompCustomRefreshHeader.m */,
+				193F253720B260E600F08873 /* DITCompCustomRefreshFooter.h */,
+				193F253820B260E600F08873 /* DITCompCustomRefreshFooter.m */,
+			);
+			path = CustomRefresh;
 			sourceTree = "<group>";
 		};
 		1964F1991F7366B600661FC8 /* MBProgressHUD */ = {
@@ -744,6 +772,11 @@
 				19C18AA02068962A0014BEF4 /* Record */,
 				19C18A89206891B20014BEF4 /* LoopView */,
 				19C18A91206891B20014BEF4 /* slideView */,
+				193F253020B2609A00F08873 /* CustomRefresh */,
+				193F254920B550C300F08873 /* DITCompProgressViewController.h */,
+				193F254A20B550C300F08873 /* DITCompProgressViewController.m */,
+				193F254C20B550D400F08873 /* DITProgressView.h */,
+				193F254D20B550D400F08873 /* DITProgressView.m */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -1180,6 +1213,7 @@
 				19A2D81D1F4C815F00341A7E /* DITWeChatHomeTableViewCell.m in Sources */,
 				19F769AE1F5C48EA0050775C /* AFSecurityPolicy.m in Sources */,
 				1964F1BE1F7367EE00661FC8 /* NSObject+MJProperty.m in Sources */,
+				193F253920B260E600F08873 /* DITCompCustomRefreshFooter.m in Sources */,
 				19C18A9D206891B20014BEF4 /* DITCompSlideSelViewController.m in Sources */,
 				1964F1B61F7367EE00661FC8 /* MJExtensionConst.m in Sources */,
 				19A2D81A1F4C813700341A7E /* DITWeChatProfileViewController.m in Sources */,
@@ -1187,6 +1221,7 @@
 				19E1516220A29FB9001D6E60 /* DITUIGestureRecognizerViewController.m in Sources */,
 				19A2D8201F4C832A00341A7E /* DITWeChatHomeModel.m in Sources */,
 				1964F19C1F7366B600661FC8 /* MBProgressHUD.m in Sources */,
+				193F254E20B550D400F08873 /* DITProgressView.m in Sources */,
 				19A2D7EB1F48955A00341A7E /* ViewController.m in Sources */,
 				19272E8720075DAE00EA104F /* DITWeChatAccount.m in Sources */,
 				19A2D8171F4C813700341A7E /* DITWeChatDiscoverViewController.m in Sources */,
@@ -1210,6 +1245,7 @@
 				191F31E71F658475001D757D /* DITWeChatChatTableViewController.m in Sources */,
 				19C18AA8206899AD0014BEF4 /* DITRecordView.m in Sources */,
 				19C18AA5206898A10014BEF4 /* DITRecordViewController.m in Sources */,
+				193F253320B2609B00F08873 /* DITCompCustomRefreshViewController.m in Sources */,
 				19F769AC1F5C48EA0050775C /* AFHTTPSessionManager.m in Sources */,
 				191F31E31F623A1E001D757D /* DITWeCharContactsSearchResultController.m in Sources */,
 				1926211E1F6197CB004ECA8E /* DITWeChatContactsTableViewCell.m in Sources */,
@@ -1230,7 +1266,9 @@
 				193AF8161E48C03E00F35FE4 /* main.m in Sources */,
 				19A2D7EC1F48955A00341A7E /* AppDelegate.m in Sources */,
 				19A2D8181F4C813700341A7E /* DITWeChatHomeViewController.m in Sources */,
+				193F254B20B550C300F08873 /* DITCompProgressViewController.m in Sources */,
 				19F769AD1F5C48EA0050775C /* AFNetworkReachabilityManager.m in Sources */,
+				193F253620B260D500F08873 /* DITCompCustomRefreshHeader.m in Sources */,
 				1964F0941F72BB2B00661FC8 /* NSArray+Log.m in Sources */,
 				19F769991F5C48D90050775C /* MASViewConstraint.m in Sources */,
 				194CDF87207A62F200294F03 /* DITRecordButton.m in Sources */,
