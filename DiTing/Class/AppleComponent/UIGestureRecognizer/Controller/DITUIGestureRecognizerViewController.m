@@ -68,7 +68,8 @@
     return _dataAry;
 }
 
-
+- (void)dealloc
+{}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

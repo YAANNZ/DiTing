@@ -16,6 +16,7 @@
 @property (nonatomic, assign) NSInteger currentLenght;
 @property (nonatomic, strong) NSOutputStream *outPutStream;
 @property (nonatomic, strong) NSURLSessionDataTask *dataTask;
+@property (nonatomic, assign) BOOL isNetWorkLost;
 
 @end
 
@@ -61,6 +62,18 @@
     return _dataTask;
 }
 
+- (NSOutputStream *)outPutStreamWith:(NSURLSessionDataTask *)dataTask
+{
+    if (!self.outPutStream)
+    {
+        // 创建输出流
+        NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+        filePath = [filePath stringByAppendingPathComponent:dataTask.response.suggestedFilename];
+        self.outPutStream = [[NSOutputStream alloc] initToFileAtPath:filePath append:YES];
+    }
+    return self.outPutStream;
+}
+
 #pragma mark - NSURLSessionDataDelegate
 // 1. 接收到服务器的响应
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveResponse:(NSURLResponse *)response completionHandler:(void (^)(NSURLSessionResponseDisposition))completionHandler
@@ -68,12 +81,8 @@
     // 获取文件的总大小
     self.totalLenght = response.expectedContentLength;
     
-    // 创建输出流
-    NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    filePath = [filePath stringByAppendingPathComponent:@"zzz.pdf"];
-    self.outPutStream = [[NSOutputStream alloc] initToFileAtPath:filePath append:YES];
-    
     // 打开输出流
+    [self outPutStreamWith:dataTask];
     [self.outPutStream open];
     
     // 是否接受服务器的响应
@@ -103,11 +112,6 @@
     {
         // 相应处理
     }
-    else
-    {
-        // 清空指针
-        self.outPutStream = nil;
-    }
 }
 
 
@@ -135,19 +139,22 @@
 - (void)addNetworkReachabilityManager
 {
     AFNetworkReachabilityManager *netReachabeManager = [AFNetworkReachabilityManager sharedManager];
+    __weak __typeof(self) weakSelf = self;
     [netReachabeManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         if (status == (AFNetworkReachabilityStatusNotReachable | AFNetworkReachabilityStatusUnknown))
         {
-            if (self.dataTask.state == NSURLSessionTaskStateRunning)
+            if (weakSelf.dataTask.state == NSURLSessionTaskStateRunning)
             {
-                [self.dataTask suspend];
+                [weakSelf.dataTask suspend];
+                weakSelf.isNetWorkLost = YES;
             }
         }
         else
         {
-            if (self.dataTask.state == NSURLSessionTaskStateSuspended)
+            if (weakSelf.dataTask.state == NSURLSessionTaskStateSuspended && weakSelf.isNetWorkLost)
             {
-                [self.dataTask resume];
+                [weakSelf.dataTask resume];
+                weakSelf.isNetWorkLost = NO;
             }
         }
     }];
@@ -157,10 +164,13 @@
 // 3. 对象销毁
 - (void)dealloc
 {
+    AFNetworkReachabilityManager *netReachabeManager = [AFNetworkReachabilityManager sharedManager];
+    [netReachabeManager stopMonitoring];
+    
     if (self.dataTask.state == NSURLSessionTaskStateRunning)
     {
 //        self.currentLenght
-        // 存储进度，下次进来点击继续下载
+        // 存储进度，下次进来点击继续下载, 下载的URL拼上当前进度
     }
     
 }

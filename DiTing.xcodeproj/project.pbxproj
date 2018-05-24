@@ -935,10 +935,10 @@
 		19E1515D20A29FB9001D6E60 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				19E1515E20A29FB9001D6E60 /* DITUIGestureRecognizerExamplesViewController.h */,
-				19E1515F20A29FB9001D6E60 /* DITUIGestureRecognizerViewController.m */,
-				19E1516020A29FB9001D6E60 /* DITUIGestureRecognizerExamplesViewController.m */,
 				19E1516120A29FB9001D6E60 /* DITUIGestureRecognizerViewController.h */,
+				19E1515F20A29FB9001D6E60 /* DITUIGestureRecognizerViewController.m */,
+				19E1515E20A29FB9001D6E60 /* DITUIGestureRecognizerExamplesViewController.h */,
+				19E1516020A29FB9001D6E60 /* DITUIGestureRecognizerExamplesViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
