@@ -169,13 +169,22 @@
     
     if (self.dataTask.state == NSURLSessionTaskStateRunning)
     {
-//        self.currentLenght
         // 存储进度，下次进来点击继续下载, 下载的URL拼上当前进度
+        [[NSUserDefaults standardUserDefaults] setInteger:self.currentLenght forKey:@"currentLenghtKey"];   // 大量任务时用数据库
     }
-    
 }
 
-
+// 重新进入界面，判断是否有需要继续的下载，有就继续
+- (void)continueDownload
+{
+    NSURLSession *urlSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://127.0.0.1:8080/iOS/icon512.png"]];
+    NSString *range = [NSString stringWithFormat:@"bytes=%zd", [[NSUserDefaults standardUserDefaults] integerForKey:@"currentLenghtKey"]];
+    [request setValue:range forHTTPHeaderField:@"Range"];
+    NSURLSessionDataTask *dataTask = [urlSession dataTaskWithRequest:request];
+    
+    [dataTask resume];
+}
 
 
 
