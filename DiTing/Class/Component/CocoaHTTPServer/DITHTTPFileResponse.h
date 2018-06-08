@@ -10,4 +10,6 @@
 
 @interface DITHTTPFileResponse : HTTPFileResponse
 
+@property (nonatomic, copy) NSString *filename;
+
 @end

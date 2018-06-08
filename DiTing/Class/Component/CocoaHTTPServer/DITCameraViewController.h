@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^DITCameraVCBlock) (NSMutableArray *imgDetailAry);
+
 @interface DITCameraViewController : UIViewController
+
+@property (nonatomic, copy) DITCameraVCBlock updateIndexBlock;
 
 @end

@@ -53,4 +53,9 @@ hud.label.text = Text;\
 // 比例高
 #define SCALE_HEIGHT(h) h/667.0*MAINSCREEN_HEIGHT
 
+/* CocoaHttpServer */
+#define ImageDirPath [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:@"ImageDir"]
+
+#define ImagesPlistPath [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:@"imagesDetail.plist"]
+
 

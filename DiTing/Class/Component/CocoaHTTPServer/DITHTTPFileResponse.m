@@ -12,10 +12,11 @@
 
 - (NSDictionary *)httpHeaders
 {
-    return @{
-             @"Content-Type": @"application/octet-stream",
-             @"Content-Disposition": @"attachment"
-             };
+    NSMutableDictionary *headersDict = [NSMutableDictionary dictionary];
+    [headersDict setValue:@"application/octet-stream" forKey:@"Content-Type"];
+    [headersDict setValue:[NSString stringWithFormat:@"attachment; filename=%@", self.filename] forKey:@"Content-Disposition"];
+    
+    return headersDict;
 }
 
 @end

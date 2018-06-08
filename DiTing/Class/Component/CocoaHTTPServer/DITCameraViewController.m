@@ -75,39 +75,18 @@
     [self.view.layer addSublayer:self.previewLayer];
 }
 
-- (void)addSubViews
+- (void)viewWillAppear:(BOOL)animated
 {
-    UIButton *tapBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [tapBtn setTitle:@"Tap" forState:UIControlStateNormal];
-    [tapBtn addTarget:self action:@selector(tapBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
-    tapBtn.layer.cornerRadius = 20;
-    tapBtn.layer.borderColor = [UIColor blackColor].CGColor;
-    tapBtn.layer.borderWidth = 1.0;
-    [self.view addSubview:tapBtn];
-    [tapBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(@0);
-        make.bottom.equalTo(@-150);
-        make.width.equalTo(@80);
-        make.height.equalTo(@40);
-    }];
+    [super viewWillAppear:animated];
+    
+    [self.captureSession startRunning]; // startRunning
 }
 
-- (void)tapBtnClicked:(UIButton *)tapBtn
+- (void)viewDidDisappear:(BOOL)animated
 {
-    AVCaptureConnection *stillImageConnection = [self.stillImgOutput        connectionWithMediaType:AVMediaTypeVideo];
-    UIDeviceOrientation curDeviceOrientation = [[UIDevice currentDevice] orientation];
-    AVCaptureVideoOrientation avcaptureOrientation = [self avOrientationForDeviceOrientation:curDeviceOrientation];
-    [stillImageConnection setVideoOrientation:avcaptureOrientation];
-    [stillImageConnection setVideoScaleAndCropFactor:1];
+    [super viewDidDisappear:animated];
     
-    [self.stillImgOutput captureStillImageAsynchronouslyFromConnection:stillImageConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
-        
-        NSData *jpegData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
-//        self.jpegData = jpegData;
-//        self.imgDate = [NSDate date];
-        
-        
-    }];
+    [self.captureSession stopRunning]; // stopRunning
 }
 
 - (AVCaptureVideoOrientation)avOrientationForDeviceOrientation:(UIDeviceOrientation)deviceOrientation
@@ -119,6 +98,115 @@
         result = AVCaptureVideoOrientationLandscapeLeft;
     return result;
 }
+
+#pragma mark - subviews
+- (void)addSubViews
+{
+    UIButton *tapBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [tapBtn setTitle:@"Tap" forState:UIControlStateNormal];
+    [tapBtn addTarget:self action:@selector(tapBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    tapBtn.layer.cornerRadius = 20;
+    tapBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+    tapBtn.layer.borderWidth = 1.0;
+    [self.view addSubview:tapBtn];
+    [tapBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(@0);
+        make.bottom.equalTo(@-150);
+        make.width.equalTo(@80);
+        make.height.equalTo(@40);
+    }];
+    
+    UIButton *dismissBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [dismissBtn setTitle:@"Dismiss" forState:UIControlStateNormal];
+    [dismissBtn addTarget:self action:@selector(dismissBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    dismissBtn.layer.cornerRadius = 20;
+    dismissBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+    dismissBtn.layer.borderWidth = 1.0;
+    [self.view addSubview:dismissBtn];
+    [dismissBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(@0);
+        make.bottom.equalTo(@-70);
+        make.width.equalTo(@120);
+        make.height.equalTo(@40);
+    }];
+}
+
+- (void)dismissBtnClicked:(UIButton *)dismissBtn
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - Capture
+- (void)tapBtnClicked:(UIButton *)tapBtn
+{
+    AVCaptureConnection *stillImageConnection = [self.stillImgOutput        connectionWithMediaType:AVMediaTypeVideo];
+    UIDeviceOrientation curDeviceOrientation = [[UIDevice currentDevice] orientation];
+    AVCaptureVideoOrientation avcaptureOrientation = [self avOrientationForDeviceOrientation:curDeviceOrientation];
+    [stillImageConnection setVideoOrientation:avcaptureOrientation];
+    [stillImageConnection setVideoScaleAndCropFactor:1];
+    
+    __weak typeof(self) weakself = self;
+    [self.stillImgOutput captureStillImageAsynchronouslyFromConnection:stillImageConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
+        
+        NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
+
+        [weakself.captureSession stopRunning];
+        
+        // 存储进Caches
+        [weakself saveImageData:imageData];
+    }];
+}
+
+- (void)saveImageData:(NSData *)imageData
+{
+    BOOL isDirectory = NO;
+    if (![[NSFileManager defaultManager] fileExistsAtPath:ImageDirPath isDirectory:&isDirectory])
+    {
+        NSError *error;
+        [[NSFileManager defaultManager] createDirectoryAtPath:ImageDirPath withIntermediateDirectories:YES attributes:nil error:&error];
+    }
+    
+    NSString *imagePath = [ImageDirPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png", [self getTimeString]]];
+    [imageData writeToFile:imagePath atomically:YES];
+    
+    // 记录进 plist
+    [self saveImageDetailToPlist:imagePath];
+}
+
+- (NSString *)getTimeString
+{
+    NSDateFormatter  *dateformatter = [[NSDateFormatter alloc] init];
+    [dateformatter setDateFormat:@"YYYYMMddHHmmssSSS"];
+    
+    return [dateformatter stringFromDate:[NSDate dateWithTimeIntervalSinceNow:0]];
+}
+
+- (void)saveImageDetailToPlist:(NSString *)imagePath
+{
+    NSString *filename = [[imagePath componentsSeparatedByString:@"/"] lastObject];
+    
+    NSMutableArray *imgDetailAry = [NSMutableArray arrayWithContentsOfFile:ImagesPlistPath];
+    if (!imgDetailAry)
+    {
+        NSMutableDictionary *imgDetailDict = [NSMutableDictionary dictionaryWithObjectsAndKeys:filename, @"filename", imagePath, @"imagePath", nil];
+        imgDetailAry = [NSMutableArray arrayWithObject:imgDetailDict];
+        [imgDetailAry writeToFile:ImagesPlistPath atomically:YES];
+    }
+    else
+    {
+        NSMutableDictionary *imgDetailDict = [NSMutableDictionary dictionaryWithObjectsAndKeys:filename, @"filename", imagePath, @"imagePath", nil];
+        [imgDetailAry addObject:imgDetailDict];
+        [imgDetailAry writeToFile:ImagesPlistPath atomically:YES];
+    }
+    
+    ShowMBProgressHUDText(@"照片已存储")
+    [self.captureSession startRunning];
+    
+    self.updateIndexBlock(imgDetailAry);
+}
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
