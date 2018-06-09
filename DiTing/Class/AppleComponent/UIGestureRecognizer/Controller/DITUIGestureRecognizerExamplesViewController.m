@@ -8,7 +8,7 @@
 
 #import "DITUIGestureRecognizerExamplesViewController.h"
 
-@interface DITUIGestureRecognizerExamplesViewController ()
+@interface DITUIGestureRecognizerExamplesViewController () <UIGestureRecognizerDelegate>
 
 @property (nonatomic, weak) UILabel *tapLabel;
 @property (nonatomic, weak) UILabel *detailLabel;
@@ -137,8 +137,9 @@
     self.detailLabel.text = @"指数大于等于2根\n小于等于3根";
     
     UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesture:)];
-    panGesture.minimumNumberOfTouches = 2;
+//    panGesture.minimumNumberOfTouches = 2;
     panGesture.maximumNumberOfTouches = 3;
+    panGesture.delegate = self;
     [self.tapLabel addGestureRecognizer:panGesture];
 }
 
@@ -159,6 +160,23 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.tapLabel.text = nil;
     });
+}
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    CGPoint point = [(UIPanGestureRecognizer *)gestureRecognizer translationInView:self.view];
+    CGPoint points = [(UIPanGestureRecognizer *)gestureRecognizer locationInView:self.view];
+    NSLog(@"%@", NSStringFromCGPoint(point));
+    NSLog(@"%@", NSStringFromCGPoint(points));
+//    [self.tapLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+//
+//    }]
+//    if (<#condition#>)
+//    {
+//        return YES;
+//    }
+    
+    return NO;
 }
 
 #pragma mark - 捏合（缩放）
