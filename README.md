@@ -1,6 +1,6 @@
 # DiTing
 
-> 收集精品demo研读仿写。
+#### 基础UI库
+#### 原生组件使用分析
 
-> 已收集内容如下：
-> `仿微信demo：` [GSD_WeiXin](https://github.com/gsdios/GSD_WeiXin)
+
