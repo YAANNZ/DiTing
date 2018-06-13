@@ -108,6 +108,12 @@
 				<key>targetVc</key>
 				<string>DITUIGestureRecognizerViewController</string>
 			</dict>
+            <dict>
+                <key>title</key>
+                <string>runtime</string>
+                <key>targetVc</key>
+                <string>DITRuntimeViewController</string>
+            </dict>
 		</array>
 	</dict>
 	<dict>
