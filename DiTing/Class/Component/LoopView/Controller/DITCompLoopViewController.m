@@ -29,20 +29,20 @@
     [self.view addSubview:loopScrollView];
 
     
-    
+    // collectionView 是为了给同事测试UI问题
     UICollectionViewFlowLayout *cvLayout = [UICollectionViewFlowLayout new];
     cvLayout.itemSize = CGSizeMake(MAINSCREEN_WIDTH, 60);
     cvLayout.minimumInteritemSpacing = 0;
     cvLayout.minimumLineSpacing = 0;
     cvLayout.headerReferenceSize = CGSizeMake(MAINSCREEN_WIDTH, 40);
     
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, NAV_HEIGHT+210, MAINSCREEN_WIDTH, MAINSCREEN_HEIGHT) collectionViewLayout:cvLayout];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, NAV_HEIGHT+210, MAINSCREEN_WIDTH, MAINSCREEN_HEIGHT-(NAV_HEIGHT+210)) collectionViewLayout:cvLayout];
     self.collectionView.backgroundColor = [UIColor lightGrayColor];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"collectionViewCell"];
     [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"collectionViewHeader"];
-    [self.view addSubview:self.collectionView];
+//    [self.view addSubview:self.collectionView];
     
 }
 

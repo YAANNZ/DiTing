@@ -10,4 +10,6 @@
 
 @interface NSObject (DITKeyValues)
 
++ (instancetype)modelWithKeyValues:(NSDictionary *)dict;
+
 @end

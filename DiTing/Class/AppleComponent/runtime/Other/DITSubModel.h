@@ -10,4 +10,6 @@
 
 @interface DITSubModel : NSObject
 
+@property (nonatomic, copy) NSString *testSubName;
+
 @end

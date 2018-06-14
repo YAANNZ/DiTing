@@ -89,10 +89,12 @@
 		19BDCFEE20C7F3B500C9117D /* DITHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BDCFED20C7F3B500C9117D /* DITHTTPConnection.m */; };
 		19BDCFF120C7F40600C9117D /* DITHTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BDCFF020C7F40600C9117D /* DITHTTPFileResponse.m */; };
 		19BDD03420C82D6900C9117D /* web in Resources */ = {isa = PBXBuildFile; fileRef = 19BDD03320C82D6900C9117D /* web */; };
-		19BDD04D20D0B6E600C9117D /* DITRuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BDD04C20D0B6E500C9117D /* DITRuntimeViewController.m */; };
-		19BDD05020D0B70A00C9117D /* UIImage+DITImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BDD04F20D0B70A00C9117D /* UIImage+DITImage.m */; };
-		19BDD05920D1522900C9117D /* DITForwardingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BDD05820D1522900C9117D /* DITForwardingTest.m */; };
-		19BDD05F20D2099E00C9117D /* UITextView+DITPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BDD05E20D2099E00C9117D /* UITextView+DITPlaceholder.m */; };
+		19BDD07220D25A9A00C9117D /* DITForwardingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BDD06620D25A9900C9117D /* DITForwardingTest.m */; };
+		19BDD07320D25A9A00C9117D /* DITRuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BDD06A20D25A9A00C9117D /* DITRuntimeViewController.m */; };
+		19BDD07420D25A9A00C9117D /* NSObject+DITKeyValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BDD06D20D25A9A00C9117D /* NSObject+DITKeyValues.m */; };
+		19BDD07520D25A9A00C9117D /* UITextView+DITPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BDD06E20D25A9A00C9117D /* UITextView+DITPlaceholder.m */; };
+		19BDD07620D25A9A00C9117D /* UIImage+DITImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BDD06F20D25A9A00C9117D /* UIImage+DITImage.m */; };
+		19BDD07A20D2761600C9117D /* DITSubModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BDD07920D2761600C9117D /* DITSubModel.m */; };
 		19C18A9B206891B20014BEF4 /* DITCompLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A8C206891B20014BEF4 /* DITCompLoopViewController.m */; };
 		19C18A9C206891B20014BEF4 /* DITLoopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A90206891B20014BEF4 /* DITLoopScrollView.m */; };
 		19C18A9D206891B20014BEF4 /* DITCompSlideSelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A93206891B20014BEF4 /* DITCompSlideSelViewController.m */; };
@@ -334,14 +336,18 @@
 		19BDCFEF20C7F40600C9117D /* DITHTTPFileResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITHTTPFileResponse.h; sourceTree = "<group>"; };
 		19BDCFF020C7F40600C9117D /* DITHTTPFileResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITHTTPFileResponse.m; sourceTree = "<group>"; };
 		19BDD03320C82D6900C9117D /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = web; sourceTree = "<group>"; };
-		19BDD04B20D0B6E500C9117D /* DITRuntimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITRuntimeViewController.h; sourceTree = "<group>"; };
-		19BDD04C20D0B6E500C9117D /* DITRuntimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITRuntimeViewController.m; sourceTree = "<group>"; };
-		19BDD04E20D0B70A00C9117D /* UIImage+DITImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+DITImage.h"; sourceTree = "<group>"; };
-		19BDD04F20D0B70A00C9117D /* UIImage+DITImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DITImage.m"; sourceTree = "<group>"; };
-		19BDD05720D1522900C9117D /* DITForwardingTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITForwardingTest.h; sourceTree = "<group>"; };
-		19BDD05820D1522900C9117D /* DITForwardingTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITForwardingTest.m; sourceTree = "<group>"; };
-		19BDD05D20D2099E00C9117D /* UITextView+DITPlaceholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+DITPlaceholder.h"; sourceTree = "<group>"; };
-		19BDD05E20D2099E00C9117D /* UITextView+DITPlaceholder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+DITPlaceholder.m"; sourceTree = "<group>"; };
+		19BDD06620D25A9900C9117D /* DITForwardingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITForwardingTest.m; sourceTree = "<group>"; };
+		19BDD06720D25A9900C9117D /* DITForwardingTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITForwardingTest.h; sourceTree = "<group>"; };
+		19BDD06920D25A9A00C9117D /* DITRuntimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITRuntimeViewController.h; sourceTree = "<group>"; };
+		19BDD06A20D25A9A00C9117D /* DITRuntimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITRuntimeViewController.m; sourceTree = "<group>"; };
+		19BDD06C20D25A9A00C9117D /* UIImage+DITImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DITImage.h"; sourceTree = "<group>"; };
+		19BDD06D20D25A9A00C9117D /* NSObject+DITKeyValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DITKeyValues.m"; sourceTree = "<group>"; };
+		19BDD06E20D25A9A00C9117D /* UITextView+DITPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+DITPlaceholder.m"; sourceTree = "<group>"; };
+		19BDD06F20D25A9A00C9117D /* UIImage+DITImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DITImage.m"; sourceTree = "<group>"; };
+		19BDD07020D25A9A00C9117D /* NSObject+DITKeyValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DITKeyValues.h"; sourceTree = "<group>"; };
+		19BDD07120D25A9A00C9117D /* UITextView+DITPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+DITPlaceholder.h"; sourceTree = "<group>"; };
+		19BDD07820D2761600C9117D /* DITSubModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITSubModel.h; sourceTree = "<group>"; };
+		19BDD07920D2761600C9117D /* DITSubModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITSubModel.m; sourceTree = "<group>"; };
 		19C18A8B206891B20014BEF4 /* DITCompLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITCompLoopViewController.h; sourceTree = "<group>"; };
 		19C18A8C206891B20014BEF4 /* DITCompLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITCompLoopViewController.m; sourceTree = "<group>"; };
 		19C18A8F206891B20014BEF4 /* DITLoopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITLoopScrollView.h; sourceTree = "<group>"; };
@@ -514,8 +520,8 @@
 		193F253020B2609A00F08873 /* CustomRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				193F253120B2609A00F08873 /* DITCompCustomRefreshViewController.m */,
 				193F253220B2609A00F08873 /* DITCompCustomRefreshViewController.h */,
+				193F253120B2609A00F08873 /* DITCompCustomRefreshViewController.m */,
 				193F253420B260D500F08873 /* DITCompCustomRefreshHeader.h */,
 				193F253520B260D500F08873 /* DITCompCustomRefreshHeader.m */,
 				193F253720B260E600F08873 /* DITCompCustomRefreshFooter.h */,
@@ -981,16 +987,44 @@
 		19BDD04A20D0B6E500C9117D /* runtime */ = {
 			isa = PBXGroup;
 			children = (
-				19BDD04B20D0B6E500C9117D /* DITRuntimeViewController.h */,
-				19BDD04C20D0B6E500C9117D /* DITRuntimeViewController.m */,
-				19BDD04E20D0B70A00C9117D /* UIImage+DITImage.h */,
-				19BDD04F20D0B70A00C9117D /* UIImage+DITImage.m */,
-				19BDD05720D1522900C9117D /* DITForwardingTest.h */,
-				19BDD05820D1522900C9117D /* DITForwardingTest.m */,
-				19BDD05D20D2099E00C9117D /* UITextView+DITPlaceholder.h */,
-				19BDD05E20D2099E00C9117D /* UITextView+DITPlaceholder.m */,
+				19BDD06B20D25A9A00C9117D /* Category */,
+				19BDD06820D25A9A00C9117D /* Controller */,
+				19BDD06520D25A9900C9117D /* Other */,
 			);
 			path = runtime;
+			sourceTree = "<group>";
+		};
+		19BDD06520D25A9900C9117D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				19BDD06720D25A9900C9117D /* DITForwardingTest.h */,
+				19BDD06620D25A9900C9117D /* DITForwardingTest.m */,
+				19BDD07820D2761600C9117D /* DITSubModel.h */,
+				19BDD07920D2761600C9117D /* DITSubModel.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		19BDD06820D25A9A00C9117D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19BDD06920D25A9A00C9117D /* DITRuntimeViewController.h */,
+				19BDD06A20D25A9A00C9117D /* DITRuntimeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		19BDD06B20D25A9A00C9117D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				19BDD06C20D25A9A00C9117D /* UIImage+DITImage.h */,
+				19BDD06F20D25A9A00C9117D /* UIImage+DITImage.m */,
+				19BDD07020D25A9A00C9117D /* NSObject+DITKeyValues.h */,
+				19BDD06D20D25A9A00C9117D /* NSObject+DITKeyValues.m */,
+				19BDD07120D25A9A00C9117D /* UITextView+DITPlaceholder.h */,
+				19BDD06E20D25A9A00C9117D /* UITextView+DITPlaceholder.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		19C18A592046F7EB0014BEF4 /* Component */ = {
@@ -1439,7 +1473,6 @@
 			files = (
 				19B3CC021FE2813600598D6C /* DITWeChatContactsSearchController.m in Sources */,
 				19BDCFDB20C7F03800C9117D /* DDNumber.m in Sources */,
-				19BDD05920D1522900C9117D /* DITForwardingTest.m in Sources */,
 				1964F1D91F73BD8300661FC8 /* DITDataBaseManager.m in Sources */,
 				19BDCFDD20C7F03800C9117D /* DDRange.m in Sources */,
 				19F7699C1F5C48D90050775C /* View+MASAdditions.m in Sources */,
@@ -1452,8 +1485,8 @@
 				19BDCFDA20C7F03800C9117D /* HTTPAuthenticationRequest.m in Sources */,
 				1964F1B61F7367EE00661FC8 /* MJExtensionConst.m in Sources */,
 				19A2D81A1F4C813700341A7E /* DITWeChatProfileViewController.m in Sources */,
-				19BDD05F20D2099E00C9117D /* UITextView+DITPlaceholder.m in Sources */,
 				19BDCFE420C7F03800C9117D /* DDAbstractDatabaseLogger.m in Sources */,
+				19BDD07520D25A9A00C9117D /* UITextView+DITPlaceholder.m in Sources */,
 				19C18A9E206891B20014BEF4 /* DITCompSideSelModel.m in Sources */,
 				19E1516220A29FB9001D6E60 /* DITUIGestureRecognizerViewController.m in Sources */,
 				19A2D8201F4C832A00341A7E /* DITWeChatHomeModel.m in Sources */,
@@ -1470,7 +1503,6 @@
 				19BDCFD720C7F03800C9117D /* HTTPMessage.m in Sources */,
 				19BDCFE220C7F03800C9117D /* DispatchQueueLogFormatter.m in Sources */,
 				1964F1BA1F7367EE00661FC8 /* MJPropertyType.m in Sources */,
-				19BDD05020D0B70A00C9117D /* UIImage+DITImage.m in Sources */,
 				1964F1BB1F7367EE00661FC8 /* NSObject+MJClass.m in Sources */,
 				19272E762006013500EA104F /* UIView+Extension.m in Sources */,
 				19BDCFDE20C7F03800C9117D /* HTTPServer.m in Sources */,
@@ -1503,9 +1535,11 @@
 				19F769AF1F5C48EA0050775C /* AFURLRequestSerialization.m in Sources */,
 				19C18A9F206891B20014BEF4 /* DITCompSlideSelTableViewCell.m in Sources */,
 				19BDCFDC20C7F03800C9117D /* DDData.m in Sources */,
-				19BDD04D20D0B6E600C9117D /* DITRuntimeViewController.m in Sources */,
 				19E1516320A29FB9001D6E60 /* DITUIGestureRecognizerExamplesViewController.m in Sources */,
+				19BDD07620D25A9A00C9117D /* UIImage+DITImage.m in Sources */,
+				19BDD07320D25A9A00C9117D /* DITRuntimeViewController.m in Sources */,
 				19BDCFD620C7F03800C9117D /* HTTPRedirectResponse.m in Sources */,
+				19BDD07A20D2761600C9117D /* DITSubModel.m in Sources */,
 				19BDCFEB20C7F2B100C9117D /* DITCameraViewController.m in Sources */,
 				19C18A9C206891B20014BEF4 /* DITLoopScrollView.m in Sources */,
 				19F7699B1F5C48D90050775C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -1519,10 +1553,12 @@
 				19BDCFE020C7F03800C9117D /* DDASLLogger.m in Sources */,
 				19F7699A1F5C48D90050775C /* NSArray+MASAdditions.m in Sources */,
 				19BDCFD020C7F03800C9117D /* GCDAsyncSocket.m in Sources */,
+				19BDD07420D25A9A00C9117D /* NSObject+DITKeyValues.m in Sources */,
 				193AF8161E48C03E00F35FE4 /* main.m in Sources */,
 				19A2D7EC1F48955A00341A7E /* AppDelegate.m in Sources */,
 				19A2D8181F4C813700341A7E /* DITWeChatHomeViewController.m in Sources */,
 				193F254B20B550C300F08873 /* DITCompProgressViewController.m in Sources */,
+				19BDD07220D25A9A00C9117D /* DITForwardingTest.m in Sources */,
 				19BDCFD820C7F03800C9117D /* HTTPConnection.m in Sources */,
 				19F769AD1F5C48EA0050775C /* AFNetworkReachabilityManager.m in Sources */,
 				193F253620B260D500F08873 /* DITCompCustomRefreshHeader.m in Sources */,

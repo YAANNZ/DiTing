@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DITSubModel.h"
+
 
 @interface DITForwardingTest : NSObject
+
+@property (nonatomic, copy) NSString *testName;
+@property (nonatomic, strong) DITSubModel *subModel;
 
 @end

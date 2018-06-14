@@ -9,6 +9,7 @@
 #import "DITRuntimeViewController.h"
 #import "DITForwardingTest.h"
 #import "UITextView+DITPlaceholder.h"
+#import "NSObject+DITKeyValues.h"
 
 @interface DITRuntimeViewController ()
 
@@ -36,6 +37,9 @@
     
     // 5. 动态添加属性
     [self testDynamicProperty];
+    
+    // 6. 字典转模型
+    [self testModelWithDict];
 }
 
 #pragma mark - 方法交换
@@ -137,6 +141,15 @@ void justTestMethod(id self, SEL _cmd, id str) {
 }
 
 
+#pragma mark - 字典转模型
+- (void)testModelWithDict
+{
+    DITForwardingTest *forwardingTestModel = [DITForwardingTest modelWithKeyValues:@{
+                                            @"testName": @"testName123",
+                                            @"subModel": @{@"testSubName": @"testSubName123"}
+                                            }];
+    NSLog(@"%@", forwardingTestModel.mj_keyValues);
+}
 
 
 
