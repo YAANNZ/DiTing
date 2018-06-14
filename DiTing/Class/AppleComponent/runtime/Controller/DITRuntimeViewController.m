@@ -49,6 +49,37 @@
     NSLog(@"%@", testImage);
 }
 
++ (void)load
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        SEL originalSelector = @selector(viewDidLoad);
+        SEL swizzledSelector = @selector(testviewDidLoad);
+        
+        Method originalMethod = class_getInstanceMethod(class,originalSelector);
+        Method swizzledMethod = class_getInstanceMethod(class,swizzledSelector);
+        
+        //judge the method named  swizzledMethod is already existed.
+        BOOL didAddMethod = class_addMethod(class, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+        // if swizzledMethod is already existed.
+        if (didAddMethod)
+        {
+            class_replaceMethod(class, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+        }
+        else
+        {
+            method_exchangeImplementations(originalMethod, swizzledMethod);
+        }
+    });
+}
+
+- (void)testviewDidLoad
+{
+    NSLog(@"替换的方法");
+    
+    [self testviewDidLoad];
+}
 
 #pragma mark - 动态添加方法
 - (void)testDynamicMethod
