@@ -92,6 +92,7 @@
 		19BDD04D20D0B6E600C9117D /* DITRuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BDD04C20D0B6E500C9117D /* DITRuntimeViewController.m */; };
 		19BDD05020D0B70A00C9117D /* UIImage+DITImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BDD04F20D0B70A00C9117D /* UIImage+DITImage.m */; };
 		19BDD05920D1522900C9117D /* DITForwardingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BDD05820D1522900C9117D /* DITForwardingTest.m */; };
+		19BDD05F20D2099E00C9117D /* UITextView+DITPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BDD05E20D2099E00C9117D /* UITextView+DITPlaceholder.m */; };
 		19C18A9B206891B20014BEF4 /* DITCompLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A8C206891B20014BEF4 /* DITCompLoopViewController.m */; };
 		19C18A9C206891B20014BEF4 /* DITLoopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A90206891B20014BEF4 /* DITLoopScrollView.m */; };
 		19C18A9D206891B20014BEF4 /* DITCompSlideSelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C18A93206891B20014BEF4 /* DITCompSlideSelViewController.m */; };
@@ -339,6 +340,8 @@
 		19BDD04F20D0B70A00C9117D /* UIImage+DITImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DITImage.m"; sourceTree = "<group>"; };
 		19BDD05720D1522900C9117D /* DITForwardingTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITForwardingTest.h; sourceTree = "<group>"; };
 		19BDD05820D1522900C9117D /* DITForwardingTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITForwardingTest.m; sourceTree = "<group>"; };
+		19BDD05D20D2099E00C9117D /* UITextView+DITPlaceholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+DITPlaceholder.h"; sourceTree = "<group>"; };
+		19BDD05E20D2099E00C9117D /* UITextView+DITPlaceholder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+DITPlaceholder.m"; sourceTree = "<group>"; };
 		19C18A8B206891B20014BEF4 /* DITCompLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITCompLoopViewController.h; sourceTree = "<group>"; };
 		19C18A8C206891B20014BEF4 /* DITCompLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITCompLoopViewController.m; sourceTree = "<group>"; };
 		19C18A8F206891B20014BEF4 /* DITLoopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITLoopScrollView.h; sourceTree = "<group>"; };
@@ -984,6 +987,8 @@
 				19BDD04F20D0B70A00C9117D /* UIImage+DITImage.m */,
 				19BDD05720D1522900C9117D /* DITForwardingTest.h */,
 				19BDD05820D1522900C9117D /* DITForwardingTest.m */,
+				19BDD05D20D2099E00C9117D /* UITextView+DITPlaceholder.h */,
+				19BDD05E20D2099E00C9117D /* UITextView+DITPlaceholder.m */,
 			);
 			path = runtime;
 			sourceTree = "<group>";
@@ -1447,6 +1452,7 @@
 				19BDCFDA20C7F03800C9117D /* HTTPAuthenticationRequest.m in Sources */,
 				1964F1B61F7367EE00661FC8 /* MJExtensionConst.m in Sources */,
 				19A2D81A1F4C813700341A7E /* DITWeChatProfileViewController.m in Sources */,
+				19BDD05F20D2099E00C9117D /* UITextView+DITPlaceholder.m in Sources */,
 				19BDCFE420C7F03800C9117D /* DDAbstractDatabaseLogger.m in Sources */,
 				19C18A9E206891B20014BEF4 /* DITCompSideSelModel.m in Sources */,
 				19E1516220A29FB9001D6E60 /* DITUIGestureRecognizerViewController.m in Sources */,

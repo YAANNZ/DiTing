@@ -15,4 +15,9 @@
     NSLog(@"备用接收者收到justTestForwarding:消息转发，参数：%@", testStr);
 }
 
+- (void)justTestMethodSignature:(NSString *)testStr
+{
+    NSLog(@"收到justTestMethodSignature: 完整消息转发，参数：%@", testStr);
+}
+
 @end

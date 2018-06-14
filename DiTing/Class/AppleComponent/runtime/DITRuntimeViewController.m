@@ -8,6 +8,7 @@
 
 #import "DITRuntimeViewController.h"
 #import "DITForwardingTest.h"
+#import "UITextView+DITPlaceholder.h"
 
 @interface DITRuntimeViewController ()
 
@@ -24,7 +25,7 @@
     // 1. 方法交换
     [self testMethod_exchangeImplementations];
     
-    // 2. 动态添加方法
+    // 2. 动态添加方法(动态方法解析)
     [self testDynamicMethod];
     
     // 3. 备用接受者
@@ -32,6 +33,9 @@
     
     // 4. 完整消息转发
     [self testMethodSignature];
+    
+    // 5. 动态添加属性
+    [self testDynamicProperty];
 }
 
 #pragma mark - 方法交换
@@ -84,7 +88,33 @@ void justTestMethod(id self, SEL _cmd, id str) {
 #pragma mark - 完整消息转发
 - (void)testMethodSignature
 {
+    [self performSelector:@selector(justTestMethodSignature:) withObject:@"testMethodSignatureStr"];
+}
+
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector
+{
+    if (aSelector == @selector(justTestMethodSignature:))
+    {
+        return [NSMethodSignature signatureWithObjCTypes:"v@:"];
+    }
     
+    return [super methodSignatureForSelector:aSelector];
+}
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation
+{
+    SEL sel = anInvocation.selector;
+    DITForwardingTest *methodSignatureTest = [[DITForwardingTest alloc] init];
+    
+    if ([methodSignatureTest respondsToSelector:sel])
+    {
+        [anInvocation invokeWithTarget:methodSignatureTest];
+    }
+    else
+    {
+        [anInvocation doesNotRecognizeSelector:sel];
+//        [super forwardInvocation:anInvocation];
+    }
 }
 
 //- (void)forwardInvocation:(NSInvocation *)anInvocation
@@ -92,6 +122,21 @@ void justTestMethod(id self, SEL _cmd, id str) {
 //- (id)forwardingTargetForSelector:(SEL)aSelector
 //+ (BOOL)resolveClassMethod:(SEL)sel
 //+(BOOL)resolveInstanceMethod:(SEL)sel
+
+
+
+#pragma mark - 动态添加属性
+- (void)testDynamicProperty
+{
+    UITextView *testTextView = [[UITextView alloc] initWithFrame:CGRectMake(10, 100, MAINSCREEN_WIDTH-20, 200)];
+    testTextView.layer.borderWidth = 1.0;
+    testTextView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    testTextView.font = [UIFont systemFontOfSize:15];
+    testTextView.placeholder = @"I'm a placeholder!";
+    [self.view addSubview:testTextView];
+}
+
+
 
 
 
