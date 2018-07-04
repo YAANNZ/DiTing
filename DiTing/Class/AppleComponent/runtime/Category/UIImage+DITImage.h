@@ -10,6 +10,6 @@
 
 @interface UIImage (DITImage)
 
-+ (nullable UIImage *)ditImangeNamed:(NSString *)name;
++ (nullable UIImage *)ditImangeNamed:(nullable NSString *)name;
 
 @end
