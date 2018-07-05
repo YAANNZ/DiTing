@@ -52,6 +52,8 @@
 		198BD6422033138900FEA818 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198BD6402033138900FEA818 /* MainInterface.storyboard */; };
 		198BD6462033138900FEA818 /* DITSiriExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 198BD6382033138900FEA818 /* DITSiriExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		198BD6492033138900FEA818 /* DITSiriExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 198BD62E2033138900FEA818 /* DITSiriExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		19911C3320EDC097007C24F4 /* DITTextfieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19911C3120EDC097007C24F4 /* DITTextfieldViewController.m */; };
+		19911C3620EDF045007C24F4 /* UITextField+DITAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 19911C3520EDF045007C24F4 /* UITextField+DITAddtion.m */; };
 		19A2D7EB1F48955A00341A7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7DB1F48955A00341A7E /* ViewController.m */; };
 		19A2D7EC1F48955A00341A7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7DE1F48955A00341A7E /* AppDelegate.m */; };
 		19A2D8161F4C813700341A7E /* DITWeChatContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2D7FB1F4C813700341A7E /* DITWeChatContactsViewController.m */; };
@@ -259,6 +261,10 @@
 		198BD6412033138900FEA818 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		198BD6432033138900FEA818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		198BD6512034723E00FEA818 /* DiTing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DiTing.entitlements; sourceTree = "<group>"; };
+		19911C3120EDC097007C24F4 /* DITTextfieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITTextfieldViewController.m; sourceTree = "<group>"; };
+		19911C3220EDC097007C24F4 /* DITTextfieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITTextfieldViewController.h; sourceTree = "<group>"; };
+		19911C3420EDF045007C24F4 /* UITextField+DITAddtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+DITAddtion.h"; sourceTree = "<group>"; };
+		19911C3520EDF045007C24F4 /* UITextField+DITAddtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DITAddtion.m"; sourceTree = "<group>"; };
 		19A2D7CA1F45EDD200341A7E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		19A2D7DA1F48955A00341A7E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		19A2D7DB1F48955A00341A7E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -605,6 +611,17 @@
 				198BD6432033138900FEA818 /* Info.plist */,
 			);
 			path = DITSiriExtensionUI;
+			sourceTree = "<group>";
+		};
+		19911C3020EDC097007C24F4 /* DITTextField */ = {
+			isa = PBXGroup;
+			children = (
+				19911C3220EDC097007C24F4 /* DITTextfieldViewController.h */,
+				19911C3120EDC097007C24F4 /* DITTextfieldViewController.m */,
+				19911C3420EDF045007C24F4 /* UITextField+DITAddtion.h */,
+				19911C3520EDF045007C24F4 /* UITextField+DITAddtion.m */,
+			);
+			path = DITTextField;
 			sourceTree = "<group>";
 		};
 		19A2D7D71F48955A00341A7E /* Class */ = {
@@ -1030,6 +1047,7 @@
 		19C18A592046F7EB0014BEF4 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				19911C3020EDC097007C24F4 /* DITTextField */,
 				19BDCF9A20C7E53800C9117D /* CocoaHTTPServer */,
 				19C18AA02068962A0014BEF4 /* Record */,
 				19C18A89206891B20014BEF4 /* LoopView */,
@@ -1494,6 +1512,7 @@
 				193F254E20B550D400F08873 /* DITProgressView.m in Sources */,
 				19A2D7EB1F48955A00341A7E /* ViewController.m in Sources */,
 				19BDCFD920C7F03800C9117D /* WebSocket.m in Sources */,
+				19911C3620EDF045007C24F4 /* UITextField+DITAddtion.m in Sources */,
 				19272E8720075DAE00EA104F /* DITWeChatAccount.m in Sources */,
 				19BDCFEE20C7F3B500C9117D /* DITHTTPConnection.m in Sources */,
 				19A2D8171F4C813700341A7E /* DITWeChatDiscoverViewController.m in Sources */,
@@ -1535,6 +1554,7 @@
 				19F769AF1F5C48EA0050775C /* AFURLRequestSerialization.m in Sources */,
 				19C18A9F206891B20014BEF4 /* DITCompSlideSelTableViewCell.m in Sources */,
 				19BDCFDC20C7F03800C9117D /* DDData.m in Sources */,
+				19911C3320EDC097007C24F4 /* DITTextfieldViewController.m in Sources */,
 				19E1516320A29FB9001D6E60 /* DITUIGestureRecognizerExamplesViewController.m in Sources */,
 				19BDD07620D25A9A00C9117D /* UIImage+DITImage.m in Sources */,
 				19BDD07320D25A9A00C9117D /* DITRuntimeViewController.m in Sources */,

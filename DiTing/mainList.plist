@@ -89,6 +89,12 @@
 				<key>targetVc</key>
 				<string>DITHTTPServerViewController</string>
 			</dict>
+            <dict>
+                <key>title</key>
+                <string>DITTextField</string>
+                <key>targetVc</key>
+                <string>DITTextfieldViewController</string>
+            </dict>
 		</array>
 	</dict>
 	<dict>
