@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/Author-Sherlock-brightgreen.svg)](http://zynlo.xyz)
 ![](https://img.shields.io/badge/platform-iOS-red.svg)
 ![](https://img.shields.io/badge/language-Objective--C-orange.svg) 
-![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
+![](https://img.shields.io/badge/license-Apache%20License%202.0-brightgreen.svg) 
 [![](https://img.shields.io/badge/简书-Gavin-red.svg)](https://www.jianshu.com/u/8ee283b782bd)
 
 ## 基础UI库
