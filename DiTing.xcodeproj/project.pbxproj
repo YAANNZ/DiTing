@@ -43,6 +43,7 @@
 		1964F1BE1F7367EE00661FC8 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1964F1B21F7367EE00661FC8 /* NSObject+MJProperty.m */; };
 		1964F1BF1F7367EE00661FC8 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1964F1B41F7367EE00661FC8 /* NSString+MJExtension.m */; };
 		1964F1D91F73BD8300661FC8 /* DITDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1964F1D81F73BD8300661FC8 /* DITDataBaseManager.m */; };
+		197CE6FA2132ED9600413CEF /* DITButtonEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197CE6F92132ED9500413CEF /* DITButtonEventsViewController.m */; };
 		1982B4001FAB6B42000806AB /* DITPeekPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1982B3FF1FAB6B42000806AB /* DITPeekPopViewController.m */; };
 		1982B4031FABFF70000806AB /* DITPeekPopPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1982B4021FABFF70000806AB /* DITPeekPopPresentationViewController.m */; };
 		198A27921FFB842A0003CC55 /* discoverList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 198A27911FFB84290003CC55 /* discoverList.plist */; };
@@ -245,6 +246,8 @@
 		1964F1B41F7367EE00661FC8 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
 		1964F1D71F73BD8300661FC8 /* DITDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITDataBaseManager.h; sourceTree = "<group>"; };
 		1964F1D81F73BD8300661FC8 /* DITDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITDataBaseManager.m; sourceTree = "<group>"; };
+		197CE6F82132ED9500413CEF /* DITButtonEventsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITButtonEventsViewController.h; sourceTree = "<group>"; };
+		197CE6F92132ED9500413CEF /* DITButtonEventsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITButtonEventsViewController.m; sourceTree = "<group>"; };
 		1982B3FE1FAB6B42000806AB /* DITPeekPopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITPeekPopViewController.h; sourceTree = "<group>"; };
 		1982B3FF1FAB6B42000806AB /* DITPeekPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITPeekPopViewController.m; sourceTree = "<group>"; };
 		1982B4011FABFF70000806AB /* DITPeekPopPresentationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITPeekPopPresentationViewController.h; sourceTree = "<group>"; };
@@ -1064,6 +1067,8 @@
 		19C18A6B204937CB0014BEF4 /* AppleComponent */ = {
 			isa = PBXGroup;
 			children = (
+				197CE6F82132ED9500413CEF /* DITButtonEventsViewController.h */,
+				197CE6F92132ED9500413CEF /* DITButtonEventsViewController.m */,
 				19BDD04A20D0B6E500C9117D /* runtime */,
 				19E1515820A29FB8001D6E60 /* NSURLSessionDataTask */,
 				19E1515C20A29FB9001D6E60 /* UIGestureRecognizer */,
@@ -1508,6 +1513,7 @@
 				19C18A9E206891B20014BEF4 /* DITCompSideSelModel.m in Sources */,
 				19E1516220A29FB9001D6E60 /* DITUIGestureRecognizerViewController.m in Sources */,
 				19A2D8201F4C832A00341A7E /* DITWeChatHomeModel.m in Sources */,
+				197CE6FA2132ED9600413CEF /* DITButtonEventsViewController.m in Sources */,
 				1964F19C1F7366B600661FC8 /* MBProgressHUD.m in Sources */,
 				193F254E20B550D400F08873 /* DITProgressView.m in Sources */,
 				19A2D7EB1F48955A00341A7E /* ViewController.m in Sources */,
