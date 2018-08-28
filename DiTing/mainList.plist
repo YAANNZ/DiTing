@@ -89,12 +89,12 @@
 				<key>targetVc</key>
 				<string>DITHTTPServerViewController</string>
 			</dict>
-            <dict>
-                <key>title</key>
-                <string>DITTextField</string>
-                <key>targetVc</key>
-                <string>DITTextfieldViewController</string>
-            </dict>
+			<dict>
+				<key>title</key>
+				<string>DITTextField</string>
+				<key>targetVc</key>
+				<string>DITTextfieldViewController</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
@@ -114,12 +114,18 @@
 				<key>targetVc</key>
 				<string>DITUIGestureRecognizerViewController</string>
 			</dict>
-            <dict>
-                <key>title</key>
-                <string>runtime</string>
-                <key>targetVc</key>
-                <string>DITRuntimeViewController</string>
-            </dict>
+			<dict>
+				<key>title</key>
+				<string>runtime</string>
+				<key>targetVc</key>
+				<string>DITRuntimeViewController</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>事件传递</string>
+				<key>targetVc</key>
+				<string>DITButtonEventsViewController</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>

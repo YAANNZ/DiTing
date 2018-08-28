@@ -20,6 +20,10 @@
     
     
 }
+- (IBAction)touchUp:(UIButton *)sender
+{
+    NSLog(@"get touch ");
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
