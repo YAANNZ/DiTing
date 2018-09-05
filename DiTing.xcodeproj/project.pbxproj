@@ -45,6 +45,7 @@
 		1964F1D91F73BD8300661FC8 /* DITDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1964F1D81F73BD8300661FC8 /* DITDataBaseManager.m */; };
 		197CE6FA2132ED9600413CEF /* DITButtonEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197CE6F92132ED9500413CEF /* DITButtonEventsViewController.m */; };
 		197CE6FC2135952000413CEF /* DITButtonEventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 197CE6FB2135952000413CEF /* DITButtonEventsViewController.xib */; };
+		197CE6FF2140134F00413CEF /* DITCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 197CE6FE2140134F00413CEF /* DITCustomButton.m */; };
 		1982B4001FAB6B42000806AB /* DITPeekPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1982B3FF1FAB6B42000806AB /* DITPeekPopViewController.m */; };
 		1982B4031FABFF70000806AB /* DITPeekPopPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1982B4021FABFF70000806AB /* DITPeekPopPresentationViewController.m */; };
 		198A27921FFB842A0003CC55 /* discoverList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 198A27911FFB84290003CC55 /* discoverList.plist */; };
@@ -250,6 +251,8 @@
 		197CE6F82132ED9500413CEF /* DITButtonEventsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITButtonEventsViewController.h; sourceTree = "<group>"; };
 		197CE6F92132ED9500413CEF /* DITButtonEventsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITButtonEventsViewController.m; sourceTree = "<group>"; };
 		197CE6FB2135952000413CEF /* DITButtonEventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DITButtonEventsViewController.xib; sourceTree = "<group>"; };
+		197CE6FD2140134F00413CEF /* DITCustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITCustomButton.h; sourceTree = "<group>"; };
+		197CE6FE2140134F00413CEF /* DITCustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITCustomButton.m; sourceTree = "<group>"; };
 		1982B3FE1FAB6B42000806AB /* DITPeekPopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITPeekPopViewController.h; sourceTree = "<group>"; };
 		1982B3FF1FAB6B42000806AB /* DITPeekPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DITPeekPopViewController.m; sourceTree = "<group>"; };
 		1982B4011FABFF70000806AB /* DITPeekPopPresentationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DITPeekPopPresentationViewController.h; sourceTree = "<group>"; };
@@ -1069,6 +1072,8 @@
 		19C18A6B204937CB0014BEF4 /* AppleComponent */ = {
 			isa = PBXGroup;
 			children = (
+				197CE6FD2140134F00413CEF /* DITCustomButton.h */,
+				197CE6FE2140134F00413CEF /* DITCustomButton.m */,
 				197CE6F82132ED9500413CEF /* DITButtonEventsViewController.h */,
 				197CE6F92132ED9500413CEF /* DITButtonEventsViewController.m */,
 				197CE6FB2135952000413CEF /* DITButtonEventsViewController.xib */,
@@ -1568,6 +1573,7 @@
 				19E1516320A29FB9001D6E60 /* DITUIGestureRecognizerExamplesViewController.m in Sources */,
 				19BDD07620D25A9A00C9117D /* UIImage+DITImage.m in Sources */,
 				19BDD07320D25A9A00C9117D /* DITRuntimeViewController.m in Sources */,
+				197CE6FF2140134F00413CEF /* DITCustomButton.m in Sources */,
 				19BDCFD620C7F03800C9117D /* HTTPRedirectResponse.m in Sources */,
 				19BDD07A20D2761600C9117D /* DITSubModel.m in Sources */,
 				19BDCFEB20C7F2B100C9117D /* DITCameraViewController.m in Sources */,

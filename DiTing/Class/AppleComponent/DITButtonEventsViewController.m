@@ -20,6 +20,9 @@
     
     
 }
+- (IBAction)anotherTouch:(UIButton *)sender {
+    NSLog(@"get another touch ");
+}
 - (IBAction)touchUp:(UIButton *)sender
 {
     NSLog(@"get touch ");
