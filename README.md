@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/Author-Sherlock-brightgreen.svg)](http://zynlo.xyz)
+[![](https://img.shields.io/badge/Author-Sherlock-brightgreen.svg)](http://zynll.com)
 ![](https://img.shields.io/badge/platform-iOS-red.svg)
 ![](https://img.shields.io/badge/language-Objective--C-orange.svg)
 ![](https://img.shields.io/badge/license-Apache%20License%202.0-brightgreen.svg)
@@ -11,15 +11,15 @@
 * 仿墨墨背单词的 list 侧边滑动选择效果。
 
 ## 系统组件理解分析
-* runtime 的理解和使用，文章地址：[简书](https://www.jianshu.com/p/a23f0b30baf6) | [Blog](http://zynlo.xyz/2018/06/08/runtime的理解/)。
+* runtime 的理解和使用，文章地址：[简书](https://www.jianshu.com/p/a23f0b30baf6) | [Blog](http://zynll.com/2018/06/08/runtime的理解/)。
 * UIGestureRecognizer 类的使用分析。
 
 ## 常见功能整理
-* 利用 [runtime](https://developer.apple.com/documentation/objectivec/objective_c_runtime#//apple_ref/doc/uid/TP40001418-CH1g-126286) 给 UITTextView 添加 placeholder，文章地址：[简书](https://www.jianshu.com/p/5d87f3e32108) | [Blog](http://zynlo.xyz/2018/06/14/runtime的理解二/)。
-* 系统相机完全自定义拍照及沙盒存储读取，文章地址：[简书](https://www.jianshu.com/p/67058679efce) | [Blog](http://zynlo.xyz/2018/06/07/App内搭建HTTP服务/)。
+* 利用 [runtime](https://developer.apple.com/documentation/objectivec/objective_c_runtime#//apple_ref/doc/uid/TP40001418-CH1g-126286) 给 UITTextView 添加 placeholder，文章地址：[简书](https://www.jianshu.com/p/5d87f3e32108) | [Blog](http://zynll.com/2018/06/14/runtime的理解二/)。
+* 系统相机完全自定义拍照及沙盒存储读取，文章地址：[简书](https://www.jianshu.com/p/67058679efce) | [Blog](http://zynll.com/2018/06/07/App内搭建HTTP服务/)。
 * 基于 NSURLSessionDataTask 实现的文件下载，支持断点续传下载。
 
 ## 三方框架整理
-* 利用 [CocoaHTTPServer](https://github.com/robbiehanson/CocoaHTTPServer) 在App内搭建HTTP服务，文章地址：[简书](https://www.jianshu.com/p/67058679efce) | [Blog](http://zynlo.xyz/2018/06/07/App内搭建HTTP服务/)。
+* 利用 [CocoaHTTPServer](https://github.com/robbiehanson/CocoaHTTPServer) 在App内搭建HTTP服务，文章地址：[简书](https://www.jianshu.com/p/67058679efce) | [Blog](http://zynll.com/2018/06/07/App内搭建HTTP服务/)。
 
 
