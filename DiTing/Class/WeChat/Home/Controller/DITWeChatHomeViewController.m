@@ -10,6 +10,7 @@
 #import "DITWeChatHomeTableViewCell.h"
 #import "DITWeChatHomeModel.h"
 #import "DITWeChatChatTableViewController.h"
+#import "ViewController.h"
 
 #define DITWeChatHomeCellID @"DITWeChatHomeCellID"
 
@@ -46,6 +47,13 @@
     tableView.estimatedRowHeight = 70;
     [tableView registerClass:[DITWeChatHomeTableViewCell class] forCellReuseIdentifier:DITWeChatHomeCellID];
     [self.view addSubview:tableView];
+    
+    self.navigationController.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backEvent)];
+}
+
+- (void)backEvent
+{
+    UIApplication.sharedApplication.keyWindow.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
 }
 
 - (void)getAllData

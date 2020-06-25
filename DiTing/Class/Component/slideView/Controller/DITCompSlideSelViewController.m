@@ -30,9 +30,19 @@
     
     self.panView = [[UIView alloc] init];
     [self.view addSubview:self.panView];
+    
+    
+    int topSpace = 64;
+    int bottomSpace = 0;
+    if (MAINSCREEN_HEIGHT >= 812) {
+        topSpace = 88;
+        bottomSpace = -34;
+    }
+    
     [self.panView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(@64);
-        make.left.bottom.equalTo(@0);
+        make.top.bottom.equalTo([[NSNumber alloc] initWithInt:topSpace]);
+        make.bottom.equalTo([[NSNumber alloc] initWithInt:bottomSpace]);
+        make.left.equalTo(@0);
         make.width.equalTo(@45);
     }];
 

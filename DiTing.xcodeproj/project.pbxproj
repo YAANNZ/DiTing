@@ -110,7 +110,6 @@
 		19E1516220A29FB9001D6E60 /* DITUIGestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E1515F20A29FB9001D6E60 /* DITUIGestureRecognizerViewController.m */; };
 		19E1516320A29FB9001D6E60 /* DITUIGestureRecognizerExamplesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E1516020A29FB9001D6E60 /* DITUIGestureRecognizerExamplesViewController.m */; };
 		19E1516620A29FCB001D6E60 /* NSURLSessionDataTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E1516520A29FCB001D6E60 /* NSURLSessionDataTaskViewController.m */; };
-		19F769931F5C48D90050775C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19F769791F5C48D90050775C /* Info.plist */; };
 		19F769941F5C48D90050775C /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F7697B1F5C48D90050775C /* MASCompositeConstraint.m */; };
 		19F769951F5C48D90050775C /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F7697E1F5C48D90050775C /* MASConstraint.m */; };
 		19F769961F5C48D90050775C /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F769801F5C48D90050775C /* MASConstraintMaker.m */; };
@@ -1132,8 +1131,8 @@
 		19C18A92206891B20014BEF4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				19C18A93206891B20014BEF4 /* DITCompSlideSelViewController.m */,
 				19C18A94206891B20014BEF4 /* DITCompSlideSelViewController.h */,
+				19C18A93206891B20014BEF4 /* DITCompSlideSelViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1150,8 +1149,8 @@
 		19C18A98206891B20014BEF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				19C18A99206891B20014BEF4 /* DITCompSlideSelTableViewCell.m */,
 				19C18A9A206891B20014BEF4 /* DITCompSlideSelTableViewCell.h */,
+				19C18A99206891B20014BEF4 /* DITCompSlideSelTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1433,6 +1432,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1462,7 +1462,6 @@
 				193AF8211E48C03E00F35FE4 /* Assets.xcassets in Resources */,
 				198A27921FFB842A0003CC55 /* discoverList.plist in Resources */,
 				197CE6FC2135952000413CEF /* DITButtonEventsViewController.xib in Resources */,
-				19F769931F5C48D90050775C /* Info.plist in Resources */,
 				193AF81F1E48C03E00F35FE4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
