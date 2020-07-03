@@ -8,6 +8,7 @@
 
 #import "DITCompLoopViewController.h"
 #import "DITLoopScrollView.h"
+//#import <SDWebImage/SDWebImage.h>
 
 @interface DITCompLoopViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -28,6 +29,8 @@
     self.loopScrollView = loopScrollView;
     [self.view addSubview:loopScrollView];
 
+    UIImageView *img = [[UIImageView alloc] init];
+//    [img sd_set];
     
     // collectionView 是为了给同事测试UI问题
     UICollectionViewFlowLayout *cvLayout = [UICollectionViewFlowLayout new];
