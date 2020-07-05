@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DiTing-Swift.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -115,8 +116,8 @@ NSString * const cellID = @"cellID";
         {
             return;
         }
-        
-        
+        DITCompCompressImgViewController *vc = [[DITCompCompressImgViewController alloc] init];
+//        [self.navigationController pushViewController:vc animated:YES];
         [self.navigationController pushViewController:[[NSClassFromString(cellItem[@"targetVc"]) alloc] init] animated:YES];
     }
     

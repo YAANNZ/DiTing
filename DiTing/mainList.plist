@@ -151,6 +151,12 @@
 				<key>targetVc</key>
 				<string>DITPeekPopViewController</string>
 			</dict>
+            <dict>
+                <key>title</key>
+                <string>CompressImg</string>
+                <key>targetVc</key>
+                <string>DITCompCompressImgViewController</string>
+            </dict>
 		</array>
 	</dict>
 </array>

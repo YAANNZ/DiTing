@@ -10,10 +10,23 @@ import UIKit
 
 class DITCompCompressImgViewController: UIViewController {
 
+    @IBOutlet var fImgView: UIImageView!
+    @IBOutlet var sImgView: UIImageView!
+    @IBOutlet var tImgView: UIImageView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let testImg = UIImage.init(named: "test")
+        fImgView.image = UIImage.init(data: testImg?.compression(0.3) as! Data)
+        
+        sImgView.image = UIImage.init(data: testImg?.shrink(200) as! Data)
+        
+        tImgView.image = UIImage.init(data: testImg?.compressionImage(0.3, 200) as! Data)
+        
+        
     }
 
 
