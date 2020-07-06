@@ -116,8 +116,14 @@ NSString * const cellID = @"cellID";
         {
             return;
         }
-        DITCompCompressImgViewController *vc = [[DITCompCompressImgViewController alloc] init];
-//        [self.navigationController pushViewController:vc animated:YES];
+        
+        if ([cellItem[@"targetVc"] isEqualToString:@"DITCompCompressImgViewController"])
+        {
+            DITCompCompressImgViewController *vc = [[DITCompCompressImgViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            return;
+        }
+        
         [self.navigationController pushViewController:[[NSClassFromString(cellItem[@"targetVc"]) alloc] init] animated:YES];
     }
     
