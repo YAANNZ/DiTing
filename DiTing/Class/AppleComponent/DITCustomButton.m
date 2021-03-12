@@ -18,6 +18,11 @@
 }
 */
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+//    super.touch
+}
+
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
 {
     NSLog(@"%d", [super pointInside:point withEvent:event]);

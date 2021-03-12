@@ -47,6 +47,7 @@
 {
     UIImage *testImage = [UIImage imageNamed:@"xxx"];
     NSLog(@"%@", testImage);
+
 }
 
 + (void)load
