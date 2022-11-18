@@ -196,6 +196,8 @@
 		19F769AF1F5C48EA0050775C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F769A71F5C48EA0050775C /* AFURLRequestSerialization.m */; };
 		19F769B01F5C48EA0050775C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F769A91F5C48EA0050775C /* AFURLResponseSerialization.m */; };
 		19F769B11F5C48EA0050775C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F769AB1F5C48EA0050775C /* AFURLSessionManager.m */; };
+		7C8D2A582927198400E77958 /* DITSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D2A562927198400E77958 /* DITSettingViewController.swift */; };
+		7C8D2A592927198400E77958 /* DITSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8D2A572927198400E77958 /* DITSettingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -691,6 +693,8 @@
 		19F769A91F5C48EA0050775C /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		19F769AA1F5C48EA0050775C /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		19F769AB1F5C48EA0050775C /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		7C8D2A562927198400E77958 /* DITSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DITSettingViewController.swift; sourceTree = "<group>"; };
+		7C8D2A572927198400E77958 /* DITSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DITSettingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -905,6 +909,7 @@
 		19A2D7D71F48955A00341A7E /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				7C8D2A552927190A00E77958 /* Setting */,
 				19A2D7D81F48955A00341A7E /* Main */,
 				19A2D7E01F48955A00341A7E /* WeChat */,
 				19C18A592046F7EB0014BEF4 /* Component */,
@@ -1801,6 +1806,15 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		7C8D2A552927190A00E77958 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				7C8D2A562927198400E77958 /* DITSettingViewController.swift */,
+				7C8D2A572927198400E77958 /* DITSettingViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1977,6 +1991,7 @@
 				198A27921FFB842A0003CC55 /* discoverList.plist in Resources */,
 				197CE6FC2135952000413CEF /* DITButtonEventsViewController.xib in Resources */,
 				193AF81F1E48C03E00F35FE4 /* Main.storyboard in Resources */,
+				7C8D2A592927198400E77958 /* DITSettingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2022,6 +2037,7 @@
 				1964F1D91F73BD8300661FC8 /* DITDataBaseManager.m in Sources */,
 				19BDCFDD20C7F03800C9117D /* DDRange.m in Sources */,
 				19F1240524A63D67001FA660 /* SDImageGIFCoder.m in Sources */,
+				7C8D2A582927198400E77958 /* DITSettingViewController.swift in Sources */,
 				19F7699C1F5C48D90050775C /* View+MASAdditions.m in Sources */,
 				19A2D81D1F4C815F00341A7E /* DITWeChatHomeTableViewCell.m in Sources */,
 				19BDCFD420C7F03800C9117D /* HTTPFileResponse.m in Sources */,
